@@ -18,7 +18,7 @@ const base = import.meta.env.BASE_URL;
 ---
 <BaseLayout title={entry.data.title} description={entry.data.summary}>
   <article class="mx-auto max-w-3xl px-6 pt-16 pb-24">
-    <header class="reveal">
+    <header>
       <p class="text-sm uppercase tracking-widest text-[var(--color-text-secondary)]">
         {entry.data.company ?? 'Case study'}
       </p>
@@ -37,7 +37,7 @@ const base = import.meta.env.BASE_URL;
       </ul>
     </header>
 
-    <div class="article-body prose-portfolio reveal mt-12">
+    <div class="article-body prose-portfolio mt-12">
       <Content />
     </div>
 
