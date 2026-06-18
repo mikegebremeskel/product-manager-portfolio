@@ -1,14 +1,14 @@
 ---
-const base = import.meta.env.BASE_URL;
+import { url } from '../lib/url';
 const links = [
-  { href: `${base}#work`, label: 'Work' },
-  { href: `${base}about`, label: 'About' },
-  { href: `${base}contact`, label: 'Contact' },
+  { href: url('#work'), label: 'Work' },
+  { href: url('about'), label: 'About' },
+  { href: url('contact'), label: 'Contact' },
 ];
 ---
 <header class="sticky top-0 z-40 border-b border-[var(--color-border)] bg-[var(--color-bg-primary)]/80 backdrop-blur">
   <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-    <a href={base} class="text-sm font-semibold tracking-tight">
+    <a href={url()} class="text-sm font-semibold tracking-tight">
       Mike Gebremeskel
     </a>
     <nav aria-label="Primary">
