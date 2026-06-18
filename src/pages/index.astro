@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CaseStudyCard from '../components/CaseStudyCard.astro';
+
+const base = import.meta.env.BASE_URL;
+const work = (await getCollection('work')).sort((a, b) => a.data.order - b.data.order);
+---
+<BaseLayout title="Mike Gebremeskel" description="Product manager. Co-founder and COO at Talisman. Four case studies in fintech and B2B SaaS.">
+  <section class="mx-auto max-w-5xl px-6 pt-20 pb-16">
+    <p class="text-sm uppercase tracking-widest text-[var(--color-text-secondary)]">Product manager</p>
+    <h1 class="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl md:text-6xl">
+      I build and run fintech and B2B SaaS products end&nbsp;to&nbsp;end.
+    </h1>
+    <p class="mt-6 max-w-2xl text-lg text-[var(--color-text-secondary)] leading-relaxed text-pretty">
+      Co-founder and COO at Talisman. Below are four case studies — product strategy, execution, zero-to-one, and how I operate — grounded in real artifacts and honest outcomes.
+    </p>
+  </section>
+
+  <section id="work" class="mx-auto max-w-5xl px-6 pb-24">
+    <h2 class="text-sm uppercase tracking-widest text-[var(--color-text-secondary)] mb-6">Case studies</h2>
+    <div class="grid gap-4 sm:grid-cols-2">
+      {work.map((entry) => (
+        <CaseStudyCard
+          href={`${base}work/${entry.id}`}
+          title={entry.data.title}
+          summary={entry.data.summary}
+          competencies={entry.data.competencies}
+        />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

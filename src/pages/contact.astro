@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Replace the form action with a real Formspree endpoint once created.
+// PRD requirement: Mike's email must never appear in the source. Formspree
+// holds the email server-side and forwards submissions.
+const FORMSPREE_ENDPOINT = import.meta.env.PUBLIC_FORMSPREE_ENDPOINT || 'https://formspree.io/f/YOUR_FORM_ID';
+---
+<BaseLayout title="Contact" description="Get in touch with Mike Gebremeskel.">
+  <section class="mx-auto max-w-xl px-6 pt-16 pb-24">
+    <h1 class="text-3xl sm:text-4xl font-semibold tracking-tight">Contact</h1>
+    <p class="mt-4 text-[var(--color-text-secondary)] leading-relaxed">
+      Send a note and I'll get back to you. I keep my email off the site on purpose.
+    </p>
+
+    <form
+      id="contact-form"
+      action={FORMSPREE_ENDPOINT}
+      method="POST"
+      class="mt-8 space-y-5"
+    >
+      <div>
+        <label for="name" class="block text-sm text-[var(--color-text-secondary)] mb-2">Name</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          required
+          autocomplete="name"
+          class="w-full rounded-md border border-[var(--color-border)] bg-[var(--color-bg-surface)] px-3 py-2 text-[var(--color-text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-green)]"
+        />
+      </div>
+      <div>
+        <label for="email" class="block text-sm text-[var(--color-text-secondary)] mb-2">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+          autocomplete="email"
+          class="w-full rounded-md border border-[var(--color-border)] bg-[var(--color-bg-surface)] px-3 py-2 text-[var(--color-text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-green)]"
+        />
+      </div>
+      <div>
+        <label for="company" class="block text-sm text-[var(--color-text-secondary)] mb-2">Company <span class="text-[var(--color-text-muted)]">(optional)</span></label>
+        <input
+          id="company"
+          name="company"
+          type="text"
+          class="w-full rounded-md border border-[var(--color-border)] bg-[var(--color-bg-surface)] px-3 py-2 text-[var(--color-text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-green)]"
+        />
+      </div>
+      <div>
+        <label for="message" class="block text-sm text-[var(--color-text-secondary)] mb-2">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          required
+          class="w-full rounded-md border border-[var(--color-border)] bg-[var(--color-bg-surface)] px-3 py-2 text-[var(--color-text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-green)]"
+        ></textarea>
+      </div>
+
+      {/* Honeypot — bots fill it, humans don't see it. */}
+      <div class="hidden" aria-hidden="true">
+        <label>Leave this field empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label>
+      </div>
+
+      <button
+        type="submit"
+        class="rounded-md bg-[var(--color-accent-green)] px-5 py-2.5 text-sm font-medium text-[var(--color-bg-primary)] hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-green)] focus:ring-offset-2 focus:ring-offset-[var(--color-bg-primary)]"
+      >
+        Send
+      </button>
+
+      <p id="form-success" class="hidden text-sm text-[var(--color-accent-green)]" role="status">
+        Thanks — message sent. I'll reply soon.
+      </p>
+      <p id="form-error" class="hidden text-sm text-[var(--color-status-red)]" role="alert">
+        Something went wrong. Please try again, or reach out on LinkedIn.
+      </p>
+    </form>
+  </section>
+
+  <script>
+    const form = document.getElementById('contact-form') as HTMLFormElement | null;
+    const okMsg = document.getElementById('form-success');
+    const errMsg = document.getElementById('form-error');
+    if (form && okMsg && errMsg) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        okMsg.classList.add('hidden');
+        errMsg.classList.add('hidden');
+        try {
+          const res = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { Accept: 'application/json' },
+          });
+          if (res.ok) {
+            form.reset();
+            okMsg.classList.remove('hidden');
+          } else {
+            errMsg.classList.remove('hidden');
+          }
+        } catch {
+          errMsg.classList.remove('hidden');
+        }
+      });
+    }
+  </script>
+</BaseLayout>

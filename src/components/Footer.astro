@@ -1,0 +1,36 @@
+---
+const base = import.meta.env.BASE_URL;
+const year = new Date().getFullYear();
+---
+<footer class="border-t border-[var(--color-border)] mt-24">
+  <div class="mx-auto flex max-w-5xl flex-col gap-4 px-6 py-8 text-sm text-[var(--color-text-secondary)] sm:flex-row sm:items-center sm:justify-between">
+    <p>© {year} Mike Gebremeskel</p>
+    <nav aria-label="Footer">
+      <ul class="flex items-center gap-6">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/mikegebremeskel/"
+            class="hover:text-[var(--color-text-primary)] transition-colors"
+            rel="noopener"
+          >
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/mikegebremeskel/product-manager-portfolio"
+            class="hover:text-[var(--color-text-primary)] transition-colors"
+            rel="noopener"
+          >
+            How this site was built
+          </a>
+        </li>
+        <li>
+          <a href={`${base}contact`} class="hover:text-[var(--color-text-primary)] transition-colors">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>

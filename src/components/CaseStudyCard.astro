@@ -1,0 +1,27 @@
+---
+interface Props {
+  href: string;
+  title: string;
+  summary: string;
+  competencies: string[];
+}
+const { href, title, summary, competencies } = Astro.props;
+---
+<a
+  href={href}
+  class="reveal group block rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 transition-colors hover:bg-[var(--color-bg-elevated)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-green)]"
+>
+  <h3 class="text-xl font-medium text-[var(--color-text-primary)] group-hover:text-[var(--color-accent-green)] transition-colors">
+    {title}
+  </h3>
+  <p class="mt-2 text-[var(--color-text-secondary)] leading-relaxed text-pretty">
+    {summary}
+  </p>
+  <ul class="mt-4 flex flex-wrap gap-2">
+    {competencies.map((c) => (
+      <li class="rounded-sm border border-[var(--color-border)] px-2 py-0.5 text-xs text-[var(--color-text-secondary)]">
+        {c}
+      </li>
+    ))}
+  </ul>
+</a>

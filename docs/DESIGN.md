@@ -1,6 +1,8 @@
 # Design Direction
 
-> Stub. Fill this in with Claude Code during the build, drawing the tokens, fonts, and icons from the design system of the prior tool.
+The visual system is inherited from **Tekky** (mikegebremeskel/tekky), a prior product whose design system is fully defined in code. Reusing those tokens keeps this site consistent with my existing work and removes the design-from-scratch tax.
+
+Source of truth in the tekky repo: `frontend/tailwind.config.ts`, `frontend/src/app/globals.css`, `frontend/src/app/layout.tsx`, `frontend/components.json`.
 
 ## Principles (from the PRD)
 
@@ -9,26 +11,89 @@
 - **Legible artifacts.** Diagrams and screens must be readable, with a way to view them larger (lightbox or full-width).
 - **Purposeful motion only.** No animation for its own sake.
 
-## Source design system
+## Mode
 
-The visual system is inherited from a prior product I built, which has a fully defined design system. Reuse its tokens so the site feels consistent with my existing work and saves design time.
+**Dark, single mode.** Tekky is dark-mode-first and the portfolio inherits that. No light/dark toggle in v1 (PRD §5 non-goal). The case-study artifacts (which were captured against light UIs in their original products) are presented inside cards on the dark surface; image backgrounds remain whatever they were captured as.
 
-To fill in with Claude Code:
+## Color tokens
 
-- **Color tokens:** _[paste from the existing system: background, surface, text, accent, muted, border, success/error]_
-- **Typography:** _[font families for headings and body, the type scale, weights, line heights]_
-- **Spacing scale:** _[the spacing steps and base unit]_
-- **Icons:** _[the icon set / library used in the existing system]_
-- **Radius, shadows, borders:** _[fill in]_
+Lifted verbatim from `tailwind.config.ts`.
 
-## Components to define
+### Surfaces (background depth scale)
 
-- Header / nav and footer (footer carries the LinkedIn link and the "how this site was built" colophon link to the repo)
-- Case study card (home index): title, one-line hook, thumbnail
-- Case study page layout: snapshot block, meta block (role, timeline, worked with, competencies), section headings, image with caption, reflection block
-- Image / artifact viewer (click to enlarge dense diagrams)
-- Contact form (name, email, message; honeypot; success and error states)
-- 404 page
+| Token | Hex | Use |
+|---|---|---|
+| `background.primary` | `#0B0E11` | Page background |
+| `background.surface` | `#141920` | Section backgrounds |
+| `background.card` | `#1C2330` | Case study cards, artifact frames |
+| `background.elevated` | `#243040` | Modals, lightbox, popovers |
+
+### Text
+
+| Token | Hex | Use |
+|---|---|---|
+| `text.primary` | `#FFFFFF` | Headings, primary body |
+| `text.secondary` | `#8A9BB0` | Meta labels, secondary copy |
+| `text.muted` | `#4A5568` | Placeholders, disabled states |
+
+### Accent
+
+| Token | Hex | Use |
+|---|---|---|
+| `accent.green` | `#05C46B` | Positive outcomes ($113K ARR, +80% activation), primary CTA |
+| `accent.gold` | `#F5C842` | Award/recognition callouts (Product Hunt #1, This Week in Fintech) |
+
+### Status
+
+| Token | Hex | Use |
+|---|---|---|
+| `status.red` | `#E53E3E` | Errors (contact form), negative deltas |
+| `status.blue` | `#3B82F6` | Informational, link hover |
+
+### Contrast check
+
+`text.primary` on `background.primary` = ~19:1 — passes WCAG AAA. `text.secondary` (#8A9BB0) on `background.primary` = ~6.8:1 — passes AA. `text.muted` is below 4.5:1 and is only used for disabled/placeholder, which is permitted.
+
+## Typography
+
+- **Family:** Inter, loaded via `next/font/google` as `--font-inter` with `display: swap`. All weights available.
+- **Fallback stack:** `sans-serif`.
+- **Scale:** Tailwind defaults (no custom scale in tekky). The site uses:
+  - `text-5xl` / `font-semibold` — Home hero headline
+  - `text-3xl` / `font-semibold` — Case study page title
+  - `text-xl` / `font-medium` — Section headings, card titles
+  - `text-base` — Body
+  - `text-sm` / `text-text-secondary` — Meta labels (role, timeline, competencies)
+- **Line height:** Tailwind defaults; body uses `leading-relaxed` for long-form case studies.
+- **Text balance:** apply `text-balance` utility (defined in tekky `globals.css`) to headlines.
+
+## Spacing, radius, motion
+
+- **Spacing:** Tailwind default 4px scale (no override in tekky).
+- **Radius:** `--radius: 0.5rem` (8px) base; `lg` = `var(--radius)`, `md` = 6px, `sm` = 4px. Cards and the lightbox use `rounded-lg`.
+- **Borders:** 1px, `hsl(var(--border))` (shadcn slate dark).
+- **Shadows:** None on the page surface (the dark depth scale carries hierarchy). Lightbox uses a subtle elevated shadow only.
+- **Motion:** `tailwindcss-animate` is available. Use it sparingly — page transitions are instant; only the lightbox and contact form state changes animate (fade/scale, ≤200ms).
+
+## Icons
+
+- **Library:** `lucide-react` (the default that ships with shadcn/ui, which tekky uses via `components.json`).
+- **Weight:** stroke 1.5, size 16–20px inline with text, 24px in nav.
+
+## Components to define (built from tekky tokens)
+
+- **Header / nav** — name on the left, links right (Work, About, Contact). Sticky, `bg-background-primary/80` with `backdrop-blur`, 1px bottom border.
+- **Footer** — LinkedIn link, "How this site was built" link to the repo, copyright. Quiet.
+- **Case study card** (home index) — `bg-background-card`, `rounded-lg`, hover lift to `background-elevated`. Title, one-line hook, thumbnail, competency chips.
+- **Case study page layout**:
+  - Snapshot block — blockquote treatment on `background-surface`
+  - Meta block — two-column grid of label/value pairs, `text-text-secondary` labels
+  - Section headings — `text-xl`, generous top spacing
+  - Image with caption — full-width within content column, caption in `text-sm text-text-secondary` italic
+  - Reflection — large blockquote, accent-gold left border
+- **Image / artifact viewer (lightbox)** — click any artifact to open at full size on `background-elevated`, dim the page. Closes on Escape and backdrop click.
+- **Contact form** — name, email, message, honeypot. Inputs use shadcn slate-dark tokens; success state in `accent.green`, errors in `status.red`.
+- **404 page** — minimal: heading, one line, link home.
 
 ## Targets this design must hit (from the PRD)
 
@@ -36,3 +101,8 @@ To fill in with Claude Code:
 - Largest Contentful Paint under 1.5s, Cumulative Layout Shift under 0.1
 - WCAG 2.1 AA: contrast at least 4.5:1, alt text on every image, keyboard-navigable nav and form
 - Clean on mobile and desktop
+
+## What was deliberately not borrowed from tekky
+
+- The shadcn light-mode CSS variables in `globals.css` — unused, since the portfolio is dark-only.
+- Tekky-specific component patterns (stat cards, leaderboards, comparison tables) — irrelevant to a portfolio.
