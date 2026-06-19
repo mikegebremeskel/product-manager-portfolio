@@ -8,7 +8,7 @@ const testimonials = [
       "Focus and drive are two of the words that come to mind when describing Michael Gebremeskel. In every role he has been assigned, he has used his unique perspective to accomplish the tasks in front of him and find additional ways to provide value. There is nothing that will stop Michael from reaching his full potential.",
     name: 'Chikomborero (Chiko) Chingaya',
     title: 'CEO, Talisman',
-    relation: "Mike's co-founder and mentor",
+    relation: "Mike's co-founder",
   },
   {
     quote:
@@ -34,10 +34,22 @@ const testimonials = [
 ];
 ---
 <section class="mx-auto max-w-6xl px-6 pb-24">
-  <h2 class="text-sm uppercase tracking-widest text-[var(--color-text-secondary)] mb-8">What people say</h2>
+  <div class="mb-8 flex items-baseline justify-between gap-4">
+    <h2 class="text-sm uppercase tracking-widest text-[var(--color-text-secondary)]">What people say</h2>
+    <a
+      href="https://www.linkedin.com/in/mikegebremeskel/details/recommendations/"
+      rel="noopener"
+      class="text-sm text-[var(--color-accent-green)] hover:underline underline-offset-4 whitespace-nowrap"
+    >
+      Read on LinkedIn ↗
+    </a>
+  </div>
   <div class="grid items-start gap-4 sm:grid-cols-2">
     {testimonials.map((t) => (
-      <figure class="flex flex-col rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
+      <a
+        href="https://www.linkedin.com/in/mikegebremeskel/details/recommendations/"
+        rel="noopener"
+        class="group flex flex-col rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 transition-colors hover:bg-[var(--color-bg-elevated)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-green)]">
         <blockquote class="space-y-3 text-[var(--color-text-primary)] leading-relaxed text-pretty">
           {t.quote.split('\n\n').map((p) => <p>{p}</p>)}
         </blockquote>
@@ -46,7 +58,7 @@ const testimonials = [
           <p class="mt-0.5 text-sm text-[var(--color-text-secondary)]">{t.title}</p>
           <p class="mt-0.5 text-xs text-[var(--color-text-muted)]">{t.relation}</p>
         </figcaption>
-      </figure>
+      </a>
     ))}
   </div>
 </section>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 112" width="400" height="112" role="img" aria-label="Product Hunt: #1 Product of the Week, SaaS">
+  <rect x="3" y="3" width="394" height="106" rx="20" fill="#FFFFFF" stroke="#DA552F" stroke-width="3"/>
+  <circle cx="60" cy="56" r="33" fill="#DA552F"/>
+  <text x="60" y="57" text-anchor="middle" dominant-baseline="central"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="40" font-weight="700" fill="#FFFFFF">P</text>
+  <text x="110" y="44" font-family="Inter, Helvetica, Arial, sans-serif" font-size="17" font-weight="700"
+        letter-spacing="1.5" fill="#DA552F">#1 PRODUCT OF THE WEEK</text>
+  <text x="110" y="86" font-family="Inter, Helvetica, Arial, sans-serif" font-size="32" font-weight="700"
+        fill="#DA552F">SaaS</text>
+</svg>
