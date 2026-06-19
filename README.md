@@ -2,7 +2,7 @@
 
 A product manager's portfolio, and a work sample of how I build.
 
-**Live site:** _[domain to be added once purchased]_
+**Live site:** https://mikegebremeskel.github.io/product-manager-portfolio/ _(custom domain to be connected once purchased)_
 
 ---
 
@@ -18,7 +18,7 @@ If you only have a minute, open the live site. If you want to see the thinking, 
 
 1. **`docs/PRFAQ.md`**: the why and the who. Written working backwards from the two users of this site: the hiring team evaluating me, and me trying to stand out. Start here.
 2. **`docs/PRD.md`**: the what and the how. Scope, requirements, information architecture, and success metrics written as measurable targets anyone can verify against the live site.
-3. **`content/`**: the four case studies and the About page, as Markdown.
+3. **`src/content/`**: the four case studies and the About page, as Markdown.
 4. **The live site**: the result.
 
 ## What's inside
@@ -26,16 +26,30 @@ If you only have a minute, open the live site. If you want to see the thinking, 
 ```
 .
 ├── README.md              You are here
+├── ASSETS.md              Image asset manifest
+├── astro.config.mjs       Astro config (site URL, base, Markdown plugins)
+├── package.json
 ├── docs/
 │   ├── PRFAQ.md           Product narrative (Working Backwards)
 │   ├── PRD.md             Product requirements and verifiable targets
 │   └── DESIGN.md          Design direction and tokens
-├── content/               Case studies + About, as Markdown
-├── public/assets/         Images and artifacts
-└── src/                   Site code
+├── public/
+│   └── assets/            Images, artifacts, favicon
+├── src/
+│   ├── content/
+│   │   ├── work/          The four case studies, as Markdown
+│   │   └── pages/         About, as Markdown
+│   ├── content.config.ts  Content collection schema
+│   ├── pages/             Routes (home, work/[slug], about, contact, 404)
+│   ├── layouts/           Base page layout
+│   ├── components/        Header, footer, case study card
+│   ├── scripts/           Scroll reveal + image lightbox
+│   ├── lib/               Small helpers (URL building, remark plugin)
+│   └── styles/            Global CSS + design tokens
+└── .github/workflows/     GitHub Pages deploy
 ```
 
-Content lives in `content/` as plain Markdown, separate from the code, so any case study can be edited without touching the build. That separation is intentional.
+Content lives in `src/content/` as plain Markdown, separate from the presentation code, so any case study can be edited without touching the build. That separation is intentional.
 
 ## The case studies
 
@@ -46,11 +60,11 @@ Content lives in `content/` as plain Markdown, separate from the code, so any ca
 
 ## How it is built
 
-- A static site. Content authored in Markdown, kept separate from presentation.
-- Hosted free on **GitHub Pages**, served from a **custom domain** (to be connected once purchased).
+- A static site built with **Astro**, styled with **Tailwind CSS v4**, case studies authored in Markdown and kept separate from presentation.
+- Hosted free on **GitHub Pages** via a GitHub Actions workflow, to be served from a **custom domain** once purchased.
 - The visual system (typography, color, spacing, icons) is borrowed from the design system of a prior product I built, so the look is consistent with my existing work.
 - Built with **Claude Code** as an intentional, AI-assisted workflow. That is a deliberate choice, documented rather than hidden.
-- Stack: _[finalized during the build]_
+- Stack: Astro, Tailwind CSS v4, Markdown content collections, deployed to GitHub Pages.
 
 ## Goals you can verify
 
@@ -64,7 +78,14 @@ Run PageSpeed Insights or Lighthouse against the live URL to confirm. The full t
 
 ## Running locally
 
-_[Setup and run instructions completed during the build, once the stack is chosen.]_
+```
+npm install
+npm run dev      # local dev server at localhost:4321
+npm run build    # static build to dist/
+npm run preview  # preview the production build
+```
+
+Requires Node 18 or newer.
 
 ## A note on the research
 
