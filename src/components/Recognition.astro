@@ -1,0 +1,63 @@
+---
+// Honest recognition framing: Product Hunt is the launch result Mike led as PM.
+// Awwwards / CSSDA are design awards the team earned together with the design
+// partners; the lead line credits that collaboration rather than claiming the
+// specific design honors personally.
+const items = [
+  {
+    org: 'Product Hunt',
+    honor: '#1 SaaS Product of the Week, #2 Product of the Day',
+    year: '2024',
+    href: 'https://www.producthunt.com/products/talisman-2',
+  },
+  {
+    org: 'This Week in Fintech',
+    honor: 'Fintech Startup of the Year',
+    year: '2024',
+  },
+  {
+    org: 'Awwwards',
+    honor: 'Honors',
+    year: '2024',
+  },
+  {
+    org: 'CSSDA',
+    honor: 'Best UI, Best UX & Best Innovation',
+    year: '2024',
+  },
+];
+---
+<section class="mx-auto max-w-5xl px-6 pb-24">
+  <h2 class="text-sm uppercase tracking-widest text-[var(--color-text-secondary)] mb-3">Recognition</h2>
+  <p class="max-w-2xl text-[var(--color-text-secondary)] leading-relaxed text-pretty mb-8">
+    I led Talisman's February 2024 launch as product manager and co-founder, working closely with our design partners. The launch and its design earned:
+  </p>
+  <ul class="grid gap-4 sm:grid-cols-2">
+    {items.map((item) => {
+      const inner = (
+        <div class="flex items-baseline justify-between gap-4 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 h-full transition-colors group-hover:bg-[var(--color-bg-elevated)]">
+          <div>
+            <p class="font-medium text-[var(--color-text-primary)]">{item.org}</p>
+            <p class="mt-1 text-sm text-[var(--color-text-secondary)] text-pretty">{item.honor}</p>
+          </div>
+          <span class="shrink-0 text-sm font-medium text-[var(--color-accent-gold)]">{item.year}</span>
+        </div>
+      );
+      return (
+        <li>
+          {item.href ? (
+            <a
+              href={item.href}
+              rel="noopener"
+              class="group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-green)] rounded-lg"
+            >
+              {inner}
+            </a>
+          ) : (
+            <div class="group">{inner}</div>
+          )}
+        </li>
+      );
+    })}
+  </ul>
+</section>

@@ -1,15 +1,31 @@
 ---
 import { getEntry, render } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { url } from '../lib/url';
 
 const about = await getEntry('pages', 'about');
 if (!about) throw new Error('about page not found');
 const { Content } = await render(about);
+
+// Swap to '/assets/headshot.jpg' once the real photo is added to public/assets/.
+const headshot = url('assets/headshot-placeholder.svg');
 ---
 <BaseLayout title="About" description="About Mike Gebremeskel, product manager and startup operator.">
   <article class="mx-auto max-w-3xl px-6 pt-16 pb-24">
-    <h1 class="text-3xl sm:text-4xl font-semibold tracking-tight">About</h1>
-    <div class="article-body prose-portfolio mt-8">
+    <div class="flex items-center gap-5">
+      <img
+        src={headshot}
+        alt="Mike Gebremeskel"
+        width="96"
+        height="96"
+        class="h-24 w-24 shrink-0 rounded-2xl border border-[var(--color-border)] object-cover"
+      />
+      <div>
+        <h1 class="text-3xl sm:text-4xl font-semibold tracking-tight">About</h1>
+        <p class="mt-1 text-[var(--color-text-secondary)]">Mike Gebremeskel, product manager</p>
+      </div>
+    </div>
+    <div class="article-body prose-portfolio mt-10">
       <Content />
     </div>
   </article>
