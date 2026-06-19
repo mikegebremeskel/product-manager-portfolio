@@ -6,10 +6,10 @@ The running record of significant decisions and document versions for this proje
 
 | Document | Version | Last updated |
 |---|---|---|
-| [PRD.md](PRD.md) | v2.4 | 2026-06-19 |
+| [PRD.md](PRD.md) | v2.5 | 2026-06-19 |
 | [PRFAQ.md](PRFAQ.md) | v1.1 | 2026-06-19 |
-| [DESIGN.md](DESIGN.md) | v2.2 | 2026-06-19 |
-| [DECISIONS.md](DECISIONS.md) | v1.5 | 2026-06-19 |
+| [DESIGN.md](DESIGN.md) | v2.3 | 2026-06-19 |
+| [DECISIONS.md](DECISIONS.md) | v1.6 | 2026-06-19 |
 | [../README.md](../README.md) | v1.4 | 2026-06-19 |
 | [../ASSETS.md](../ASSETS.md) | v2.2 | 2026-06-19 |
 
@@ -19,6 +19,7 @@ Versioning convention: bump the minor (v1 to v1.1) for edits and clarifications;
 
 ### 2026-06-19 (writing section)
 
+- **Social links unified, Substack added.** A shared `SocialLinks` component (LinkedIn, GitHub, Substack) now renders in the footer, the contact page, and the essay author block. The essay author block was simplified to just the name plus actions and icons (dropped the title and the "exploring roles" line).
 - **Writing section added.** New top-level "Writing," chosen over "Blog" or "Essays" per research: it reads as curated and senior and carries no implied posting cadence, so it never looks abandoned. Three essays published (write it down, find the wedge, teach your team to think in outcomes) as a `writing` content collection. The index is a simple title and summary list with no dates (evergreen framing). Each essay page has an author and contact CTA footer, related-essay links, and Article JSON-LD for SEO. The "source moments, not for publishing" footers were stripped, and titles were sentence-cased to match the site. Nav is now Work, Writing, Experience, About, Contact (mobile uses the hamburger). To add an essay: drop a Markdown file in `src/content/writing/` with title, summary, date, and order. No code changes.
 - **Prose CSS centralized** into `global.css`, so case studies, About, and essays share one source.
 - **Voice pass (decided, rollout pending).** Moderate intensity: adopt the voice guide's mechanics (short sentences, named opinions, the why, an occasional reader question and analogy) but not the Slack-only casual lexicon. Calibrate on one case study before applying across the rest. The voice and style guide stays out of the repo (it is built from private Slack history). The three essays are the voice reference standard.
