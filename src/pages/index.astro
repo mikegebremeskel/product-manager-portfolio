@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CaseStudyCard from '../components/CaseStudyCard.astro';
 import Recognition from '../components/Recognition.astro';
+import Testimonials from '../components/Testimonials.astro';
 import { url } from '../lib/url';
 
 const work = (await getCollection('work')).sort((a, b) => a.data.order - b.data.order);
@@ -33,4 +34,6 @@ const work = (await getCollection('work')).sort((a, b) => a.data.order - b.data.
   </section>
 
   <Recognition />
+
+  <Testimonials />
 </BaseLayout>

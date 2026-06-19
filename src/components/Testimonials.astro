@@ -1,0 +1,38 @@
+---
+// LinkedIn recommendations. Quotes are faithful excerpts (trimmed for length,
+// two obvious typos in the original lightly corrected). To add more, append to
+// this array; the grid handles any count.
+const testimonials = [
+  {
+    quote:
+      "Mike worked on projects that realized over $1M for our company. He is genuine, forthright, hardworking and positive. He welcomes feedback and immediately turns it around to grow. His personal and professional ethics are beyond reproach. I recommend him without hesitation for any group looking for smart, kind teammates who uplift those around them.",
+    name: 'Ananda Karakaya, MBA, PMP',
+    title: 'Chief of Strategic Operations and Transformation, McKesson',
+    relation: "Mike's mentor",
+  },
+  {
+    quote:
+      "Michael is a very talented individual, with skills ranging from customer service to process improvement and leadership. He's a person who any leader should fight to have on their team. He possesses the main skill we all want in any team member: character. I have spent 2 years coaching Mike as well as learning from him, and I can truly say I have learned more than I have taught.",
+    name: 'Jawad Hashmi, M.S.',
+    title: 'Senior Analytics Solutions Analyst, McKesson',
+    relation: 'Worked with Mike at McKesson',
+  },
+];
+---
+<section class="mx-auto max-w-5xl px-6 pb-24">
+  <h2 class="text-sm uppercase tracking-widest text-[var(--color-text-secondary)] mb-8">What people say</h2>
+  <div class="grid gap-4 sm:grid-cols-2">
+    {testimonials.map((t) => (
+      <figure class="flex flex-col rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
+        <blockquote class="text-[var(--color-text-primary)] leading-relaxed text-pretty">
+          {t.quote}
+        </blockquote>
+        <figcaption class="mt-5 border-t border-[var(--color-border)] pt-4">
+          <p class="font-medium text-[var(--color-text-primary)]">{t.name}</p>
+          <p class="mt-0.5 text-sm text-[var(--color-text-secondary)]">{t.title}</p>
+          <p class="mt-0.5 text-xs text-[var(--color-text-muted)]">{t.relation}</p>
+        </figcaption>
+      </figure>
+    ))}
+  </div>
+</section>
