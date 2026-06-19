@@ -1,6 +1,6 @@
 ---
 title: "Spec the outcome, not the story"
-summary: "Hand engineers testable acceptance criteria, not a loose narrative. Given, when, then beats a paragraph of intent."
+summary: "Hand engineers testable criteria, not a narrative."
 date: 2022-11-01
 order: 22
 related: ["a-good-spec-passes-one-test", "quality-is-a-process-not-a-vibe"]
@@ -9,6 +9,10 @@ related: ["a-good-spec-passes-one-test", "quality-is-a-process-not-a-vibe"]
 Hand engineers testable acceptance criteria, not a loose narrative of what you had in mind. A clear "given this, when that, then this" beats a paragraph of intent every time. Engineers do not need your story. They need to know exactly what is true when the work is done.
 
 This was a deliberate change I made to how we wrote tickets.
+
+![On the left, a given/when/then acceptance-criteria card; on the right, a parent ticket structured as a shell with three subissues; below, the one test a spec must pass.](/assets/22_Spec_Structure.svg)
+
+*Acceptance criteria over narrative, with big tickets structured as a shell plus subissues. The test: could someone build it without asking you a question?*
 
 ## From scenarios to criteria
 

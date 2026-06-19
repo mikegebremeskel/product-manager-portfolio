@@ -1,0 +1,72 @@
+<svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="aw" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#475569"/>
+    </marker>
+    <marker id="awT" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#0f766e"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="960" height="600" fill="#ffffff"/>
+
+  <text x="480" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#0f172a">Find the wedge, then narrow it again</text>
+  <text x="480" y="62" text-anchor="middle" font-size="14" fill="#475569">Sharpen to the one thing customers actually want. The same move at two altitudes.</text>
+
+  <!-- Altitude 1: company level strip -->
+  <text x="60" y="96" font-size="13" font-weight="700" fill="#1e293b">1. Company level</text>
+  <g font-size="13" font-weight="600">
+    <rect x="60" y="108" width="190" height="50" rx="8" fill="#1e293b"/>
+    <text x="155" y="130" text-anchor="middle" fill="#ffffff">Password manager</text>
+    <text x="155" y="147" text-anchor="middle" font-size="11" fill="#cbd5e1">our first idea</text>
+
+    <rect x="290" y="108" width="210" height="50" rx="8" fill="#b91c1c"/>
+    <text x="395" y="130" text-anchor="middle" fill="#ffffff">Rejected at Techstars</text>
+    <text x="395" y="147" text-anchor="middle" font-size="11" fill="#fecaca">forced the real question</text>
+
+    <rect x="540" y="108" width="360" height="50" rx="8" fill="#0f766e"/>
+    <text x="720" y="130" text-anchor="middle" fill="#ffffff">Talisman: one focused company</text>
+    <text x="720" y="147" text-anchor="middle" font-size="11" fill="#bbf7d0">who are we actually for?</text>
+  </g>
+  <line x1="252" y1="133" x2="286" y2="133" stroke="#475569" stroke-width="2.5" marker-end="url(#aw)"/>
+  <line x1="502" y1="133" x2="536" y2="133" stroke="#475569" stroke-width="2.5" marker-end="url(#aw)"/>
+
+  <line x1="60" y1="184" x2="900" y2="184" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Altitude 2: product level focus -->
+  <text x="60" y="216" font-size="13" font-weight="700" fill="#2563eb">2. Product level: three ambitions, one sharp focus</text>
+
+  <!-- three candidate boxes -->
+  <rect x="70" y="244" width="250" height="76" rx="10" fill="#0f766e"/>
+  <text x="195" y="278" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Spend</text>
+  <text x="195" y="300" text-anchor="middle" font-size="11.5" fill="#bbf7d0">the one that resonated</text>
+
+  <rect x="355" y="244" width="250" height="76" rx="10" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="480" y="278" text-anchor="middle" font-size="16" font-weight="700" fill="#64748b">Access</text>
+  <text x="480" y="300" text-anchor="middle" font-size="11.5" fill="#94a3b8">cut: out of scope</text>
+
+  <rect x="640" y="244" width="250" height="76" rx="10" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="765" y="278" text-anchor="middle" font-size="16" font-weight="700" fill="#64748b">IT</text>
+  <text x="765" y="300" text-anchor="middle" font-size="11.5" fill="#94a3b8">cut: out of scope</text>
+
+  <!-- only spend continues -->
+  <line x1="195" y1="320" x2="195" y2="372" stroke="#0f766e" stroke-width="3" marker-end="url(#awT)"/>
+  <text x="480" y="352" text-anchor="middle" font-size="12.5" fill="#475569">Customers pointed to spend, so we cut the rest and went deep on one thing.</text>
+
+  <!-- committed focus -->
+  <rect x="70" y="378" width="250" height="66" rx="10" fill="#0f766e" stroke="#f59e0b" stroke-width="2.5"/>
+  <text x="195" y="406" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff">We committed to spend</text>
+  <text x="195" y="426" text-anchor="middle" font-size="11.5" fill="#bbf7d0">one sharp use case, done well</text>
+
+  <!-- reason callout -->
+  <rect x="355" y="378" width="535" height="66" rx="10" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="622" y="405" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1e3a8a">"The spend piece is what is resonating. The IT piece is out of scope."</text>
+  <text x="622" y="426" text-anchor="middle" font-size="11.5" fill="#475569">the customer signal that told us where to focus</text>
+
+  <!-- takeaway -->
+  <rect x="70" y="472" width="820" height="68" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="480" y="499" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0f172a">Pick the one sharp thing closest to a real customer, and cut the rest. The focus is the whole move.</text>
+  <text x="480" y="520" text-anchor="middle" font-size="12.5" fill="#475569">Finding the wedge is not a one-time call. It is a habit of narrowing, at the company level and again inside the product.</text>
+
+  <!-- honest source line -->
+  <text x="480" y="566" text-anchor="middle" font-size="11" font-style="italic" fill="#94a3b8">Concept: the wedge / beachhead strategy (Chris Dixon, "the thin edge of the wedge"). Story and quote: Mike's own Talisman experience.</text>
+</svg>

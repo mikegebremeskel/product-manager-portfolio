@@ -1,7 +1,7 @@
 ---
 title: "Your lived experience is a product superpower"
-summary: "The best product insight often doesn't come from a spreadsheet. It comes from your own life."
-date: 2024-06-10
+summary: "The best insight often comes from your own life, not your research."
+date: 2024-06-01
 order: 35
 related: ["listen-to-what-users-do"]
 ---
@@ -46,8 +46,10 @@ So the next time you are stuck on a customer problem, do not only open the resea
 
 > **From the original post, written on LinkedIn in 2024:**
 >
-> "Before starting Talisman, I wanted to go to Wharton and pursue a master's degree in organizational behavior. I was (and am) fascinated by the idea of uncovering every team member's full potential... how does a completely unrelated experience in my life help me with my work today?
+> *"Before starting Talisman, I wanted to go to Wharton and pursue a master's degree in organizational behavior. I was (and am) fascinated by the idea of uncovering every team member's full potential... how does a completely unrelated experience in my life help me with my work today?*
 >
-> Back in 2000, only 8.5% of engineers were women. It was notable then that Ford put 30 women engineers on the same team to make Windstar minivans more user-friendly for their core customer base: women with children... One of the Windstar Moms, Cindy Hodges, a mechanical engineer, pushed especially hard for the idea of a larger gas tank. She said, 'There was nothing I hated more than refueling with crying babies.'... Her experience as a mother informed her work as an engineer and 10x'd her product as a result.
+> *Back in 2000, only 8.5% of engineers were women. It was notable then that Ford put 30 women engineers on the same team to make Windstar minivans more user-friendly for their core customer base: women with children... One of the Windstar Moms, Cindy Hodges, a mechanical engineer, pushed especially hard for the idea of a larger gas tank. She said, 'There was nothing I hated more than refueling with crying babies.'... Her experience as a mother informed her work as an engineer and 10x'd her product as a result.*
 >
-> We encourage and inspire our team to draw from their life experiences to solve real customer problems as they build products. Just like the Windstar Moms did."
+> *We encourage and inspire our team to draw from their life experiences to solve real customer problems as they build products. Just like the Windstar Moms did."*
+
+*Source: Mike's LinkedIn post, 2024. The Windstar Moms and Cindy Hodges details are as Mike recounted them in that post.*

@@ -1,7 +1,7 @@
 ---
 title: "A good spec passes one test"
-summary: "Could a teammate build it without coming back to ask what you meant? That's the only test a spec needs to pass."
-date: 2023-07-15
+summary: "Could someone build it without asking you a single question?"
+date: 2023-07-01
 order: 11
 related: ["spec-the-outcome-not-the-story", "quality-is-a-process-not-a-vibe"]
 ---

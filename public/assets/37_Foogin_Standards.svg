@@ -1,0 +1,80 @@
+<svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="af" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="960" height="600" fill="#ffffff"/>
+
+  <text x="480" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#0f172a">The Foogin' Standards</text>
+  <text x="480" y="62" text-anchor="middle" font-size="14" fill="#475569">A culture of excellence: written down, held by everyone, even when it costs you.</text>
+
+  <!-- four values -->
+  <g>
+    <rect x="40" y="88" width="205" height="98" rx="10" fill="#1e293b"/>
+    <text x="142" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">Focus</text>
+    <text x="142" y="148" text-anchor="middle" font-size="11.5" fill="#cbd5e1">know the one most</text>
+    <text x="142" y="164" text-anchor="middle" font-size="11.5" fill="#cbd5e1">important thing, and ask</text>
+
+    <rect x="269" y="88" width="205" height="98" rx="10" fill="#1e293b"/>
+    <text x="371" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">Communication</text>
+    <text x="371" y="148" text-anchor="middle" font-size="11.5" fill="#cbd5e1">over-communicate,</text>
+    <text x="371" y="164" text-anchor="middle" font-size="11.5" fill="#cbd5e1">concise and relevant</text>
+
+    <rect x="498" y="88" width="205" height="98" rx="10" fill="#1e293b"/>
+    <text x="600" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">Attention to detail</text>
+    <text x="600" y="148" text-anchor="middle" font-size="11.5" fill="#cbd5e1">doing the job is not</text>
+    <text x="600" y="164" text-anchor="middle" font-size="11.5" fill="#cbd5e1">doing the job</text>
+
+    <rect x="727" y="88" width="205" height="98" rx="10" fill="#1e293b"/>
+    <text x="829" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">Collaboration</text>
+    <text x="829" y="148" text-anchor="middle" font-size="11.5" fill="#cbd5e1">we are a collective,</text>
+    <text x="829" y="164" text-anchor="middle" font-size="11.5" fill="#cbd5e1">stronger together</text>
+  </g>
+
+  <!-- arrows down to band -->
+  <g stroke="#475569" stroke-width="2.5" marker-end="url(#af)">
+    <line x1="142" y1="186" x2="142" y2="212"/>
+    <line x1="371" y1="186" x2="371" y2="212"/>
+    <line x1="600" y1="186" x2="600" y2="212"/>
+    <line x1="829" y1="186" x2="829" y2="212"/>
+  </g>
+
+  <!-- held at every level band (red top stripe nods to Arsenal) -->
+  <rect x="40" y="216" width="892" height="62" rx="10" fill="#0f172a"/>
+  <rect x="40" y="216" width="892" height="6" rx="3" fill="#b91c1c"/>
+  <text x="486" y="244" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Held at every level, including the leader.</text>
+  <text x="486" y="265" text-anchor="middle" font-size="12.5" fill="#cbd5e1">A standard that bends for your best player is not a standard.</text>
+
+  <text x="486" y="306" text-anchor="middle" font-size="12.5" font-style="italic" fill="#475569">Inspired by how Mikel Arteta rebuilt Arsenal: standards held from the top earners to the academy.</text>
+
+  <!-- attack / defend / win -->
+  <rect x="60" y="332" width="250" height="76" rx="10" fill="#2563eb"/>
+  <text x="185" y="362" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">ATTACK</text>
+  <text x="185" y="384" text-anchor="middle" font-size="11.5" fill="#dbeafe">clear on what, why, how,</text>
+  <text x="185" y="399" text-anchor="middle" font-size="11.5" fill="#dbeafe">and how we test</text>
+
+  <rect x="355" y="332" width="250" height="76" rx="10" fill="#2563eb"/>
+  <text x="480" y="362" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">DEFEND</text>
+  <text x="480" y="384" text-anchor="middle" font-size="11.5" fill="#dbeafe">meet every requirement,</text>
+  <text x="480" y="399" text-anchor="middle" font-size="11.5" fill="#dbeafe">never let the bar drop</text>
+
+  <rect x="650" y="332" width="250" height="76" rx="10" fill="#0f766e"/>
+  <text x="775" y="362" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">WIN</text>
+  <text x="775" y="384" text-anchor="middle" font-size="11.5" fill="#bbf7d0">attack and defend</text>
+  <text x="775" y="399" text-anchor="middle" font-size="11.5" fill="#bbf7d0">as one team</text>
+
+  <line x1="310" y1="370" x2="353" y2="370" stroke="#475569" stroke-width="2.5" marker-end="url(#af)"/>
+  <line x1="605" y1="370" x2="648" y2="370" stroke="#475569" stroke-width="2.5" marker-end="url(#af)"/>
+
+  <!-- result -->
+  <text x="480" y="452" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">A product customers love.</text>
+
+  <!-- takeaway band -->
+  <rect x="60" y="476" width="840" height="50" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="480" y="506" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a">Excellence is a hundred small, non-negotiable habits, repeated.</text>
+
+  <!-- honest sources -->
+  <text x="480" y="560" text-anchor="middle" font-size="11" font-style="italic" fill="#94a3b8">Sources: Mike's own "Foogin' Standards" doc for the Talisman product team. Arsenal and Arteta details: J. McNicholas, The Athletic (2024).</text>
+  <text x="480" y="576" text-anchor="middle" font-size="11" font-style="italic" fill="#94a3b8">The name and the attack / defend / win frame are Mike's, inspired by Arteta.</text>
+</svg>

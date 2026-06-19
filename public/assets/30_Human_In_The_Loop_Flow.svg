@@ -1,0 +1,57 @@
+<svg viewBox="0 0 960 620" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#475569"/>
+    </marker>
+    <marker id="arFb" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#7c3aed"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="960" height="620" fill="#ffffff"/>
+
+  <text x="480" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#0f172a">Where the human goes</text>
+  <text x="480" y="63" text-anchor="middle" font-size="14" fill="#475569">The cost of being wrong decides what AI handles and what a person reviews</text>
+
+  <!-- feedback loop (drawn first so it sits behind boxes) -->
+  <path d="M925 372 L925 150 L566 150 L566 196" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#arFb)"/>
+  <text x="742" y="118" text-anchor="middle" font-size="12.5" font-weight="700" fill="#6d28d9">Each human review becomes training data</text>
+  <text x="742" y="134" text-anchor="middle" font-size="11.5" fill="#7c3aed">so the model clears more on its own next time</text>
+
+  <!-- step 1 -->
+  <rect x="370" y="92" width="220" height="44" rx="8" fill="#1e293b"/>
+  <text x="480" y="119" text-anchor="middle" font-size="14" font-weight="600" fill="#ffffff">A transaction comes in</text>
+  <line x1="480" y1="136" x2="480" y2="172" stroke="#475569" stroke-width="2.5" marker-end="url(#ar)"/>
+
+  <!-- decision diamond -->
+  <polygon points="480,176 620,232 480,288 340,232" fill="#2563eb"/>
+  <text x="480" y="222" text-anchor="middle" font-size="13.5" font-weight="600" fill="#ffffff">Confidence above</text>
+  <text x="480" y="240" text-anchor="middle" font-size="13.5" font-weight="600" fill="#ffffff">the threshold?</text>
+  <text x="480" y="308" text-anchor="middle" font-size="11.5" font-style="italic" fill="#475569">a score the model gives, against a bar you set and tune</text>
+
+  <!-- yes branch -->
+  <path d="M340 232 L150 232 L150 338" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="245" y="222" text-anchor="middle" font-size="12" font-weight="700" fill="#0f766e">YES</text>
+  <rect x="40" y="342" width="220" height="60" rx="8" fill="#0f766e"/>
+  <text x="150" y="368" text-anchor="middle" font-size="14" font-weight="600" fill="#ffffff">Auto-assign the vendor</text>
+  <text x="150" y="387" text-anchor="middle" font-size="11.5" fill="#cbd5e1">most transactions, spot-checked</text>
+
+  <!-- no branch -->
+  <path d="M620 232 L810 232 L810 338" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="715" y="222" text-anchor="middle" font-size="12" font-weight="700" fill="#b45309">NO</text>
+  <rect x="700" y="342" width="220" height="60" rx="8" fill="#1e293b"/>
+  <text x="810" y="368" text-anchor="middle" font-size="14" font-weight="600" fill="#ffffff">A human reviews it</text>
+  <text x="810" y="387" text-anchor="middle" font-size="11.5" fill="#cbd5e1">the unsure, high-stakes edge cases</text>
+
+  <!-- converge -->
+  <path d="M150 402 L150 452 L368 452" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#ar)"/>
+  <path d="M810 402 L810 452 L592 452" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#ar)"/>
+  <rect x="370" y="428" width="220" height="48" rx="8" fill="#0f172a"/>
+  <text x="480" y="457" text-anchor="middle" font-size="14" font-weight="600" fill="#ffffff">A result the customer trusts</text>
+
+  <!-- principle band -->
+  <rect x="40" y="508" width="880" height="80" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="480" y="533" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0f172a">Low cost of error: let AI run. High cost, like money: keep a human on what it is unsure of.</text>
+  <text x="480" y="554" text-anchor="middle" font-size="12.5" fill="#475569">Automate the volume. Reserve human judgment for where being wrong is expensive.</text>
+  <text x="480" y="574" text-anchor="middle" font-size="12.5" fill="#6d28d9">And every human review trains the model, so the queue that needs a person keeps shrinking.</text>
+  <text x="480" y="606" text-anchor="middle" font-size="11" font-style="italic" fill="#94a3b8">Pattern: human-in-the-loop review with active learning. Based on Mike's own Talisman vendor-identification workflow.</text>
+</svg>

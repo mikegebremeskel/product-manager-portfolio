@@ -1,6 +1,6 @@
 # Image asset manifest
 
-> v2.4, last updated 2026-06-19. See [docs/DECISIONS.md](docs/DECISIONS.md).
+> v2.5, last updated 2026-06-19. See [docs/DECISIONS.md](docs/DECISIONS.md).
 
 All images live in `public/assets/`. The Markdown in `src/content/` and the page components reference them by these exact filenames, so keep the names as-is.
 
@@ -43,6 +43,19 @@ All images live in `public/assets/`. The Markdown in `src/content/` and the page
 | `speed-slack-report.png` | "Speed is a form of respect" (the 6:33am report and 6:35am reply; customer name anonymized) |
 | `speed-slack-resolution.png` | "Speed is a form of respect" (root cause and the 11:43am verification request) |
 | `speed-linkedin-recap.png` | "Speed is a form of respect" (the CEO's public LinkedIn recap of the morning) |
+
+## Writing (diagrams)
+
+Inline SVG figures, referenced from the essays and rendered as white figure cards on the dark site. They have a transparent-free white background and scale cleanly.
+
+| File | Used in |
+|---|---|
+| `02_Find_The_Wedge_Funnel.svg` | "Find the wedge, then narrow it again" |
+| `03_OKR_Structure.svg` | "Teach your team to think in outcomes" |
+| `22_Spec_Structure.svg` | "Spec the outcome, not the story" |
+| `30_Human_In_The_Loop_Flow.svg` | "Keep a human in the loop where being wrong is expensive" |
+| `36_Process_Map.svg` | "AI didn't write this portfolio. My own archive did." |
+| `37_Foogin_Standards.svg` | "The Foogin' Standards" |
 
 ## Also in public/
 

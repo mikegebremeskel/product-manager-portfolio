@@ -1,0 +1,99 @@
+<svg viewBox="0 0 980 660" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#475569"/>
+    </marker>
+    <marker id="arrowSmall" markerWidth="8" markerHeight="8" refX="6" refY="2.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,2.5 L0,5 Z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="980" height="660" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="490" y="40" text-anchor="middle" font-size="26" font-weight="700" fill="#0f172a">How this portfolio was built</text>
+  <text x="490" y="66" text-anchor="middle" font-size="15" fill="#475569">Human judgment and AI, working from a proprietary archive</text>
+
+  <!-- Column headers -->
+  <text x="165" y="104" text-anchor="middle" font-size="15" font-weight="700" fill="#1e293b">INPUTS</text>
+  <text x="165" y="123" text-anchor="middle" font-size="12" fill="#64748b">the part that is hard to copy</text>
+
+  <text x="490" y="104" text-anchor="middle" font-size="15" font-weight="700" fill="#2563eb">AI-ACCELERATED PIPELINE</text>
+  <text x="490" y="123" text-anchor="middle" font-size="12" fill="#64748b">fast, but directed by me</text>
+
+  <text x="820" y="104" text-anchor="middle" font-size="15" font-weight="700" fill="#0f766e">OUTPUTS</text>
+  <text x="820" y="123" text-anchor="middle" font-size="12" fill="#64748b">grounded in real work</text>
+
+  <!-- INPUT boxes (5) -->
+  <g fill="#1e293b">
+    <rect x="40" y="150" width="250" height="50" rx="8"/>
+    <rect x="40" y="212" width="250" height="50" rx="8"/>
+    <rect x="40" y="274" width="250" height="50" rx="8"/>
+    <rect x="40" y="336" width="250" height="50" rx="8"/>
+    <rect x="40" y="398" width="250" height="50" rx="8"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="165" y="171" font-size="13.5" font-weight="600" fill="#ffffff">5 years of Slack</text>
+    <text x="165" y="189" font-size="11" fill="#cbd5e1">23,000+ of my own messages</text>
+    <text x="165" y="233" font-size="13.5" font-weight="600" fill="#ffffff">LinkedIn archive</text>
+    <text x="165" y="251" font-size="11" fill="#cbd5e1">posts from 2018 to 2024</text>
+    <text x="165" y="295" font-size="13.5" font-weight="600" fill="#ffffff">Personal notes</text>
+    <text x="165" y="313" font-size="11" fill="#cbd5e1">10 years of notes to myself</text>
+    <text x="165" y="357" font-size="13.5" font-weight="600" fill="#ffffff">Lived experience</text>
+    <text x="165" y="375" font-size="11" fill="#cbd5e1">real decisions, real stakes</text>
+    <text x="165" y="419" font-size="13.5" font-weight="600" fill="#ffffff">Target job descriptions</text>
+    <text x="165" y="437" font-size="11" fill="#cbd5e1">to focus the set</text>
+  </g>
+
+  <!-- PIPELINE boxes (5) -->
+  <g fill="#2563eb">
+    <rect x="370" y="158" width="240" height="46" rx="8"/>
+    <rect x="370" y="214" width="240" height="46" rx="8"/>
+    <rect x="370" y="270" width="240" height="46" rx="8"/>
+    <rect x="370" y="326" width="240" height="46" rx="8"/>
+    <rect x="370" y="382" width="240" height="46" rx="8"/>
+  </g>
+  <g fill="#ffffff" font-size="13.5" text-anchor="middle" font-weight="600">
+    <text x="490" y="186">1. Analyze the voice</text>
+    <text x="490" y="242">2. Build the style guide</text>
+    <text x="490" y="298">3. Mine the themes</text>
+    <text x="490" y="354">4. Draft at scale</text>
+    <text x="490" y="410">5. Verify and fact-check</text>
+  </g>
+  <!-- small down arrows between pipeline steps -->
+  <g stroke="#2563eb" stroke-width="2" marker-end="url(#arrowSmall)">
+    <line x1="490" y1="204" x2="490" y2="212"/>
+    <line x1="490" y1="260" x2="490" y2="268"/>
+    <line x1="490" y1="316" x2="490" y2="324"/>
+    <line x1="490" y1="372" x2="490" y2="380"/>
+  </g>
+  <!-- feedback loop: verify back to draft -->
+  <path d="M610 405 C 656 405, 656 349, 614 349" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrowSmall)"/>
+  <text x="643" y="381" text-anchor="middle" font-size="11" fill="#64748b">revise</text>
+
+  <!-- OUTPUT boxes (3) -->
+  <g fill="#0f766e">
+    <rect x="700" y="176" width="240" height="56" rx="8"/>
+    <rect x="700" y="258" width="240" height="56" rx="8"/>
+    <rect x="700" y="340" width="240" height="56" rx="8"/>
+  </g>
+  <g fill="#ffffff" font-size="14" text-anchor="middle" font-weight="600">
+    <text x="820" y="209">Voice and style guide</text>
+    <text x="820" y="291">Idea bank, 34 themes</text>
+    <text x="820" y="373">36 grounded essays</text>
+  </g>
+
+  <!-- big stage arrows -->
+  <line x1="296" y1="288" x2="362" y2="288" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="616" y1="288" x2="692" y2="288" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Human judgment band -->
+  <rect x="40" y="478" width="900" height="80" rx="12" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="490" y="508" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Human judgment throughout</text>
+  <text x="490" y="532" text-anchor="middle" font-size="13" fill="#334155">What is true. What sounds like me. What to cut. No fabricated numbers.</text>
+  <text x="490" y="550" text-anchor="middle" font-size="13" fill="#334155">AI compressed the labor, not the thinking.</text>
+
+  <!-- bottom takeaway -->
+  <text x="490" y="606" text-anchor="middle" font-size="15" font-weight="700" fill="#0f766e">The model is a commodity. The archive and the judgment are the moat.</text>
+  <text x="490" y="632" text-anchor="middle" font-size="12" fill="#94a3b8">Source: Mike Gebremeskel's own process for building this portfolio. Inputs are his real Slack, LinkedIn, notes, and experience.</text>
+</svg>

@@ -1,6 +1,6 @@
 ---
 title: "How to name a product"
-summary: "The best product names come from the oldest, most human version of the problem you solve."
+summary: "Name the oldest version of the problem. How Talisman got its name."
 date: 2022-02-01
 order: 12
 related: ["find-the-wedge-then-narrow-it-again"]

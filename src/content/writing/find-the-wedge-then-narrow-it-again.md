@@ -1,14 +1,20 @@
 ---
 title: "Find the wedge, then narrow it again"
-summary: "We thought we were building spend, access, and IT. Customers told us we were building one screen."
-date: 2026-06-19
+summary: "Pick the easiest slice closest to a real customer, then let them narrow you further."
+date: 2025-11-01
 order: 2
 related: ["write-it-down-before-you-say-it", "teach-your-team-to-think-in-outcomes"]
 ---
 
 We spent months exploring the wrong half of our product. Our customers corrected us in one sentence.
 
-Here is the story, because the lesson only makes sense if you see how we got there. (The shorter case study version, with the artifacts, lives here: [Finding the wedge](/work/finding-the-wedge).)
+Before this, we had already found a wedge once, at the company level. We applied to Techstars Boulder with a password manager idea, got rejected in the final round, and that no forced the first version of the only question that matters: who are we actually for. That rethink became Talisman. I tell that story separately, in "The Leap, and the Rejection That Found the Wedge." This essay is about the second time we had to narrow, a year later, this time inside the product. Same skill, smaller altitude.
+
+Here is the story, because the lesson only makes sense if you see how we got there.
+
+![The same focusing move at two levels. Top: the company pivot from a rejected password-manager idea into one focused company. Bottom: three product ambitions, spend, access, and IT, narrowed by customer feedback to a single sharp focus on spend.](/assets/02_Find_The_Wedge_Funnel.svg)
+
+*Sharpen to the one thing customers actually want. We cut access and IT and committed to spend, after the same focusing move at the company level created Talisman.*
 
 ## The market was huge, and that was the problem
 

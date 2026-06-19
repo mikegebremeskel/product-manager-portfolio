@@ -1,6 +1,6 @@
 ---
 title: "Be deliberate about data and trust when you adopt AI"
-summary: "Turning on AI is one click. Being responsible about what data it touches is the actual work."
+summary: "Turning on AI is one click. Being responsible is the real work."
 date: 2024-07-01
 order: 33
 related: ["keep-a-human-in-the-loop", "the-durable-skills-in-the-ai-era"]

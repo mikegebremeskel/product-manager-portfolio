@@ -1,6 +1,6 @@
 ---
 title: "The most valuable person on an early team"
-summary: "Early teams don't die from a lack of ideas. They die from dropped handoffs."
+summary: "Teams die from dropped handoffs, not a lack of ideas."
 date: 2026-03-01
 order: 6
 related: ["speed-is-a-form-of-respect", "teach-your-team-to-think-in-outcomes"]
@@ -20,7 +20,7 @@ I kept everyone on the same page, out loud. When a thread had gone quiet or tang
 
 I made alignment a visible action, not an assumption. When I posted the day's priorities or a release plan, I would ask the team to "review and check mark if you agree, or comment with any questions or corrections." A green check meant you had actually read it and you were in. That one small ritual turned silent, assumed agreement into something real I could see.
 
-I made sure nothing fell through the cracks. If something mattered but could not be handled right now, I set a reminder on the message so we would come back to it. I asked teammates to do the same, to set a reminder to come back to this if you cannot right now. A small team moves fast and forgets faster. Reminders were how we remembered.
+I made sure nothing fell through the cracks. If something mattered but could not be handled right now, I set a reminder on the message so we would come back to it. I asked teammates to do the same, to "set a reminder to come back to this if you cannot right now." A small team moves fast and forgets faster. Reminders were how we remembered.
 
 ## Removing blockers was half the job
 

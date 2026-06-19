@@ -1,7 +1,7 @@
 ---
 title: "Teach your team to think in outcomes"
-summary: "Read any goal and ask 'so what?' If nothing changes when you hit it, it was a task, not a goal."
-date: 2026-06-19
+summary: "A real goal passes one test: so what changes if we hit it?"
+date: 2025-12-01
 order: 3
 related: ["write-it-down-before-you-say-it", "find-the-wedge-then-narrow-it-again"]
 ---
@@ -9,6 +9,10 @@ related: ["write-it-down-before-you-say-it", "find-the-wedge-then-narrow-it-agai
 Your team's goals are probably a to do list with a fancy name. Here is the test I use. Read a goal, then ask, "So what?" What changes if we hit this? If the answer is nothing, it was never a goal. It was a task.
 
 I learned this the slow way, by sitting with my team every week and rewriting our goals together until they actually meant something.
+
+![The structure of a real goal: an objective carrying the what and why sits above measurable key results carrying the what and when, with a task-versus-goal comparison underneath.](/assets/03_OKR_Structure.svg)
+
+*The objective carries the why. The key result carries the when and the number. A task becomes a goal when it can answer "so what?"*
 
 ## Where it started
 

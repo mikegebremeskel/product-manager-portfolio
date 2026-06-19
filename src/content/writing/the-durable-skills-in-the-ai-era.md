@@ -1,6 +1,6 @@
 ---
 title: "The durable skills in the AI era"
-summary: "The edge that compounds isn't the newest tool. It's judgment, and AI makes it more valuable, not less."
+summary: "The skills that protect your career are the oldest ones."
 date: 2026-06-01
 order: 34
 related: ["keep-a-human-in-the-loop", "be-deliberate-about-data-and-trust"]

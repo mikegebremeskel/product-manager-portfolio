@@ -1,0 +1,64 @@
+<svg viewBox="0 0 920 560" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="as" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="920" height="560" fill="#ffffff"/>
+
+  <text x="460" y="40" text-anchor="middle" font-size="24" font-weight="700" fill="#0f172a">Spec the outcome, not the story</text>
+  <text x="460" y="66" text-anchor="middle" font-size="14" fill="#475569">Hand engineers testable criteria, structured so nothing lives only in your head</text>
+
+  <!-- Left: given/when/then card -->
+  <text x="70" y="106" font-size="14" font-weight="700" fill="#2563eb">Acceptance criteria, not a narrative</text>
+  <rect x="70" y="120" width="360" height="190" rx="10" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <g font-size="13.5">
+    <text x="92" y="156" font-weight="700" fill="#1e3a8a">Given</text>
+    <text x="160" y="156" fill="#334155">the user is an admin on the table</text>
+    <text x="92" y="196" font-weight="700" fill="#1e3a8a">When</text>
+    <text x="160" y="196" fill="#334155">they click a column header</text>
+    <text x="92" y="236" font-weight="700" fill="#1e3a8a">Then</text>
+    <text x="160" y="236" fill="#334155">the table sorts by that column</text>
+  </g>
+  <text x="250" y="284" text-anchor="middle" font-size="12" fill="#475569">Each line is true or false. The ticket grades itself.</text>
+
+  <!-- Right: parent to subissues tree -->
+  <text x="640" y="106" font-size="14" font-weight="700" fill="#0f766e">Structure the big ones</text>
+  <rect x="540" y="120" width="320" height="58" rx="8" fill="#0f766e"/>
+  <text x="700" y="143" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">Parent ticket (a shell)</text>
+  <text x="700" y="162" text-anchor="middle" font-size="11.5" fill="#bbf7d0">the user story + the acceptance criteria</text>
+
+  <line x1="700" y1="178" x2="700" y2="196" stroke="#475569" stroke-width="2"/>
+  <line x1="594" y1="196" x2="806" y2="196" stroke="#475569" stroke-width="2"/>
+  <line x1="594" y1="196" x2="594" y2="214" stroke="#475569" stroke-width="2" marker-end="url(#as)"/>
+  <line x1="700" y1="196" x2="700" y2="214" stroke="#475569" stroke-width="2" marker-end="url(#as)"/>
+  <line x1="806" y1="196" x2="806" y2="214" stroke="#475569" stroke-width="2" marker-end="url(#as)"/>
+
+  <g fill="#1e293b">
+    <rect x="548" y="218" width="92" height="80" rx="8"/>
+    <rect x="654" y="218" width="92" height="80" rx="8"/>
+    <rect x="760" y="218" width="92" height="80" rx="8"/>
+  </g>
+  <g font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">
+    <text x="594" y="252">Subissue</text>
+    <text x="700" y="252">Subissue</text>
+    <text x="806" y="252">Subissue</text>
+  </g>
+  <g font-size="10.5" fill="#cbd5e1" text-anchor="middle">
+    <text x="594" y="272">detail per</text>
+    <text x="594" y="285">step</text>
+    <text x="700" y="272">detail per</text>
+    <text x="700" y="285">step</text>
+    <text x="806" y="272">detail per</text>
+    <text x="806" y="285">step</text>
+  </g>
+
+  <!-- the one test -->
+  <rect x="120" y="360" width="680" height="74" rx="12" fill="#0f172a"/>
+  <text x="460" y="390" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">The one test a spec must pass</text>
+  <text x="460" y="416" text-anchor="middle" font-size="13.5" fill="#e2e8f0">Could someone build it without asking you a single question?</text>
+
+  <rect x="120" y="452" width="680" height="50" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="460" y="482" text-anchor="middle" font-size="12.5" fill="#475569">A paragraph describes. Acceptance criteria verify. The format does the thinking for you.</text>
+  <text x="460" y="528" text-anchor="middle" font-size="11" font-style="italic" fill="#94a3b8">Format: Given / When / Then, from Behavior-Driven Development. Example and practice: Mike's own Talisman tickets.</text>
+</svg>

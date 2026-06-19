@@ -1,7 +1,7 @@
 ---
 title: "Ask the dumb question"
-summary: "The fastest way to lose an engineer's trust is to fake understanding. The fastest way to earn it is to ask the naive question."
-date: 2024-06-15
+summary: "The fastest way to earn engineers' trust is to admit what you do not know."
+date: 2024-06-01
 order: 21
 related: ["go-find-the-domain-expert"]
 ---

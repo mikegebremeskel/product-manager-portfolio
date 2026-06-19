@@ -1,6 +1,6 @@
 ---
 title: "Quality is a process, not a vibe"
-summary: "Quality isn't a feeling about your product. It's a bar you write down before you build, and refuse to ship below."
+summary: "Write the definition of done before you build, and refuse to ship below it."
 date: 2022-10-01
 order: 10
 related: ["a-good-spec-passes-one-test", "spec-the-outcome-not-the-story"]

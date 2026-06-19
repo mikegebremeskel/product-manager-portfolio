@@ -9,13 +9,21 @@ The running record of significant decisions and document versions for this proje
 | [PRD.md](PRD.md) | v2.8 | 2026-06-19 |
 | [PRFAQ.md](PRFAQ.md) | v1.2 | 2026-06-19 |
 | [DESIGN.md](DESIGN.md) | v2.5 | 2026-06-19 |
-| [DECISIONS.md](DECISIONS.md) | v1.10 | 2026-06-19 |
+| [DECISIONS.md](DECISIONS.md) | v1.11 | 2026-06-19 |
 | [../README.md](../README.md) | v1.4 | 2026-06-19 |
-| [../ASSETS.md](../ASSETS.md) | v2.4 | 2026-06-19 |
+| [../ASSETS.md](../ASSETS.md) | v2.5 | 2026-06-19 |
 
 Versioning convention: bump the minor (v1 to v1.1) for edits and clarifications; bump the major (v1 to v2) for a structural change or a reversed decision.
 
 ## Decisions
+
+### 2026-06-19 (essay re-sync from folder)
+
+- **Re-synced the Writing section from the source folder** via a deterministic script, so every live essay matches the source exactly. Added two new essays: 36 "AI didn't write this portfolio. My own archive did." (capstone) and 37 "The Foogin' Standards." Writing is now 20 essays.
+- **Source-note policy** (per Mike): keep the publishable `Source:`/`Sources:` citations (LinkedIn posts, The Athletic) and all image captions; strip the internal "Source moments / Context (for your reference, not for publishing)" notes and the "Note for you / Companion to Essay" asides.
+- **Six inline SVG diagrams** wired in (02, 03, 22, 30, 36, 37), rendered as white figure cards (lightbox-enabled). The seventh diagram in the folder (18) was not used because essay 18 is not published.
+- **Dates and one-line hooks from `00_INDEX.md`** as the source of truth. Notably 01/02/03 moved from a placeholder June 2026 to Oct/Nov/Dec 2025, so they reorder down the index.
+- **Flags raised:** essay 02 references essay 28 ("The Leap, and the Rejection That Found the Wedge"), which is not in the published set; essay 37 includes the phrase explaining the "Foogin'" name. Both left as written, pending Mike's call.
 
 ### 2026-06-19 (writing expanded)
 

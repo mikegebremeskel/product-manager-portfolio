@@ -1,6 +1,6 @@
 ---
 title: "When the domain is not yours, go find the expert"
-summary: "When your product touches a domain you don't own, stop guessing and borrow the model of someone who lives in it."
+summary: "Borrow the mental model of someone who lives in the domain."
 date: 2026-05-01
 order: 8
 related: ["ask-the-dumb-question"]

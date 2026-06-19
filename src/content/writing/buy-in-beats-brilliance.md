@@ -1,6 +1,6 @@
 ---
 title: "Buy-in beats brilliance"
-summary: "The best solution in the room loses to the second-best one that everyone actually believes in."
+summary: "The best idea loses to the one everyone actually believes in."
 date: 2024-09-01
 order: 23
 related: ["culture-is-built-in-small-interactions"]
@@ -40,4 +40,6 @@ So when you are pushing something you know is right, spend at least as much ener
 
 > **The original post, written on LinkedIn in 2018:**
 >
-> "I just finished my first day of Six Sigma training. The most important thing I learned in Day 1 is as great and technical as any single innovation is, without the right buy-in it will fail. Even with the great technology we have in 2018, we still need to network and support each other in the main mission of achieving organizational success: contributing solutions to the problems our customers face. It's not enough to have a great solution, everyone at every level has to buy into the solution to make it achieve that end goal of helping the customer. Trust and communication are just as important as the solutions to be identified."
+> *"I just finished my first day of Six Sigma training. The most important thing I learned in Day 1 is as great and technical as any single innovation is, without the right buy-in it will fail. Even with the great technology we have in 2018, we still need to network and support each other in the main mission of achieving organizational success: contributing solutions to the problems our customers face. It's not enough to have a great solution, everyone at every level has to buy into the solution to make it achieve that end goal of helping the customer. Trust and communication are just as important as the solutions to be identified."*
+
+*Source: Mike's LinkedIn post, 2018 (#leansixsigma #trust #communication #changemanagement).*

@@ -1,7 +1,7 @@
 ---
 title: "Write it down before you say it"
-summary: "One rule cut our meeting times in half: write the idea down before the meeting, then talk."
-date: 2026-06-19
+summary: "Put the idea on paper before the meeting. I cut our meeting times in half."
+date: 2025-10-01
 order: 1
 related: ["teach-your-team-to-think-in-outcomes", "find-the-wedge-then-narrow-it-again"]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Culture is built in small interactions"
-summary: "Culture isn't set by a values poster. It's built, or eroded, in the small moments."
-date: 2025-02-15
+summary: "Not the values poster. How you treat someone having a bad week."
+date: 2025-02-01
 order: 27
 related: ["buy-in-beats-brilliance"]
 ---
@@ -46,4 +46,6 @@ Culture is not your values page. It is how you treat the person having a hard we
 
 > **The original post, written on LinkedIn in 2019:**
 >
-> "Organizational culture can be changed day by day, not only by the results you achieve but also through your interactions with others. Encouraging a neighbor when they're down, collaborating with a stakeholder who is struggling, and building meaningful two-way relationships with those around you all go a long way to building a stronger culture that will only push your organization further."
+> *"Organizational culture can be changed day by day, not only by the results you achieve but also through your interactions with others. Encouraging a neighbor when they're down, collaborating with a stakeholder who is struggling, and building meaningful two-way relationships with those around you all go a long way to building a stronger culture that will only push your organization further."*
+
+*Source: Mike's LinkedIn post, 2019 (#organizationalculture #winning #networking).*

@@ -1,6 +1,6 @@
 ---
 title: "Listen to what users do, not what you built"
-summary: "The most reliable signal in your product is not what users say. It is what they do."
+summary: "Behavior is more honest than anything a user will tell you."
 date: 2026-01-01
 order: 4
 related: ["find-the-wedge-then-narrow-it-again", "your-lived-experience-is-a-product-superpower"]
