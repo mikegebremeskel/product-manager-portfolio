@@ -8,7 +8,7 @@ related: ["write-it-down-before-you-say-it", "teach-your-team-to-think-in-outcom
 
 We spent months exploring the wrong half of our product. Our customers corrected us in one sentence.
 
-Here is the story, because the lesson only makes sense if you see how we got there.
+Here is the story, because the lesson only makes sense if you see how we got there. (The shorter case study version, with the artifacts, lives here: [Finding the wedge](/work/finding-the-wedge).)
 
 ## The market was huge, and that was the problem
 

@@ -1,12 +1,12 @@
-// Prepend BASE_URL to root-relative asset paths in Markdown.
-// Markdown authors write `/assets/foo.png`; with a project base like
-// `/product-manager-portfolio`, the deployed path must be
-// `/product-manager-portfolio/assets/foo.png`. This handles that without
-// requiring authors to know the base.
+// Prepend a non-root base to root-relative paths in Markdown.
+// The site serves from the custom domain at the root, so the default is no
+// prefix. If SITE_BASE is set (e.g. /product-manager-portfolio to build for the
+// github.io project URL), Markdown links and images are rewritten to match,
+// without authors needing to know the base.
 import { visit } from 'unist-util-visit';
 
 export default function remarkBaseUrl() {
-  const raw = process.env.SITE_BASE ?? '/product-manager-portfolio';
+  const raw = process.env.SITE_BASE ?? '';
   const base = raw.endsWith('/') ? raw.slice(0, -1) : raw;
   if (base === '') return () => {};
 

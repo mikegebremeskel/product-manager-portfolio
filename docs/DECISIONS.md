@@ -6,16 +6,23 @@ The running record of significant decisions and document versions for this proje
 
 | Document | Version | Last updated |
 |---|---|---|
-| [PRD.md](PRD.md) | v2.5 | 2026-06-19 |
-| [PRFAQ.md](PRFAQ.md) | v1.1 | 2026-06-19 |
+| [PRD.md](PRD.md) | v2.6 | 2026-06-19 |
+| [PRFAQ.md](PRFAQ.md) | v1.2 | 2026-06-19 |
 | [DESIGN.md](DESIGN.md) | v2.3 | 2026-06-19 |
-| [DECISIONS.md](DECISIONS.md) | v1.6 | 2026-06-19 |
+| [DECISIONS.md](DECISIONS.md) | v1.7 | 2026-06-19 |
 | [../README.md](../README.md) | v1.4 | 2026-06-19 |
-| [../ASSETS.md](../ASSETS.md) | v2.2 | 2026-06-19 |
+| [../ASSETS.md](../ASSETS.md) | v2.3 | 2026-06-19 |
 
 Versioning convention: bump the minor (v1 to v1.1) for edits and clarifications; bump the major (v1 to v2) for a structural change or a reversed decision.
 
 ## Decisions
+
+### 2026-06-19 (HTTPS live, docs, tidy)
+
+- **HTTPS live.** GitHub issued the certificate and Enforce HTTPS is on. The site serves over HTTPS at mikegebremeskel.com, and HTTP redirects to it. (No CAA record was blocking issuance; it just took longer than the first watcher's window.)
+- **Case study and essay cross-linked.** "Finding the wedge" links to the essay "Find the wedge, then narrow it again," and the essay links back, so the two reinforce each other instead of feeling redundant.
+- **PRD and PR/FAQ brought fully current.** Both now reflect everything shipped: Experience, Writing, Recognition, testimonials, the About narrative, social links, the custom domain, and the Open Graph image. The PR/FAQ scope was reconciled (the Writing section is a small curated set, not the "blog" the original ruled out).
+- **Repo tidy.** Moved the Open Graph card source to `scripts/og-card.html`, stopped tracking the local preview config (`.claude/` is now gitignored), and aligned the Markdown base-path default with the root build so local and CI builds match.
 
 ### 2026-06-19 (writing section)
 
@@ -26,7 +33,7 @@ Versioning convention: bump the minor (v1 to v1.1) for edits and clarifications;
 
 ### 2026-06-19 (later)
 
-- **Social share card (Open Graph image).** Instead of letting platforms grab a photo, added a branded 1200x630 card (`public/assets/og.png`): the positioning line on the dark brand background with the MG monogram, name, and URL. Wired into `BaseLayout.astro` as `og:image` and `twitter:image`. Treated as a chance to show design taste. Monogram, name, and accents use the gold token (`#F5C842`). Source markup kept at `og.html` (rendered via headless Chrome, downscaled with sharp).
+- **Social share card (Open Graph image).** Instead of letting platforms grab a photo, added a branded 1200x630 card (`public/assets/og.png`): the positioning line on the dark brand background with the MG monogram, name, and URL. Wired into `BaseLayout.astro` as `og:image` and `twitter:image`. Treated as a chance to show design taste. Monogram, name, and accents use the gold token (`#F5C842`). Source markup kept at `scripts/og-card.html` (rendered via headless Chrome, downscaled with sharp).
 - **Custom domain live.** mikegebremeskel.com wired up: added `public/CNAME`, switched the build base from `/product-manager-portfolio` to root (`/`), and registered the domain with GitHub Pages. DNS configured at the Squarespace registrar (deleted the Squarespace Defaults preset; added four A and four AAAA records for the apex plus a `www` CNAME to `mikegebremeskel.github.io`). Site verified serving over HTTP; HTTPS enforcement auto-applies once GitHub issues the TLS certificate. The github.io URL redirects to the custom domain.
 - **Home hero copy.** Tightened to "Venture-backed, co-founder of Talisman. PM for its award-winning launch."
 - **Home hero photo finalized.** Swapped the hero to a dedicated portrait (`hero.jpeg`), optimized for the web; the About page keeps the original headshot.

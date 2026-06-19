@@ -39,7 +39,7 @@ All images live in `public/assets/`. The Markdown in `src/content/` and the page
 ## Also in public/
 
 - `favicon.svg`: green "MG" monogram on the dark background.
-- `og.png`: the 1200x630 social share card (Open Graph / Twitter image). A branded statement card, not a photo, generated from `og.html` and referenced in `BaseLayout.astro`.
+- `og.png`: the 1200x630 social share card (Open Graph / Twitter image). A branded statement card, not a photo, generated from `scripts/og-card.html` and referenced in `BaseLayout.astro`.
 - `CNAME`: custom domain (mikegebremeskel.com).
 
 ## Notes

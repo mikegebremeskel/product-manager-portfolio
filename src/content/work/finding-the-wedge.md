@@ -28,7 +28,7 @@ When we got into Techstars in 2022, Talisman was a broad idea: help companies ma
 
 The spend focus became Talisman's expense product, the same product we later revamped and relaunched to #1 SaaS Product of the Week on Product Hunt, and the foundation the accountant product was eventually built on. Narrowing early is the reason there was a focused product to build, fund, and launch at all rather than a thin platform spread across five jobs.
 
-The rest of the portfolio is what happened after this call: see Subscription Activation and Accountant Transaction Workflow.
+The rest of the portfolio is what happened after this call: see [Subscription activation](/work/subscription-activation) and [Accountant transaction workflow](/work/accountant-transaction-workflow). I also wrote up the deeper lesson as an essay, [Find the wedge, then narrow it again](/writing/find-the-wedge-then-narrow-it-again).
 
 ## Artifact
 

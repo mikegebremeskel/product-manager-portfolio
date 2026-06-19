@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | **Author** | Mike Gebremeskel |
-| **Status** | v1.1 |
+| **Status** | v1.2 |
 | **Last updated** | June 19, 2026 |
 | **Format** | Amazon Working Backwards PR/FAQ. This document defines the customers and the why. The build spec lives in PRD.md. |
 
@@ -27,9 +27,9 @@ Each case study walks through a real problem, the decisions and tradeoffs behind
 
 "Being user-centric is not a line on my resume, it is how I work, so I built this by working backwards from both people in hiring," said Mike Gebremeskel. "The reviewer should know who I am in about fifteen seconds and be one click from real work. The job seeker, me, needs to be seen for that work before a seven-second scan filters me out. I set measurable targets for all of it, including a sub-1.5-second load and a 95-plus performance score, so the goals can be checked, not just claimed."
 
-Using the site is simple. Land on the home page and take in the positioning and the four case studies. Open any one for the full story, problem to outcome, with artifacts you can view up close. Reach out through the contact form when you want to talk. No login, no friction, no hunting for an email.
+Using the site is simple. Land on the home page and take in the positioning and the four case studies. Open any one for the full story, problem to outcome, with artifacts you can view up close. Go deeper if you want: an experience timeline, and a few essays on how Mike thinks about product. Reach out through the contact form when you want to talk. No login, no friction, no hunting for an email.
 
-The portfolio is live at the site address, with a contact form for hiring teams who want to start a conversation.
+The portfolio is live at mikegebremeskel.com, with a contact form for hiring teams who want to start a conversation.
 
 ---
 
@@ -55,6 +55,9 @@ Through the contact form on the site. His email is not exposed publicly.
 **Is he a fit for my role?**
 The four case studies map to four distinct PM competencies: product strategy, execution and data-driven iteration, zero-to-one in a new market, and operating discipline (prioritization, specs, quality).
 
+**What else is on the site besides the case studies?**
+An experience timeline (roles, education, leadership, and honors), a short set of essays on how Mike thinks about product, and an about page. On the home page you also see the awards the work earned and recommendations from people Mike has worked with. The case studies are the core; the rest is depth if you want it.
+
 ### For the PM-minded reviewer (how the product was built)
 
 **Who are the users, and what are their jobs?**
@@ -71,7 +74,7 @@ As part of the job search, Mike studied what actually moves hiring decisions and
 A site gives a memorable custom domain, full control over the experience, and a public repo that becomes a second work sample. It also lets the work show three things a resume and a generic link cannot: how I think as a PM, that I build fluently with AI tools, and that I have real design taste, both technical and visual. Building and designing the site myself is the proof of all three.
 
 **What is in version one, and what is deliberately left out?**
-In: four case studies, a home page, an about page, a contact form, and a responsive layout on a custom domain. Out: a blog, a CMS, accounts, analytics dashboards, and theming. Holding scope is part of the point.
+In: four case studies, a home page (with the awards the work earned and recommendations), an experience timeline, a small writing section of essays, an about page, and a contact form, all responsive on a custom domain. Out: a CMS, accounts, analytics dashboards, theming, and a high-frequency blog. The writing section is a curated set of essays, not a feed. Holding scope is still part of the point.
 
 **How will we know it worked?**
 Concrete, checkable targets, not vibes. The home page reaches Largest Contentful Paint under 1.5 seconds and scores 95 or higher on Lighthouse performance and accessibility; a first-time visitor can state the positioning within fifteen seconds (validated with a five-second test); every case study is one click from the home page; and the contact form produces real conversations. Anyone can verify the speed and accessibility numbers by running PageSpeed Insights or Lighthouse against the live URL. The full target list is in the PRD.
