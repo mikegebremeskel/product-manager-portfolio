@@ -32,7 +32,8 @@ If you only have a minute, open the live site. If you want to see the thinking, 
 ├── docs/
 │   ├── PRFAQ.md           Product narrative (Working Backwards)
 │   ├── PRD.md             Product requirements and verifiable targets
-│   └── DESIGN.md          Design direction and tokens
+│   ├── DESIGN.md          Design direction and tokens
+│   └── DECISIONS.md       Decision log and document versions
 ├── public/
 │   └── assets/            Images, artifacts, favicon
 ├── src/

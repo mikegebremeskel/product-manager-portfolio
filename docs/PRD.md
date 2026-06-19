@@ -3,8 +3,8 @@
 | | |
 |---|---|
 | **Author** | Mike Gebremeskel |
-| **Status** | Draft v1 |
-| **Last updated** | June 18, 2026 |
+| **Status** | v2 (live on GitHub Pages) |
+| **Last updated** | June 19, 2026 |
 | **Reviewers** | (self) |
 | **Related** | README.md, DESIGN.md, DECISIONS.md, /content |
 
@@ -67,14 +67,15 @@ Non-metrics (explicitly not chasing): traffic volume, SEO ranking for competitiv
 
 ## 5. Scope
 
-**In scope (v1):**
-- Home page with positioning, a short intro, and links to all case studies
+**In scope (v1, shipped):**
+- Home page with positioning, a hero with a photo, links to all case studies, an awards Recognition collage, and testimonials
 - Four case study pages: Finding the wedge, Subscription activation, Accountant transaction workflow, How I run product
-- About page
+- About page (with headshot and a personal narrative)
+- Experience page: role timeline, education, leadership and community, and honors, ending in a contact CTA (no resume download by design)
 - Contact form that does not expose Mike's email address
-- Responsive layout (mobile and desktop)
+- Responsive layout (mobile and desktop), including a mobile nav menu
 - Custom domain, hosted on GitHub Pages
-- Public repo with README and this PRD
+- Public repo with README, this PRD, and a decision log
 
 **Out of scope (v1, non-goals):**
 - Blog or articles
@@ -90,16 +91,17 @@ Non-metrics (explicitly not chasing): traffic volume, SEO ranking for competitiv
 ## 6. Information architecture
 
 ```
-/                       Home (positioning, intro, case study index)
+/                       Home (positioning, case study index, recognition, testimonials)
 /work/finding-the-wedge
 /work/subscription-activation
 /work/accountant-transaction-workflow
 /work/how-i-run-product
+/experience             Role timeline, education, leadership, honors
 /about
 /contact
 ```
 
-Global navigation: Work, About, Contact. Persistent header with name/logo linking home. Footer with LinkedIn and a contact link. No exposed email anywhere.
+Global navigation: Work, Experience, About, Contact (a hamburger menu on mobile). Persistent header with name linking home. Footer with the LinkedIn logo and a contact link. No exposed email anywhere.
 
 ---
 
@@ -203,10 +205,15 @@ Principles to hold:
 
 ## 14. Open questions
 
-- Final design direction and how closely to mirror the inherited design system.
-- Which form service to use (Formspree vs alternatives).
-- Whether to include a headshot on the About page.
-- Exact domain name (pending purchase).
+Resolved (see DECISIONS.md):
+- Stack: Astro + Tailwind v4 + MDX, deployed to GitHub Pages via Actions.
+- Design direction: tekky tokens, dark mode only.
+- Form service: Formspree (live).
+- Headshot: included on the home hero and the About page.
+
+Still open:
+- Exact custom domain name (pending purchase); the site runs on the github.io URL until then.
+- The About "what I care about" narrative is a draft pending Mike's edit.
 
 ---
 

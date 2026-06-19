@@ -1,27 +1,46 @@
 # Image asset manifest
 
-All images live in `public/assets/`. The Markdown in `content/` references them by these exact filenames, so keep the names as-is.
+> v2, last updated 2026-06-19. See [docs/DECISIONS.md](docs/DECISIONS.md).
 
-## Present in `public/assets/`
+All images live in `public/assets/`. The Markdown in `src/content/` and the page components reference them by these exact filenames, so keep the names as-is.
+
+## Case study artifacts
 
 | File | Used in |
 |---|---|
-| `jtbd-board.png` | Finding the Wedge |
-| `sub-before-prototype.png` | Subscription Activation (the earliest hand-built prototype, the "before") |
-| `sub-spend-overview-2.png` | Subscription Activation (Spend Overview 2.0, contract designer pass) |
-| `sub-spend-overview-3.png` | Subscription Activation (the revamped "after") |
-| `onboarding-1-connect.png` | Accountant Transaction Workflow |
-| `onboarding-2-companies.png` | Accountant Transaction Workflow (client emails already redacted) |
-| `onboarding-3-request.png` | Accountant Transaction Workflow |
-| `onboarding-4-clientadded.png` | Accountant Transaction Workflow |
-| `process-map.png` | Accountant Transaction Workflow (names already redacted) |
-| `accountant-onboarding-flow.png` | Accountant Transaction Workflow |
+| `jtbd-board.png` | Finding the wedge |
+| `sub-before-prototype.png` | Subscription activation (earliest prototype, the "before") |
+| `sub-spend-overview-2.png` | Subscription activation (Spend Overview 2.0) |
+| `sub-spend-overview-3.png` | Subscription activation (revamped "after") |
+| `onboarding-1-connect.png` | Accountant transaction workflow |
+| `onboarding-2-companies.png` | Accountant transaction workflow (client emails redacted) |
+| `onboarding-3-request.png` | Accountant transaction workflow |
+| `onboarding-4-clientadded.png` | Accountant transaction workflow |
+| `process-map.png` | Accountant transaction workflow (names redacted) |
+| `accountant-onboarding-flow.png` | Accountant transaction workflow |
 
-## Optional
+## Photo
 
-- A full-resolution PDF of the process map (`Accounting_Process_Master.pdf`) if you want it downloadable. The `process-map.png` already covers on-page display, so this is optional.
+| File | Used in |
+|---|---|
+| `headshot.jpeg` | Home hero and About page |
+
+## Recognition (home Recognition collage)
+
+| File | What it is |
+|---|---|
+| `producthunt-1-saas.svg` | Recreated Product Hunt "#1 SaaS Product of the Week" badge (static; the live embed is dynamic and drifts) |
+| `awwwards-honors.png` | Awwwards Honors certificate (dark mat blends into the dark page) |
+| `cssda-best-ui.png` | CSSDA Best UI Design medallion |
+| `cssda-best-ux.png` | CSSDA Best UX Design medallion |
+| `cssda-best-innovation.png` | CSSDA Best Innovation medallion |
+
+## Also in public/
+
+- `favicon.svg`: green "MG" monogram on the dark background.
 
 ## Notes
 
-- Every included image is already redacted where needed (client names on the process map, client emails on the bulk-add screen).
-- Optimize and lazy-load images at build time to meet the performance targets in the PRD.
+- Every case study artifact is already redacted where needed (client names on the process map, client emails on the bulk-add screen).
+- Awwwards and CSSDA marks are framed honestly as team design recognition, not Mike's personal design work. See [docs/DECISIONS.md](docs/DECISIONS.md).
+- Images are optimized and lazy-loaded at build time to meet the performance targets in the PRD.

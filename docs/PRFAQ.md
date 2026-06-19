@@ -5,8 +5,8 @@
 | | |
 |---|---|
 | **Author** | Mike Gebremeskel |
-| **Status** | Draft v1 |
-| **Last updated** | June 18, 2026 |
+| **Status** | v1.1 |
+| **Last updated** | June 19, 2026 |
 | **Format** | Amazon Working Backwards PR/FAQ. This document defines the customers and the why. The build spec lives in PRD.md. |
 
 ---

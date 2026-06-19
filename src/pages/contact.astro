@@ -5,11 +5,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 // address never appears in the page source (PRD requirement). The endpoint ID
 // is public by design; override via PUBLIC_FORMSPREE_ENDPOINT if it ever changes.
 const FORMSPREE_ENDPOINT = import.meta.env.PUBLIC_FORMSPREE_ENDPOINT || 'https://formspree.io/f/xeewbbqj';
+
+const fieldClass =
+  "w-full rounded-md border border-[var(--color-border)] bg-[var(--color-bg-surface)] px-3.5 py-2.5 text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] transition-colors focus:outline-none focus:border-[var(--color-accent-green)] focus:ring-2 focus:ring-[var(--color-accent-green)]";
+const labelClass = "block text-sm font-medium text-[var(--color-text-secondary)] mb-2";
 ---
 <BaseLayout title="Contact" description="Get in touch with Mike Gebremeskel.">
   <section class="mx-auto max-w-xl px-6 pt-16 pb-24">
     <h1 class="text-3xl sm:text-4xl font-semibold tracking-tight">Contact</h1>
-    <p class="mt-4 text-[var(--color-text-secondary)] leading-relaxed">
+    <p class="mt-4 text-[var(--color-text-secondary)] leading-relaxed text-pretty">
       Send a note and I'll get back to you. I keep my email off the site on purpose.
     </p>
 
@@ -17,48 +21,23 @@ const FORMSPREE_ENDPOINT = import.meta.env.PUBLIC_FORMSPREE_ENDPOINT || 'https:/
       id="contact-form"
       action={FORMSPREE_ENDPOINT}
       method="POST"
-      class="mt-8 space-y-5"
+      class="mt-8 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 sm:p-8 space-y-5"
     >
       <div>
-        <label for="name" class="block text-sm text-[var(--color-text-secondary)] mb-2">Name</label>
-        <input
-          id="name"
-          name="name"
-          type="text"
-          required
-          autocomplete="name"
-          class="w-full rounded-md border border-[var(--color-border)] bg-[var(--color-bg-surface)] px-3 py-2 text-[var(--color-text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-green)]"
-        />
+        <label for="name" class={labelClass}>Name</label>
+        <input id="name" name="name" type="text" required autocomplete="name" placeholder="Jane Doe" class={fieldClass} />
       </div>
       <div>
-        <label for="email" class="block text-sm text-[var(--color-text-secondary)] mb-2">Email</label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          required
-          autocomplete="email"
-          class="w-full rounded-md border border-[var(--color-border)] bg-[var(--color-bg-surface)] px-3 py-2 text-[var(--color-text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-green)]"
-        />
+        <label for="email" class={labelClass}>Email</label>
+        <input id="email" name="email" type="email" required autocomplete="email" placeholder="jane@company.com" class={fieldClass} />
       </div>
       <div>
-        <label for="company" class="block text-sm text-[var(--color-text-secondary)] mb-2">Company <span class="text-[var(--color-text-muted)]">(optional)</span></label>
-        <input
-          id="company"
-          name="company"
-          type="text"
-          class="w-full rounded-md border border-[var(--color-border)] bg-[var(--color-bg-surface)] px-3 py-2 text-[var(--color-text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-green)]"
-        />
+        <label for="company" class={labelClass}>Company <span class="font-normal text-[var(--color-text-muted)]">(optional)</span></label>
+        <input id="company" name="company" type="text" autocomplete="organization" placeholder="Where you're reaching out from" class={fieldClass} />
       </div>
       <div>
-        <label for="message" class="block text-sm text-[var(--color-text-secondary)] mb-2">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="6"
-          required
-          class="w-full rounded-md border border-[var(--color-border)] bg-[var(--color-bg-surface)] px-3 py-2 text-[var(--color-text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-green)]"
-        ></textarea>
+        <label for="message" class={labelClass}>Message</label>
+        <textarea id="message" name="message" rows="6" required placeholder="What's on your mind?" class={fieldClass}></textarea>
       </div>
 
       {/* Honeypot: bots fill it, humans don't see it. */}
@@ -68,7 +47,7 @@ const FORMSPREE_ENDPOINT = import.meta.env.PUBLIC_FORMSPREE_ENDPOINT || 'https:/
 
       <button
         type="submit"
-        class="rounded-md bg-[var(--color-accent-green)] px-5 py-2.5 text-sm font-medium text-[var(--color-bg-primary)] hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-green)] focus:ring-offset-2 focus:ring-offset-[var(--color-bg-primary)]"
+        class="w-full sm:w-auto rounded-md bg-[var(--color-accent-green)] px-6 py-2.5 text-sm font-medium text-[var(--color-bg-primary)] hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-green)] focus:ring-offset-2 focus:ring-offset-[var(--color-bg-card)]"
       >
         Send
       </button>

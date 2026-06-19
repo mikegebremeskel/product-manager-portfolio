@@ -1,5 +1,7 @@
 # Design Direction
 
+> v2, last updated 2026-06-19. See [DECISIONS.md](DECISIONS.md).
+
 The visual system is inherited from **Tekky** (mikegebremeskel/tekky), a prior product whose design system is fully defined in code. Reusing those tokens keeps this site consistent with my existing work and removes the design-from-scratch tax.
 
 Source of truth in the tekky repo: `frontend/tailwind.config.ts`, `frontend/src/app/globals.css`, `frontend/src/app/layout.tsx`, `frontend/components.json`.
@@ -94,6 +96,13 @@ Lifted verbatim from `tailwind.config.ts`.
 - **Image / artifact viewer (lightbox):** click any artifact to open at full size on `background-elevated`, dim the page. Closes on Escape and backdrop click.
 - **Contact form:** name, email, message, honeypot. Inputs use shadcn slate-dark tokens; success state in `accent.green`, errors in `status.red`.
 - **404 page:** minimal: heading, one line, link home.
+
+Added since v1:
+- **Home hero:** two-column on desktop (positioning text + headshot), stacking on mobile. Type scales up at `lg` (headline to `text-7xl`).
+- **Recognition collage:** overlapping award arrangement ("Loved by users, awarded by peers") modeled on the Talisman site. Awwwards certificate as the base (its dark mat blends into the page), with the Product Hunt badge and three CSSDA medallions overlapping. The black Best UX badge gets a faint light edge so it reads on the dark background.
+- **Testimonials:** equal-height cards with bottom-aligned attributions, linked to LinkedIn.
+- **Experience timeline:** vertical role list with accent-green dots, plus leadership and honors lists and a contact CTA.
+- **Mobile nav:** a no-JS disclosure (hamburger) menu below the `sm` breakpoint.
 
 ## Targets this design must hit (from the PRD)
 
