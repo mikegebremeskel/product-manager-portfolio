@@ -9,13 +9,18 @@ The running record of significant decisions and document versions for this proje
 | [PRD.md](PRD.md) | v2.10 | 2026-06-19 |
 | [PRFAQ.md](PRFAQ.md) | v1.3 | 2026-06-19 |
 | [DESIGN.md](DESIGN.md) | v2.5 | 2026-06-19 |
-| [DECISIONS.md](DECISIONS.md) | v1.13 | 2026-06-19 |
+| [DECISIONS.md](DECISIONS.md) | v1.14 | 2026-06-19 |
 | [../README.md](../README.md) | v1.4 | 2026-06-19 |
 | [../ASSETS.md](../ASSETS.md) | v2.5 | 2026-06-19 |
 
 Versioning convention: bump the minor (v1 to v1.1) for edits and clarifications; bump the major (v1 to v2) for a structural change or a reversed decision.
 
 ## Decisions
+
+### 2026-06-19 (experience synced to resume v8)
+
+- **Leadership & community** reordered reverse-chronologically and synced to resume v8: ASPIRE ERG now shows both roles (Ambassador 2017–2018, then National Team Operations Lead 2018–2020, replacing the old 2019–2022); Toastmasters corrected to 2017–2020 with "President and inaugural Sergeant at Arms"; added the EOS Committee (McKesson Master Data, 2017–2019).
+- **Honors & recognition** reordered reverse-chronologically and trimmed to the four on resume v8 (TPN National Leader of the Year 2024, On Deck Fellow 2021, TPN Dallas Leader of the Year 2021, MDM Innovation Contest 2017). This **removed the TMAA Lekatit 11 Speech Contest Winner (2019)** entry, which was not in the v8 list.
 
 ### 2026-06-19 (RSS feed for Substack)
 
