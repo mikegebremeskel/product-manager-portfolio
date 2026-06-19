@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { url } from '../../lib/url';
+
+const essays = (await getCollection('writing')).sort((a, b) => a.data.order - b.data.order);
+---
+<BaseLayout title="Writing" description="Essays on product craft from Mike Gebremeskel: writing before meetings, finding a product wedge, and leading teams to think in outcomes.">
+  <section class="mx-auto max-w-3xl px-6 pt-16 pb-24 sm:pt-20">
+    <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight">Writing</h1>
+    <p class="mt-4 text-lg text-[var(--color-text-secondary)] leading-relaxed text-pretty">
+      Essays on product craft. What I have learned building and leading product, written down so it is useful to someone else.
+    </p>
+
+    <ul class="mt-12 divide-y divide-[var(--color-border)]">
+      {essays.map((essay) => (
+        <li>
+          <a href={url(`writing/${essay.id}`)} class="group block py-6 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-green)] rounded-md">
+            <h2 class="text-xl font-medium text-[var(--color-text-primary)] group-hover:text-[var(--color-accent-green)] transition-colors">
+              {essay.data.title}
+            </h2>
+            <p class="mt-2 text-[var(--color-text-secondary)] leading-relaxed text-pretty">
+              {essay.data.summary}
+            </p>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>

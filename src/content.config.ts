@@ -23,4 +23,17 @@ const pages = defineCollection({
   }),
 });
 
-export const collections = { work, pages };
+// Thought-leadership essays. To add one: drop a Markdown file in
+// src/content/writing/ with title, summary, date, and order. No code changes.
+const writing = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/writing' }),
+  schema: z.object({
+    title: z.string(),
+    summary: z.string(),
+    date: z.date(),
+    order: z.number(),
+    related: z.array(z.string()).optional(),
+  }),
+});
+
+export const collections = { work, pages, writing };

@@ -39,6 +39,7 @@ If you only have a minute, open the live site. If you want to see the thinking, 
 ├── src/
 │   ├── content/
 │   │   ├── work/          The four case studies, as Markdown
+│   │   ├── writing/       Thought-leadership essays, as Markdown
 │   │   └── pages/         About, as Markdown
 │   ├── content.config.ts  Content collection schema
 │   ├── pages/             Routes (home, work/[slug], about, contact, 404)

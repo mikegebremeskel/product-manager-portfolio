@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Author** | Mike Gebremeskel |
-| **Status** | v2.3 (live at mikegebremeskel.com) |
+| **Status** | v2.4 (live at mikegebremeskel.com) |
 | **Last updated** | June 19, 2026 |
 | **Reviewers** | (self) |
 | **Related** | README.md, DESIGN.md, DECISIONS.md, src/content |
@@ -72,6 +72,7 @@ Non-metrics (explicitly not chasing): traffic volume, SEO ranking for competitiv
 - Four case study pages: Finding the wedge, Subscription activation, Accountant transaction workflow, How I run product
 - About page (with headshot and a personal narrative)
 - Experience page: role timeline, education, leadership and community, and honors, ending in a contact CTA (no resume download by design)
+- Writing section: a growing set of thought-leadership essays, each editable as a single Markdown file, with an author CTA and related links per essay
 - Contact form that does not expose Mike's email address
 - Responsive layout (mobile and desktop), including a mobile nav menu
 - Custom domain, hosted on GitHub Pages
@@ -97,11 +98,13 @@ Non-metrics (explicitly not chasing): traffic volume, SEO ranking for competitiv
 /work/accountant-transaction-workflow
 /work/how-i-run-product
 /experience             Role timeline, education, leadership, honors
+/writing                Thought-leadership essays (index)
+/writing/<slug>         Individual essay
 /about
 /contact
 ```
 
-Global navigation: Work, Experience, About, Contact (a hamburger menu on mobile). Persistent header with name linking home. Footer with the LinkedIn and GitHub logos and a contact link; the contact page also surfaces LinkedIn and GitHub. No exposed email anywhere.
+Global navigation: Work, Writing, Experience, About, Contact (a hamburger menu on mobile). Persistent header with name linking home. Footer with the LinkedIn and GitHub logos and a contact link; the contact page also surfaces LinkedIn and GitHub. No exposed email anywhere.
 
 ---
 

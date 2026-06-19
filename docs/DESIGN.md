@@ -1,6 +1,6 @@
 # Design Direction
 
-> v2.1, last updated 2026-06-19. See [DECISIONS.md](DECISIONS.md).
+> v2.2, last updated 2026-06-19. See [DECISIONS.md](DECISIONS.md).
 
 The visual system is inherited from **Tekky** (mikegebremeskel/tekky), a prior product whose design system is fully defined in code. Reusing those tokens keeps this site consistent with my existing work and removes the design-from-scratch tax.
 
@@ -103,6 +103,8 @@ Added since v1:
 - **Testimonials:** equal-height cards with bottom-aligned attributions, linked to LinkedIn.
 - **Experience timeline:** vertical role list with accent-green dots, plus leadership and honors lists and a contact CTA.
 - **Mobile nav:** a no-JS disclosure (hamburger) menu below the `sm` breakpoint.
+- **Writing index:** a simple list of essay title + one-line summary, no dates, evergreen framing.
+- **Essay page:** eyebrow, title, summary subtitle, long-form prose (shared `.prose-portfolio`), a subtle date at the foot, an author block (headshot, one-line bio, Contact button, "See my work", LinkedIn), and related-essay links.
 
 ## Targets this design must hit (from the PRD)
 
