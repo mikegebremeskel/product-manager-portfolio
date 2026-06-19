@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Author** | Mike Gebremeskel |
-| **Status** | v2.1 (live on GitHub Pages) |
+| **Status** | v2.2 (live at mikegebremeskel.com) |
 | **Last updated** | June 19, 2026 |
 | **Reviewers** | (self) |
 | **Related** | README.md, DESIGN.md, DECISIONS.md, /content |
@@ -212,8 +212,10 @@ Resolved (see DECISIONS.md):
 - Headshot: included on the home hero and the About page.
 
 Still open:
-- Exact custom domain name (pending purchase); the site runs on the github.io URL until then.
 - The About "what I care about" narrative is a draft pending Mike's edit.
+
+Recently resolved:
+- Custom domain: mikegebremeskel.com purchased and connected (CNAME in `public/`, base served at root).
 
 ---
 

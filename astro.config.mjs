@@ -5,12 +5,13 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 import remarkBaseUrl from './src/lib/remark-base-url.mjs';
 
-// Site URL is set at deploy time. Defaults to the github.io project page;
-// override to the custom domain once it's purchased.
-const SITE = process.env.SITE_URL || 'https://mikegebremeskel.github.io';
+// Served from the custom domain mikegebremeskel.com at the root, so base is '/'.
+// Both are overridable via env (e.g. SITE_BASE=/product-manager-portfolio to
+// build for the github.io project URL again).
+const SITE = process.env.SITE_URL || 'https://mikegebremeskel.com';
 // Normalize: always trailing slash (Astro accepts both, but BASE_URL behavior
 // is more reliable when explicit).
-const RAW_BASE = process.env.SITE_BASE ?? '/product-manager-portfolio';
+const RAW_BASE = process.env.SITE_BASE ?? '';
 const BASE = RAW_BASE === '' || RAW_BASE === '/' ? '/' : (RAW_BASE.replace(/\/+$/, '') + '/');
 
 export default defineConfig({

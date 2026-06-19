@@ -6,11 +6,11 @@ The running record of significant decisions and document versions for this proje
 
 | Document | Version | Last updated |
 |---|---|---|
-| [PRD.md](PRD.md) | v2.1 | 2026-06-19 |
+| [PRD.md](PRD.md) | v2.2 | 2026-06-19 |
 | [PRFAQ.md](PRFAQ.md) | v1.1 | 2026-06-19 |
 | [DESIGN.md](DESIGN.md) | v2.1 | 2026-06-19 |
-| [DECISIONS.md](DECISIONS.md) | v1.1 | 2026-06-19 |
-| [../README.md](../README.md) | v1.1 | 2026-06-19 |
+| [DECISIONS.md](DECISIONS.md) | v1.2 | 2026-06-19 |
+| [../README.md](../README.md) | v1.2 | 2026-06-19 |
 | [../ASSETS.md](../ASSETS.md) | v2.1 | 2026-06-19 |
 
 Versioning convention: bump the minor (v1 to v1.1) for edits and clarifications; bump the major (v1 to v2) for a structural change or a reversed decision.
@@ -19,6 +19,8 @@ Versioning convention: bump the minor (v1 to v1.1) for edits and clarifications;
 
 ### 2026-06-19 (later)
 
+- **Custom domain connected.** mikegebremeskel.com purchased and wired up: added `public/CNAME`, switched the build base from `/product-manager-portfolio` to root (`/`), and pointed the deploy at the apex domain. Requires DNS records at the registrar (A/AAAA for the apex, CNAME for www) and Enforce HTTPS once GitHub verifies.
+- **Home hero copy.** Tightened to "Venture-backed, co-founder of Talisman. PM for its award-winning launch."
 - **Home hero photo finalized.** Swapped the hero to a dedicated portrait (`hero.jpeg`), optimized for the web; the About page keeps the original headshot.
 - **Contact page warmth and channels.** Reworded the intro to be inviting rather than private, and added LinkedIn and GitHub icon links for people who prefer those over the form.
 - **Footer GitHub.** Added a GitHub profile icon next to LinkedIn.

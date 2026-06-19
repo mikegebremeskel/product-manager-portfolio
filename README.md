@@ -2,7 +2,7 @@
 
 A product manager's portfolio, and a work sample of how I build.
 
-**Live site:** https://mikegebremeskel.github.io/product-manager-portfolio/ _(custom domain to be connected once purchased)_
+**Live site:** https://mikegebremeskel.com
 
 ---
 

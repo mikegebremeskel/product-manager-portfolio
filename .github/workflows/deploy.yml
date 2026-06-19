@@ -26,8 +26,8 @@ jobs:
       - run: npm ci
       - name: Build
         env:
-          SITE_URL: https://mikegebremeskel.github.io
-          SITE_BASE: /product-manager-portfolio
+          SITE_URL: https://mikegebremeskel.com
+          SITE_BASE: ""
         run: npx astro build
       - uses: actions/upload-pages-artifact@v3
         with:
