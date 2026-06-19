@@ -3,10 +3,10 @@
 | | |
 |---|---|
 | **Author** | Mike Gebremeskel |
-| **Status** | v2.2 (live at mikegebremeskel.com) |
+| **Status** | v2.3 (live at mikegebremeskel.com) |
 | **Last updated** | June 19, 2026 |
 | **Reviewers** | (self) |
-| **Related** | README.md, DESIGN.md, DECISIONS.md, /content |
+| **Related** | README.md, DESIGN.md, DECISIONS.md, src/content |
 
 ---
 
@@ -178,7 +178,7 @@ Principles to hold:
 
 - **Static site**, content authored in Markdown, separated from presentation.
 - **Hosting:** GitHub Pages from a public repository.
-- **Custom domain:** to be purchased by Mike; configured via a CNAME file once acquired. (Noted as a dependency, not a blocker for the build.)
+- **Custom domain:** mikegebremeskel.com, configured via a `public/CNAME` file and served at the root path. DNS (A and AAAA records for the apex, CNAME for www) is set at the Squarespace registrar.
 - **Contact form:** GitHub Pages has no backend, so the form posts to a third-party form service that emails Mike. This is a deliberate constraint to keep hosting free and simple.
 - **Build assistant:** built with Claude Code as an intentional, AI-assisted workflow. This is documented in the README rather than hidden.
 - **Repo hygiene:** clear README, this PRD in /docs, content separated from code, meaningful commits.
@@ -187,8 +187,8 @@ Principles to hold:
 
 ## 12. Milestones and phasing
 
-- **v1 (launch):** all four case studies, home, about, working contact form, responsive, deployed to GitHub Pages on a temporary github.io URL.
-- **v1.1:** custom domain connected once purchased; final design polish from the inherited system; accessibility and Lighthouse pass.
+- **v1 (launch):** all four case studies, home, about, working contact form, responsive, deployed to GitHub Pages. ✅ Done.
+- **v1.1 / v2:** custom domain (mikegebremeskel.com) connected; Experience page, awards Recognition collage, and testimonials added; design polish from the inherited system. ✅ Done. (HTTPS enforcement auto-applies once GitHub issues the certificate.)
 - **v2 (later, optional):** light analytics if wanted, additional case studies, small motion polish.
 
 ---
@@ -198,7 +198,7 @@ Principles to hold:
 - **Confidentiality:** case study artifacts come from a former company. Decision: use redacted versions only, describe rather than reproduce anything proprietary. All client and personal names in artifacts are removed before publishing.
 - **Static form limitation:** no backend on GitHub Pages. Decision: use a hosted form service rather than stand up a server, accepting a light third-party dependency.
 - **Meta-framing risk:** presenting the repo as a work sample only helps if the site itself is excellent. Decision: the live site must stand fully on its own; the repo is a depth layer, never an excuse for a weaker site.
-- **Domain dependency:** custom domain is pending purchase. Assumption: build proceeds on the github.io URL and the domain is connected later with no rework.
+- **Domain dependency (resolved):** the build proceeded on the github.io URL, then the custom domain (mikegebremeskel.com) was connected by adding a CNAME and switching the base path to root, with no rework needed.
 - **Scope creep:** the temptation is to add a blog, animations, theming. Decision: hold v1 to the scope in section 5.
 
 ---
