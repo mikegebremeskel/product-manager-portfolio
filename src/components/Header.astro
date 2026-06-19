@@ -9,22 +9,43 @@ const links = [
 ---
 <header class="sticky top-0 z-40 border-b border-[var(--color-border)] bg-[var(--color-bg-primary)]/80 backdrop-blur">
   <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-    <a href={url()} class="text-sm font-semibold tracking-tight">
+    <a href={url()} class="whitespace-nowrap text-sm font-semibold tracking-tight">
       Mike Gebremeskel
     </a>
-    <nav aria-label="Primary">
+
+    <!-- Desktop nav -->
+    <nav class="hidden sm:block" aria-label="Primary">
       <ul class="flex items-center gap-6 text-sm text-[var(--color-text-secondary)]">
         {links.map((link) => (
           <li>
-            <a
-              href={link.href}
-              class="hover:text-[var(--color-text-primary)] transition-colors"
-            >
+            <a href={link.href} class="hover:text-[var(--color-text-primary)] transition-colors">
               {link.label}
             </a>
           </li>
         ))}
       </ul>
     </nav>
+
+    <!-- Mobile menu (no-JS disclosure) -->
+    <details class="relative sm:hidden [&[open]_svg.menu]:hidden [&[open]_svg.close]:block">
+      <summary
+        class="flex cursor-pointer list-none items-center text-[var(--color-text-secondary)] [&::-webkit-details-marker]:hidden"
+        aria-label="Menu"
+      >
+        <svg class="menu block h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg class="close hidden h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </summary>
+      <nav aria-label="Primary" class="absolute right-0 mt-3 w-44 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elevated)] p-2 shadow-2xl">
+        <ul class="flex flex-col text-sm text-[var(--color-text-secondary)]">
+          {links.map((link) => (
+            <li>
+              <a href={link.href} class="block rounded-md px-3 py-2 hover:bg-[var(--color-bg-card)] hover:text-[var(--color-text-primary)] transition-colors">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </details>
   </div>
 </header>

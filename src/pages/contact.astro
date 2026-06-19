@@ -1,10 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-// Replace the form action with a real Formspree endpoint once created.
-// PRD requirement: Mike's email must never appear in the source. Formspree
-// holds the email server-side and forwards submissions.
-const FORMSPREE_ENDPOINT = import.meta.env.PUBLIC_FORMSPREE_ENDPOINT || 'https://formspree.io/f/YOUR_FORM_ID';
+// Formspree holds Mike's email server-side and forwards submissions, so the
+// address never appears in the page source (PRD requirement). The endpoint ID
+// is public by design; override via PUBLIC_FORMSPREE_ENDPOINT if it ever changes.
+const FORMSPREE_ENDPOINT = import.meta.env.PUBLIC_FORMSPREE_ENDPOINT || 'https://formspree.io/f/xeewbbqj';
 ---
 <BaseLayout title="Contact" description="Get in touch with Mike Gebremeskel.">
   <section class="mx-auto max-w-xl px-6 pt-16 pb-24">
