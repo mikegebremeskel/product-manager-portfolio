@@ -9,7 +9,7 @@ workedWith: "My co-founder and the CEO, our CTO (prior accounting-software found
 competencies: ["Customer discovery", "Zero-to-one", "Fintech and accounting domain", "Design", "Working with AI tooling"]
 ---
 
-> **Snapshot.** After our Product Hunt launch, accountants signed up in waves. Our team did the discovery to understand why, met with 100+ firms to map how they work, designed the 10x experience with the team, and shipped the MVP that became Talisman's accountant-facing product. The signal was strong enough to help us raise $700K, and the product has reached $113K ARR in its first five months.
+> **Snapshot.** After our Product Hunt launch, accountants signed up in waves. Our team did the discovery to understand why, met with 100+ firms to map how they work, designed the 10x experience with the team, and shipped the MVP that became Talisman's accountant-facing product. The signal was strong enough to help us raise $700K, and the product has reached $113K ARR in its first four months.
 
 ## The opportunity
 
@@ -43,7 +43,7 @@ From there I owned the workflow where rules auto-categorize transactions from th
 
 ## Outcome
 
-The MVP became the accountant-facing product Talisman runs today, and the workflow is the path every transaction flows through. In its first five months the product has reached $113K. The original inbound that started it all also helped anchor a $700K round, part of more than $1M raised in total.
+The MVP became the accountant-facing product Talisman runs today, and the workflow is the path every transaction flows through. In its first four months the product has reached $113K. The original inbound that started it all also helped anchor a $700K round, part of more than $1M raised in total.
 
 ## The shipped product
 

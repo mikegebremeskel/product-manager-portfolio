@@ -7,12 +7,16 @@ interface Props {
 }
 const { href, title, summary, competencies } = Astro.props;
 ---
-<a
-  href={href}
-  class="reveal group block rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 transition-colors hover:bg-[var(--color-bg-elevated)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-green)]"
->
-  <h3 class="text-xl font-medium text-[var(--color-text-primary)] group-hover:text-[var(--color-accent-green)] transition-colors">
-    {title}
+{/*
+  Stretched-link pattern: only the title is the link, so a screen reader
+  announces just the case study title as the link name. The link's ::after
+  overlay makes the whole card clickable, and focus-within rings the card.
+*/}
+<article class="reveal group relative flex flex-col rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 transition-colors hover:bg-[var(--color-bg-elevated)] focus-within:outline-none focus-within:ring-2 focus-within:ring-[var(--color-accent-green)]">
+  <h3 class="text-xl font-medium text-[var(--color-text-primary)] transition-colors group-hover:text-[var(--color-accent-green)]">
+    <a href={href} class="after:absolute after:inset-0 after:content-[''] focus:outline-none">
+      {title}
+    </a>
   </h3>
   <p class="mt-2 text-[var(--color-text-secondary)] leading-relaxed text-pretty">
     {summary}
@@ -24,4 +28,4 @@ const { href, title, summary, competencies } = Astro.props;
       </li>
     ))}
   </ul>
-</a>
+</article>

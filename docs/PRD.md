@@ -104,7 +104,7 @@ Non-metrics (explicitly not chasing): traffic volume, SEO ranking for competitiv
 /contact
 ```
 
-Global navigation: Work, Writing, Experience, About, Contact (a hamburger menu on mobile). Persistent header with name linking home. Footer with LinkedIn, GitHub, and Substack icons and a contact link; the contact page and essay author blocks surface the same set. No exposed email anywhere.
+Global navigation: Home, Writing, Experience, About, Contact (a hamburger menu on mobile). Persistent header with name linking home. Footer with LinkedIn, GitHub, and Substack icons and a contact link; the contact page and essay author blocks surface the same set. No exposed email anywhere.
 
 ---
 
@@ -157,7 +157,7 @@ Each essay carries `title`, `summary`, `date`, and `order` in frontmatter, plus 
 - Also surfaces LinkedIn, GitHub, and Substack links.
 
 **Global**
-- Sticky header nav (Work, Writing, Experience, About, Contact; a hamburger menu on mobile) and footer on every page.
+- Sticky header nav (Home, Writing, Experience, About, Contact; a hamburger menu on mobile) and footer on every page.
 - Footer carries LinkedIn, GitHub, and Substack icons, a repo colophon link, and a contact link.
 - 404 page.
 - Per-page title, meta description, and a custom Open Graph image.

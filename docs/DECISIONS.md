@@ -6,16 +6,24 @@ The running record of significant decisions and document versions for this proje
 
 | Document | Version | Last updated |
 |---|---|---|
-| [PRD.md](PRD.md) | v2.6 | 2026-06-19 |
+| [PRD.md](PRD.md) | v2.7 | 2026-06-19 |
 | [PRFAQ.md](PRFAQ.md) | v1.2 | 2026-06-19 |
-| [DESIGN.md](DESIGN.md) | v2.3 | 2026-06-19 |
-| [DECISIONS.md](DECISIONS.md) | v1.7 | 2026-06-19 |
+| [DESIGN.md](DESIGN.md) | v2.4 | 2026-06-19 |
+| [DECISIONS.md](DECISIONS.md) | v1.8 | 2026-06-19 |
 | [../README.md](../README.md) | v1.4 | 2026-06-19 |
 | [../ASSETS.md](../ASSETS.md) | v2.3 | 2026-06-19 |
 
 Versioning convention: bump the minor (v1 to v1.1) for edits and clarifications; bump the major (v1 to v2) for a structural change or a reversed decision.
 
 ## Decisions
+
+### 2026-06-19 (corrections, accessibility)
+
+- **Nav: "Work" renamed to "Home"** and pointed at the home root (`/`) rather than the `#work` anchor.
+- **Fixed an ARR timeframe inconsistency.** The accountant case study said "first five months" while the Experience page and résumé said "four months." Both the snapshot and outcome now say "four months." Conflicting numbers on the same site undermine credibility.
+- **Reworded the venture-backed line.** "Venture-backed, co-founder of Talisman" implied the person was venture-backed. Changed to "Co-founder of venture-backed Talisman and the PM behind its award-winning launch," in the hero, the meta description, and the og:description.
+- **Case study card link accessibility.** The whole card was one anchor, so a screen reader announced the entire card text as the link name. Switched to a stretched-link pattern: only the title is the link (its accessible name), the card stays fully clickable, and focus rings the card.
+- **Performance and contrast pass (Lighthouse).** Optimized images (resized and recompressed: Awwwards 3MB to 33KB, the earliest prototype 4.6MB to 193KB, and the rest down proportionally), preloaded the Inter web font (the home page's LCP text was waiting on it), and stopped using the muted text token for real content (it failed WCAG AA contrast; switched those to the secondary token). Verified with Lighthouse on the home page: Performance 96, Accessibility 100, SEO 100 (LCP 2.9s, CLS 0).
 
 ### 2026-06-19 (HTTPS live, docs, tidy)
 

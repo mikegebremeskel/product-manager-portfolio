@@ -84,7 +84,7 @@ Lifted verbatim from `tailwind.config.ts`.
 
 ## Components to define (built from tekky tokens)
 
-- **Header / nav:** name on the left, links right (Work, About, Contact). Sticky, `bg-background-primary/80` with `backdrop-blur`, 1px bottom border.
+- **Header / nav:** name on the left, links right (Home, Writing, Experience, About, Contact). Sticky, `bg-background-primary/80` with `backdrop-blur`, 1px bottom border.
 - **Footer:** LinkedIn, GitHub, and Substack icons (shared `SocialLinks` component), "How this site was built" link to the repo, copyright. Quiet.
 - **Case study card** (home index): `bg-background-card`, `rounded-lg`, hover lift to `background-elevated`. Title, one-line hook, thumbnail, competency chips.
 - **Case study page layout**:
