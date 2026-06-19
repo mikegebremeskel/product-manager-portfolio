@@ -1,5 +1,5 @@
 ---
-title: "Accountant Transaction Workflow"
+title: "Accountant transaction workflow"
 company: "Talisman"
 order: 3
 summary: "Zero-to-one in a new market, built on discovery with 100+ accounting firms."

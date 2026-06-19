@@ -1,5 +1,5 @@
 ---
-title: "How I Run Product"
+title: "How I run product"
 company: "Talisman"
 order: 4
 summary: "The operating system behind the features: prioritization, specs, releases, and quality."

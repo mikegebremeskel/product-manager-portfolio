@@ -1,5 +1,5 @@
 ---
-title: "Subscription Activation"
+title: "Subscription activation"
 company: "Talisman"
 order: 2
 summary: "A revamp and an activation fix that took onboarding completion from near zero to about 80%."

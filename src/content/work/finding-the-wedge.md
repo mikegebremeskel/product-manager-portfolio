@@ -1,5 +1,5 @@
 ---
-title: "Finding the Wedge"
+title: "Finding the wedge"
 company: "Talisman"
 order: 1
 summary: "Mapping a broad opportunity and narrowing the whole company to the wedge that actually worked."

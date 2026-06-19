@@ -8,8 +8,8 @@ interface Props {
   description?: string;
 }
 
-const { title, description = "Mike Gebremeskel — product manager. Four case studies in fintech and B2B SaaS." } = Astro.props;
-const fullTitle = title === 'Mike Gebremeskel' ? title : `${title} — Mike Gebremeskel`;
+const { title, description = "Mike Gebremeskel, product manager. Four case studies in fintech and B2B SaaS." } = Astro.props;
+const fullTitle = title === 'Mike Gebremeskel' ? title : `${title} | Mike Gebremeskel`;
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 ---
 <!doctype html>

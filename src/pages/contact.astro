@@ -61,7 +61,7 @@ const FORMSPREE_ENDPOINT = import.meta.env.PUBLIC_FORMSPREE_ENDPOINT || 'https:/
         ></textarea>
       </div>
 
-      {/* Honeypot — bots fill it, humans don't see it. */}
+      {/* Honeypot: bots fill it, humans don't see it. */}
       <div class="hidden" aria-hidden="true">
         <label>Leave this field empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label>
       </div>
@@ -74,7 +74,7 @@ const FORMSPREE_ENDPOINT = import.meta.env.PUBLIC_FORMSPREE_ENDPOINT || 'https:/
       </button>
 
       <p id="form-success" class="hidden text-sm text-[var(--color-accent-green)]" role="status">
-        Thanks — message sent. I'll reply soon.
+        Thanks, message sent. I'll reply soon.
       </p>
       <p id="form-error" class="hidden text-sm text-[var(--color-status-red)]" role="alert">
         Something went wrong. Please try again, or reach out on LinkedIn.
