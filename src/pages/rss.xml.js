@@ -11,7 +11,7 @@ export async function GET(context) {
   );
 
   return rss({
-    title: 'Mike Gebremeskel — Writing',
+    title: 'Mike Gebremeskel: Writing',
     description: 'Essays on product craft. What I have learned building and leading product.',
     site: context.site,
     items: essays.map((e) => {
