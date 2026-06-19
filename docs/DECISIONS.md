@@ -6,16 +6,21 @@ The running record of significant decisions and document versions for this proje
 
 | Document | Version | Last updated |
 |---|---|---|
-| [PRD.md](PRD.md) | v2.7 | 2026-06-19 |
+| [PRD.md](PRD.md) | v2.8 | 2026-06-19 |
 | [PRFAQ.md](PRFAQ.md) | v1.2 | 2026-06-19 |
-| [DESIGN.md](DESIGN.md) | v2.4 | 2026-06-19 |
-| [DECISIONS.md](DECISIONS.md) | v1.8 | 2026-06-19 |
+| [DESIGN.md](DESIGN.md) | v2.5 | 2026-06-19 |
+| [DECISIONS.md](DECISIONS.md) | v1.9 | 2026-06-19 |
 | [../README.md](../README.md) | v1.4 | 2026-06-19 |
 | [../ASSETS.md](../ASSETS.md) | v2.3 | 2026-06-19 |
 
 Versioning convention: bump the minor (v1 to v1.1) for edits and clarifications; bump the major (v1 to v2) for a structural change or a reversed decision.
 
 ## Decisions
+
+### 2026-06-19 (writing expanded)
+
+- **Writing grew to 18 essays.** Added 15 more (on listening to behavior, the operator role, finding domain experts, quality, specs, speed, culture, buy-in, naming, AI judgment, and lived experience). Each essay carries a real "written" month as its date. The "source moments / not for publishing" footers and the screenshot placeholders were stripped; the original LinkedIn-post blockquotes were kept where present (culture, buy-in, lived experience). Titles sentence-cased. Essays are cross-linked via `related`.
+- **Writing index now shows dates and sorts newest first** (reverses the earlier "no dates, evergreen" call, per Mike's request). The risk that dates make a paused blog look stale is mitigated by volume and by Mike continuing to add essays.
 
 ### 2026-06-19 (corrections, accessibility)
 

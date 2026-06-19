@@ -31,7 +31,7 @@ const writing = defineCollection({
     title: z.string(),
     summary: z.string(),
     date: z.date(),
-    order: z.number(),
+    order: z.number().optional(),
     related: z.array(z.string()).optional(),
   }),
 });

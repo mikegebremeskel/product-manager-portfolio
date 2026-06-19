@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Author** | Mike Gebremeskel |
-| **Status** | v2.6 (live at mikegebremeskel.com, HTTPS enforced) |
+| **Status** | v2.8 (live at mikegebremeskel.com, HTTPS enforced) |
 | **Last updated** | June 19, 2026 |
 | **Reviewers** | (self) |
 | **Related** | README.md, DESIGN.md, DECISIONS.md, src/content |
@@ -143,7 +143,7 @@ Each essay carries `title`, `summary`, `date`, and `order` in frontmatter, plus 
 - Ends in a contact CTA. No resume download (resume requests come through the form).
 
 **Writing**
-- Index: a simple list of essays (title plus one-line summary), no dates, evergreen framing.
+- Index: a list of essays (title, date, and one-line summary), sorted newest first.
 - Essay page: long-form prose, a subtle date, an author block (Get in touch, See my work, social links), related-essay links, and Article JSON-LD for SEO.
 
 **About**
