@@ -3,15 +3,13 @@ title: "Subscription activation"
 company: "Talisman"
 order: 2
 summary: "A revamp and an activation fix that took onboarding completion from near zero to about 80%."
+role: "Product owner. I wrote the engineering and design tickets, led the design and grooming meetings, took the notes, ran QA, and owned the releases."
+timeline: "Mid 2022 (before Techstars Miami) through the February 2024 relaunch and activation fixes."
+workedWith: "Designer (Sam), engineering (Dan), and my co-founder (Chiko)."
 competencies: ["End-to-end ownership", "Customer discovery", "Data-driven iteration", "Cross-functional delivery"]
 ---
 
 > **Snapshot.** Talisman's onboarding was broken in two ways, and I owned fixing both. First, the product looked too plain for anyone to trust it with their spend, so almost no one completed onboarding. We brought in a designer, I ran a full revamp, and we relaunched to win #1 SaaS Product of the Week and #2 Product of the Day on Product Hunt, plus This Week in Fintech's Startup of the Year. The relaunch then exposed a second problem: users still were not activating. I drove the empty-state and Quick Verify fixes that took onboarding completion from effectively zero to about 80%.
-
-**My role:** Product owner. I wrote the engineering and design tickets, led the design and grooming meetings, took the notes, ran QA, and owned the releases.
-**Timeline:** mid 2022 (pre joining Techstars Miami) through the February 2024 relaunch and activation fixes.
-**Worked with:** designer (Sam), engineering (Dan), and my co-founder (Chiko).
-**Competencies this shows:** end-to-end ownership, customer discovery, acting on hard feedback, data-driven iteration, cross-functional delivery.
 
 ## The problem
 

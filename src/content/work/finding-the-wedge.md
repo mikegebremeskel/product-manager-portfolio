@@ -3,14 +3,12 @@ title: "Finding the wedge"
 company: "Talisman"
 order: 1
 summary: "Mapping a broad opportunity and narrowing the whole company to the wedge that actually worked."
+role: "Co-founder and product owner. I ran the discovery and made the scoping call with my co-founder."
+timeline: "Summer 2022, when we joined Techstars. This was the founding product decision."
 competencies: ["Product strategy", "Jobs-to-be-Done discovery", "Scoping", "Following user signal"]
 ---
 
 > **Snapshot.** Talisman started broad: a SaaS-management platform spanning employee onboarding, access provisioning, offboarding, security, and spend. I mapped the whole opportunity up front, then we shipped the simplest slice, spend visibility, to learn what users actually cared about. They cared about seeing their spend, not provisioning access. I made the call to narrow the entire company onto spend. That focus became the expense product, and it saved us from building costly integrations into every tool we would have needed for provisioning.
-
-**My role:** Co-founder and product owner. I ran the discovery and made the scoping call with my co-founder.
-**Timeline:** Summer 2022, when we joined Techstars. This is the founding product decision.
-**Competencies this shows:** product strategy, Jobs-to-be-Done discovery, scoping and the discipline to cut scope, following real user signal over the original vision.
 
 ## The opportunity
 

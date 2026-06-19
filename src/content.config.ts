@@ -8,6 +8,9 @@ const work = defineCollection({
     company: z.string().optional(),
     order: z.number(),
     summary: z.string(),
+    role: z.string(),
+    timeline: z.string(),
+    workedWith: z.string().optional(),
     competencies: z.array(z.string()),
   }),
 });

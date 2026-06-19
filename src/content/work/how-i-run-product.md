@@ -3,15 +3,13 @@ title: "How I run product"
 company: "Talisman"
 order: 4
 summary: "The operating system behind the features: prioritization, specs, releases, and quality."
+role: "Product owner across the lifecycle."
+timeline: "2022 to 2025."
+workedWith: "Engineering, design, QA, and the founder."
 competencies: ["Data-driven prioritization", "Product writing", "Incremental shipping", "Quality ownership"]
 ---
 
 > **Snapshot.** This is less a single feature and more how I operate. At Talisman I ran prioritization, the specs, the release process, and the quality bar, and we shipped the Expense Management product on top of that operating system. I made trade-offs with data instead of opinion, wrote the documents the team built from, and blocked releases when they were not ready.
-
-**My role:** Product owner across the lifecycle.
-**Timeline:** 2022 to 2025.
-**Worked with:** engineering, design, QA, and the founder.
-**Competencies this shows:** data-driven prioritization, product writing (PRDs and working-backwards briefs), incremental shipping, quality ownership.
 
 ## Why this matters
 

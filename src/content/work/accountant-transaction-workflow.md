@@ -3,15 +3,13 @@ title: "Accountant transaction workflow"
 company: "Talisman"
 order: 3
 summary: "Zero-to-one in a new market, built on discovery with 100+ accounting firms."
+role: "Co-founder and COO, product owner for the accountant workflow."
+timeline: "2024 to 2026 (current product)."
+workedWith: "My co-founder and the CEO, our CTO (prior accounting-software founder), engineering, product, and design."
 competencies: ["Customer discovery", "Zero-to-one", "Fintech and accounting domain", "Design", "Working with AI tooling"]
 ---
 
 > **Snapshot.** After our Product Hunt launch, accountants signed up in waves. Our team did the discovery to understand why, met with 100+ firms to map how they work, designed the 10x experience with the team, and shipped the MVP that became Talisman's accountant-facing product. The signal was strong enough to help us raise $700K, and the product has reached $113K ARR in its first five months.
-
-**My role:** Co-founder and COO, product owner for the accountant workflow.
-**Timeline:** 2024 to 2026 (current product).
-**Worked with:** my co-founder and the CEO, our CTO (prior accounting-software founder), engineering, product, and design.
-**Competencies this shows:** deep customer discovery, zero-to-one, fintech and accounting domain, design, working with AI tooling.
 
 ## The opportunity
 

@@ -52,18 +52,18 @@ Lifted verbatim from `tailwind.config.ts`.
 
 ### Contrast check
 
-`text.primary` on `background.primary` = ~19:1 — passes WCAG AAA. `text.secondary` (#8A9BB0) on `background.primary` = ~6.8:1 — passes AA. `text.muted` is below 4.5:1 and is only used for disabled/placeholder, which is permitted.
+`text.primary` on `background.primary` = ~19:1 (passes WCAG AAA). `text.secondary` (#8A9BB0) on `background.primary` = ~6.8:1 (passes AA). `text.muted` is below 4.5:1 and is only used for disabled/placeholder, which is permitted.
 
 ## Typography
 
 - **Family:** Inter, loaded via `next/font/google` as `--font-inter` with `display: swap`. All weights available.
 - **Fallback stack:** `sans-serif`.
 - **Scale:** Tailwind defaults (no custom scale in tekky). The site uses:
-  - `text-5xl` / `font-semibold` — Home hero headline
-  - `text-3xl` / `font-semibold` — Case study page title
-  - `text-xl` / `font-medium` — Section headings, card titles
-  - `text-base` — Body
-  - `text-sm` / `text-text-secondary` — Meta labels (role, timeline, competencies)
+  - `text-5xl` / `font-semibold`: home hero headline
+  - `text-3xl` / `font-semibold`: case study page title
+  - `text-xl` / `font-medium`: section headings, card titles
+  - `text-base`: body
+  - `text-sm` / `text-text-secondary`: meta labels (role, timeline, competencies)
 - **Line height:** Tailwind defaults; body uses `leading-relaxed` for long-form case studies.
 - **Text balance:** apply `text-balance` utility (defined in tekky `globals.css`) to headlines.
 
@@ -73,7 +73,7 @@ Lifted verbatim from `tailwind.config.ts`.
 - **Radius:** `--radius: 0.5rem` (8px) base; `lg` = `var(--radius)`, `md` = 6px, `sm` = 4px. Cards and the lightbox use `rounded-lg`.
 - **Borders:** 1px, `hsl(var(--border))` (shadcn slate dark).
 - **Shadows:** None on the page surface (the dark depth scale carries hierarchy). Lightbox uses a subtle elevated shadow only.
-- **Motion:** `tailwindcss-animate` is available. Use it sparingly — page transitions are instant; only the lightbox and contact form state changes animate (fade/scale, ≤200ms).
+- **Motion:** `tailwindcss-animate` is available. Use it sparingly. Page transitions are instant; only the lightbox and contact form state changes animate (fade/scale, ≤200ms).
 
 ## Icons
 
@@ -82,18 +82,18 @@ Lifted verbatim from `tailwind.config.ts`.
 
 ## Components to define (built from tekky tokens)
 
-- **Header / nav** — name on the left, links right (Work, About, Contact). Sticky, `bg-background-primary/80` with `backdrop-blur`, 1px bottom border.
-- **Footer** — LinkedIn link, "How this site was built" link to the repo, copyright. Quiet.
-- **Case study card** (home index) — `bg-background-card`, `rounded-lg`, hover lift to `background-elevated`. Title, one-line hook, thumbnail, competency chips.
+- **Header / nav:** name on the left, links right (Work, About, Contact). Sticky, `bg-background-primary/80` with `backdrop-blur`, 1px bottom border.
+- **Footer:** LinkedIn link, "How this site was built" link to the repo, copyright. Quiet.
+- **Case study card** (home index): `bg-background-card`, `rounded-lg`, hover lift to `background-elevated`. Title, one-line hook, thumbnail, competency chips.
 - **Case study page layout**:
-  - Snapshot block — blockquote treatment on `background-surface`
-  - Meta block — two-column grid of label/value pairs, `text-text-secondary` labels
-  - Section headings — `text-xl`, generous top spacing
-  - Image with caption — full-width within content column, caption in `text-sm text-text-secondary` italic
-  - Reflection — large blockquote, accent-gold left border
-- **Image / artifact viewer (lightbox)** — click any artifact to open at full size on `background-elevated`, dim the page. Closes on Escape and backdrop click.
-- **Contact form** — name, email, message, honeypot. Inputs use shadcn slate-dark tokens; success state in `accent.green`, errors in `status.red`.
-- **404 page** — minimal: heading, one line, link home.
+  - Snapshot block: blockquote treatment on `background-surface`
+  - Meta block: two-column grid of label/value pairs, `text-text-secondary` labels
+  - Section headings: `text-xl`, generous top spacing
+  - Image with caption: full-width within content column, caption in `text-sm text-text-secondary` italic
+  - Reflection: large blockquote, accent-gold left border
+- **Image / artifact viewer (lightbox):** click any artifact to open at full size on `background-elevated`, dim the page. Closes on Escape and backdrop click.
+- **Contact form:** name, email, message, honeypot. Inputs use shadcn slate-dark tokens; success state in `accent.green`, errors in `status.red`.
+- **404 page:** minimal: heading, one line, link home.
 
 ## Targets this design must hit (from the PRD)
 
@@ -104,5 +104,5 @@ Lifted verbatim from `tailwind.config.ts`.
 
 ## What was deliberately not borrowed from tekky
 
-- The shadcn light-mode CSS variables in `globals.css` — unused, since the portfolio is dark-only.
-- Tekky-specific component patterns (stat cards, leaderboards, comparison tables) — irrelevant to a portfolio.
+- The shadcn light-mode CSS variables in `globals.css`: unused, since the portfolio is dark-only.
+- Tekky-specific component patterns (stat cards, leaderboards, comparison tables): irrelevant to a portfolio.

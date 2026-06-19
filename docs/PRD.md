@@ -1,4 +1,4 @@
-# Portfolio Site — Product Requirements Document
+# Portfolio site: product requirements document
 
 | | |
 |---|---|
@@ -69,7 +69,7 @@ Non-metrics (explicitly not chasing): traffic volume, SEO ranking for competitiv
 
 **In scope (v1):**
 - Home page with positioning, a short intro, and links to all case studies
-- Four case study pages: Finding the Wedge, Subscription Activation, Accountant Transaction Workflow, How I Run Product
+- Four case study pages: Finding the wedge, Subscription activation, Accountant transaction workflow, How I run product
 - About page
 - Contact form that does not expose Mike's email address
 - Responsive layout (mobile and desktop)
@@ -213,7 +213,7 @@ Principles to hold:
 ## 15. Appendix
 
 - Source content currently lives in the Notion portfolio; it will be exported to Markdown for the repo.
-- Case study set and competencies covered: Finding the Wedge (product strategy), Subscription Activation (execution and data-driven iteration), Accountant Transaction Workflow (zero-to-one in a new market), How I Run Product (operating: prioritization, specs, quality).
+- Case study set and competencies covered: Finding the wedge (product strategy), Subscription activation (execution and data-driven iteration), Accountant transaction workflow (zero-to-one in a new market), How I run product (operating: prioritization, specs, quality).
 
 ### References
 

@@ -1,4 +1,4 @@
-# Mike Gebremeskel — Product Portfolio
+# Mike Gebremeskel: product portfolio
 
 A product manager's portfolio, and a work sample of how I build.
 
@@ -16,10 +16,10 @@ If you only have a minute, open the live site. If you want to see the thinking, 
 
 ## Read it in this order
 
-1. **`docs/PRFAQ.md`** — the why and the who. Written working backwards from the two users of this site: the hiring team evaluating me, and me trying to stand out. Start here.
-2. **`docs/PRD.md`** — the what and the how. Scope, requirements, information architecture, and success metrics written as measurable targets anyone can verify against the live site.
-3. **`content/`** — the four case studies and the About page, as Markdown.
-4. **The live site** — the result.
+1. **`docs/PRFAQ.md`**: the why and the who. Written working backwards from the two users of this site: the hiring team evaluating me, and me trying to stand out. Start here.
+2. **`docs/PRD.md`**: the what and the how. Scope, requirements, information architecture, and success metrics written as measurable targets anyone can verify against the live site.
+3. **`content/`**: the four case studies and the About page, as Markdown.
+4. **The live site**: the result.
 
 ## What's inside
 
@@ -39,10 +39,10 @@ Content lives in `content/` as plain Markdown, separate from the code, so any ca
 
 ## The case studies
 
-1. **Finding the Wedge** — product strategy: mapping a broad opportunity and narrowing to the wedge that worked.
-2. **Subscription Activation** — execution and data-driven iteration: a revamp and an activation fix that took onboarding completion from near zero to roughly 80%.
-3. **Accountant Transaction Workflow** — zero-to-one in a new market, grounded in discovery with 100+ firms.
-4. **How I Run Product** — the operating system: prioritization, specs, releases, and quality.
+1. **Finding the wedge**, product strategy: mapping a broad opportunity and narrowing to the wedge that worked.
+2. **Subscription activation**, execution and data-driven iteration: a revamp and an activation fix that took onboarding completion from near zero to roughly 80%.
+3. **Accountant transaction workflow**: zero-to-one in a new market, grounded in discovery with 100+ firms.
+4. **How I run product**, the operating system: prioritization, specs, releases, and quality.
 
 ## How it is built
 

@@ -1,4 +1,4 @@
-# Mike Gebremeskel — Product Portfolio
+# Mike Gebremeskel: product portfolio
 
 ## PR/FAQ (Working Backwards)
 
@@ -11,7 +11,7 @@
 
 ---
 
-## Press Release
+## Press release
 
 ### A product portfolio built by working backwards from both sides of hiring
 
@@ -33,7 +33,7 @@ The portfolio is live at the site address, with a contact form for hiring teams 
 
 ---
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### For recruiters and hiring managers
 
