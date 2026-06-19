@@ -12,17 +12,17 @@ const testimonials = [
   },
   {
     quote:
-      "Michael is an extraordinary talent and a valued commodity to any organization which he is affiliated. He is definitely one to think outside of the box and able to reach a viable resolution to any problem that is presented. His contribution to various department organizations and committees surpassed and exceeded all expectations set forth. Mike is a true innovator and will undoubtedly bring his team to a next level of thinking. Anyone who has the good fortune of being on his team will always speak of his positive attitude, fantastic work ethic, willingness to assist in any way possible, and I know that he is going to do amazing things in his career. Working with Mike has been a very memorable experience and I look forward to seeing how he continues his path of success.\n\nThank you so much for always being resilient, staying strong with your ideas, adapting to any change, and always having an optimistic outlook for any situation. You will do great things!",
-    name: 'Kyndra Krensavage, BGS',
-    title: 'Manager, Customer Onboarding, McKesson',
-    relation: 'Managed Mike directly',
-  },
-  {
-    quote:
       "Mike worked on projects that realized over $1M for our company. He is genuine, forthright, hardworking and positive. He welcomes feedback and immediately turns it around to grow. His personal and professional ethics are beyond reproach. I recommend him without hesitation for any group looking for smart, kind teammates who uplift those around them.",
     name: 'Ananda Karakaya, MBA, PMP',
     title: 'Chief of Strategic Operations and Transformation, McKesson',
     relation: "Mike's mentor",
+  },
+  {
+    quote:
+      "Michael is an extraordinary talent and a valued commodity to any organization which he is affiliated. He is definitely one to think outside of the box and able to reach a viable resolution to any problem that is presented. His contribution to various department organizations and committees surpassed and exceeded all expectations set forth. Mike is a true innovator and will undoubtedly bring his team to a next level of thinking. Anyone who has the good fortune of being on his team will always speak of his positive attitude, fantastic work ethic, willingness to assist in any way possible, and I know that he is going to do amazing things in his career. Working with Mike has been a very memorable experience and I look forward to seeing how he continues his path of success.\n\nThank you so much for always being resilient, staying strong with your ideas, adapting to any change, and always having an optimistic outlook for any situation. You will do great things!",
+    name: 'Kyndra Krensavage, BGS',
+    title: 'Manager, Customer Onboarding, McKesson',
+    relation: 'Managed Mike directly',
   },
   {
     quote:
@@ -33,7 +33,7 @@ const testimonials = [
   },
 ];
 ---
-<section class="mx-auto max-w-6xl px-6 pb-24">
+<section class="mx-auto max-w-7xl px-6 pb-24">
   <div class="mb-8 flex items-baseline justify-between gap-4">
     <h2 class="text-sm uppercase tracking-widest text-[var(--color-text-secondary)]">What people say</h2>
     <a
@@ -44,16 +44,16 @@ const testimonials = [
       Read on LinkedIn ↗
     </a>
   </div>
-  <div class="grid items-start gap-4 sm:grid-cols-2">
+  <div class="grid gap-4 sm:grid-cols-2">
     {testimonials.map((t) => (
       <a
         href="https://www.linkedin.com/in/mikegebremeskel/details/recommendations/"
         rel="noopener"
         class="group flex flex-col rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 transition-colors hover:bg-[var(--color-bg-elevated)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-green)]">
-        <blockquote class="space-y-3 text-[var(--color-text-primary)] leading-relaxed text-pretty">
+        <blockquote class="mb-6 space-y-3 text-[var(--color-text-primary)] leading-relaxed text-pretty">
           {t.quote.split('\n\n').map((p) => <p>{p}</p>)}
         </blockquote>
-        <figcaption class="mt-5 border-t border-[var(--color-border)] pt-4">
+        <figcaption class="mt-auto border-t border-[var(--color-border)] pt-4">
           <p class="font-medium text-[var(--color-text-primary)]">{t.name}</p>
           <p class="mt-0.5 text-sm text-[var(--color-text-secondary)]">{t.title}</p>
           <p class="mt-0.5 text-xs text-[var(--color-text-muted)]">{t.relation}</p>

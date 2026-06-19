@@ -1,0 +1,145 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { url } from '../lib/url';
+
+const roles = [
+  {
+    title: 'Co-Founder & COO',
+    company: 'Talisman',
+    dates: 'Apr 2020 – Present',
+    points: [
+      'Own the product end to end across discovery, delivery, and iteration for a B2B SaaS platform, scaling to 2M+ transactions across 200+ businesses and standing up the team’s product practice (PR/FAQs, PRDs, OKRs, release acceptance criteria).',
+      'Launched the first product in 2024 to #2 Product of the Day and #1 SaaS Product of the Week on Product Hunt and This Week in Fintech’s Best New Startup of the Year; the product and site also won Awwwards and three CSS Design Awards.',
+      'Drove the activation fix that lifted onboarding completion from near zero to roughly 80%.',
+      'Identified accountants as the higher-value customer through discovery with 100+ firms, then shipped the accountant product that anchored a $700K raise and reached $113K in ARR with zero churn in its first four months.',
+    ],
+  },
+  {
+    title: 'Account Manager',
+    company: 'McKesson Corporation',
+    dates: 'Dec 2019 – May 2022',
+    points: [
+      'Owned a $1B+ book across 10+ independent pharmacy and group purchasing accounts in a regulated healthcare environment.',
+      'Ran monthly and quarterly business reviews, re-pricing underperforming accounts to protect margin.',
+      'Owned contract renewals end to end with pricing, operations, and legal.',
+    ],
+  },
+  {
+    title: 'Strategic Pricing Analyst',
+    company: 'McKesson Corporation',
+    dates: 'Aug 2018 – Dec 2019',
+    points: [
+      'Co-led a Lean Six Sigma Green Belt project that delivered a $14M working-capital improvement, confirmed by post-implementation reporting.',
+      'Built and automated the leadership spend dashboard in Tableau on SQL, replacing a monthly manual report.',
+      'Configured specialty pricing in SAP and authored SOPs to scale adoption.',
+    ],
+  },
+  {
+    title: 'Master Data Coordinator',
+    company: 'McKesson Corporation',
+    dates: 'Jan 2017 – Aug 2018',
+    points: [
+      'Governed customer master data in SAP, partnered with risk and compliance to enforce controls, and authored 15+ SOPs for data governance and change management.',
+    ],
+  },
+];
+
+const leadership = [
+  { role: 'National Co-Chair, Tegaru Professionals Network (TPN)', dates: '2022 – 2024', note: 'Onboarded two new chapters.' },
+  { role: 'Founding Chair, TPN Dallas Chapter', dates: '2020 – 2021', note: 'Facilitated 10+ events, including an International Women’s Day broadcast panel.' },
+  { role: 'Officer (incl. Club President), McKesson Las Colinas Toastmasters', dates: '2018 – 2019', note: 'Held multiple officer roles, including inaugural Sergeant at Arms.' },
+  { role: 'National Team Operations Lead, ASPIRE ERG (McKesson)', dates: '', note: 'Ran operations for the national team of McKesson’s African American employee resource group.' },
+  { role: 'Founder, Master Data speed mentoring program (McKesson)', dates: '', note: 'Paired associates with 10+ managers; it became a recurring quarterly program.' },
+];
+
+const honors = [
+  { name: 'On Deck Founders Fellow (ODF10)', year: '2021', note: 'Competitive, interview-based selection.' },
+  { name: 'TPN National Team Leader of the Year', year: '2024', note: 'Peer-voted.' },
+  { name: 'TPN Dallas Chapter Leader of the Year', year: '2021', note: 'Peer-voted.' },
+  { name: 'MDM Innovation Contest Winner, McKesson', year: '2017', note: 'Internal award for a process innovation.' },
+  { name: 'TMAA Lekatit 11 Speech Contest Winner', year: '2019', note: '' },
+];
+---
+<BaseLayout title="Experience" description="Mike Gebremeskel's experience: co-founder and COO at Talisman, pricing and data roles at McKesson, plus leadership and recognition.">
+  <div class="mx-auto max-w-3xl px-6 pt-16 pb-24 sm:pt-20">
+    <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight">Experience</h1>
+    <p class="mt-4 text-lg text-[var(--color-text-secondary)] leading-relaxed text-pretty">
+      Co-founder and product owner at Talisman, built on pricing, data, and account roles at McKesson, a Fortune 10 company.
+    </p>
+
+    <!-- Roles timeline -->
+    <ol class="relative mt-12 ml-1 border-l border-[var(--color-border)]">
+      {roles.map((r) => (
+        <li class="relative pl-8 pb-10 last:pb-0">
+          <span class="absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full bg-[var(--color-accent-green)]"></span>
+          <p class="text-sm text-[var(--color-text-secondary)]">{r.dates}</p>
+          <h2 class="mt-1 text-xl font-medium text-[var(--color-text-primary)]">{r.title}</h2>
+          <p class="text-[var(--color-text-secondary)]">{r.company}</p>
+          <ul class="mt-3 space-y-2 text-[var(--color-text-primary)] leading-relaxed">
+            {r.points.map((p) => (
+              <li class="relative pl-5 text-pretty">
+                <span class="absolute left-0 top-2.5 h-1 w-1 rounded-full bg-[var(--color-text-muted)]"></span>
+                {p}
+              </li>
+            ))}
+          </ul>
+        </li>
+      ))}
+    </ol>
+
+    <!-- Education & certification -->
+    <section class="mt-14">
+      <h2 class="text-sm uppercase tracking-widest text-[var(--color-text-secondary)]">Education & certification</h2>
+      <div class="mt-4 space-y-1">
+        <p class="text-[var(--color-text-primary)]">B.A., Psychology, Oklahoma State University, 2016</p>
+        <p class="text-[var(--color-text-primary)]">Lean Six Sigma Green Belt (LSSGB)</p>
+      </div>
+    </section>
+
+    <!-- Leadership & community -->
+    <section class="mt-14">
+      <h2 class="text-sm uppercase tracking-widest text-[var(--color-text-secondary)]">Leadership & community</h2>
+      <ul class="mt-5 space-y-5">
+        {leadership.map((l) => (
+          <li>
+            <div class="flex items-baseline justify-between gap-4">
+              <p class="font-medium text-[var(--color-text-primary)]">{l.role}</p>
+              {l.dates && <span class="shrink-0 text-sm text-[var(--color-text-secondary)]">{l.dates}</span>}
+            </div>
+            {l.note && <p class="mt-1 text-[var(--color-text-secondary)] text-pretty">{l.note}</p>}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <!-- Honors & recognition -->
+    <section class="mt-14">
+      <h2 class="text-sm uppercase tracking-widest text-[var(--color-text-secondary)]">Honors & recognition</h2>
+      <ul class="mt-5 space-y-4">
+        {honors.map((h) => (
+          <li>
+            <div class="flex items-baseline justify-between gap-4">
+              <p class="font-medium text-[var(--color-text-primary)]">{h.name}</p>
+              <span class="shrink-0 text-sm text-[var(--color-accent-gold)]">{h.year}</span>
+            </div>
+            {h.note && <p class="mt-1 text-sm text-[var(--color-text-secondary)] text-pretty">{h.note}</p>}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <!-- CTA -->
+    <section class="mt-16 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 text-center">
+      <h2 class="text-xl font-medium text-[var(--color-text-primary)]">Want the full resume?</h2>
+      <p class="mx-auto mt-2 max-w-md text-[var(--color-text-secondary)] text-pretty">
+        Reach out and I’ll send it over. The contact form is the fastest way to start a conversation.
+      </p>
+      <a
+        href={url('contact')}
+        class="mt-5 inline-block rounded-md bg-[var(--color-accent-green)] px-5 py-2.5 text-sm font-medium text-[var(--color-bg-primary)] hover:opacity-90 transition-opacity"
+      >
+        Get in touch
+      </a>
+    </section>
+  </div>
+</BaseLayout>
