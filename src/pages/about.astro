@@ -7,8 +7,7 @@ const about = await getEntry('pages', 'about');
 if (!about) throw new Error('about page not found');
 const { Content } = await render(about);
 
-// Swap to '/assets/headshot.jpg' once the real photo is added to public/assets/.
-const headshot = url('assets/headshot-placeholder.svg');
+const headshot = url('assets/headshot.jpeg');
 ---
 <BaseLayout title="About" description="About Mike Gebremeskel, product manager and startup operator.">
   <article class="mx-auto max-w-3xl px-6 pt-16 pb-24">
