@@ -9,9 +9,9 @@ The running record of significant decisions and document versions for this proje
 | [PRD.md](PRD.md) | v2.3 | 2026-06-19 |
 | [PRFAQ.md](PRFAQ.md) | v1.1 | 2026-06-19 |
 | [DESIGN.md](DESIGN.md) | v2.1 | 2026-06-19 |
-| [DECISIONS.md](DECISIONS.md) | v1.3 | 2026-06-19 |
+| [DECISIONS.md](DECISIONS.md) | v1.4 | 2026-06-19 |
 | [../README.md](../README.md) | v1.3 | 2026-06-19 |
-| [../ASSETS.md](../ASSETS.md) | v2.1 | 2026-06-19 |
+| [../ASSETS.md](../ASSETS.md) | v2.2 | 2026-06-19 |
 
 Versioning convention: bump the minor (v1 to v1.1) for edits and clarifications; bump the major (v1 to v2) for a structural change or a reversed decision.
 
@@ -19,6 +19,7 @@ Versioning convention: bump the minor (v1 to v1.1) for edits and clarifications;
 
 ### 2026-06-19 (later)
 
+- **Social share card (Open Graph image).** Instead of letting platforms grab a photo, added a branded 1200x630 card (`public/assets/og.png`): the positioning line on the dark brand background with the MG monogram, name, and URL. Wired into `BaseLayout.astro` as `og:image` and `twitter:image`. Treated as a chance to show design taste. Source markup kept at `og.html` (rendered via headless Chrome, downscaled with sharp).
 - **Custom domain live.** mikegebremeskel.com wired up: added `public/CNAME`, switched the build base from `/product-manager-portfolio` to root (`/`), and registered the domain with GitHub Pages. DNS configured at the Squarespace registrar (deleted the Squarespace Defaults preset; added four A and four AAAA records for the apex plus a `www` CNAME to `mikegebremeskel.github.io`). Site verified serving over HTTP; HTTPS enforcement auto-applies once GitHub issues the TLS certificate. The github.io URL redirects to the custom domain.
 - **Home hero copy.** Tightened to "Venture-backed, co-founder of Talisman. PM for its award-winning launch."
 - **Home hero photo finalized.** Swapped the hero to a dedicated portrait (`hero.jpeg`), optimized for the web; the About page keeps the original headshot.

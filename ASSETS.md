@@ -1,6 +1,6 @@
 # Image asset manifest
 
-> v2.1, last updated 2026-06-19. See [docs/DECISIONS.md](docs/DECISIONS.md).
+> v2.2, last updated 2026-06-19. See [docs/DECISIONS.md](docs/DECISIONS.md).
 
 All images live in `public/assets/`. The Markdown in `src/content/` and the page components reference them by these exact filenames, so keep the names as-is.
 
@@ -39,6 +39,8 @@ All images live in `public/assets/`. The Markdown in `src/content/` and the page
 ## Also in public/
 
 - `favicon.svg`: green "MG" monogram on the dark background.
+- `og.png`: the 1200x630 social share card (Open Graph / Twitter image). A branded statement card, not a photo, generated from `og.html` and referenced in `BaseLayout.astro`.
+- `CNAME`: custom domain (mikegebremeskel.com).
 
 ## Notes
 
