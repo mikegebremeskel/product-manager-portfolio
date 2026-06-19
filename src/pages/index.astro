@@ -6,7 +6,7 @@ import Recognition from '../components/Recognition.astro';
 import Testimonials from '../components/Testimonials.astro';
 import { url } from '../lib/url';
 
-const headshot = url('assets/headshot.jpeg');
+const heroPhoto = url('assets/hero.jpeg');
 
 const work = (await getCollection('work')).sort((a, b) => a.data.order - b.data.order);
 ---
@@ -24,11 +24,11 @@ const work = (await getCollection('work')).sort((a, b) => a.data.order - b.data.
       </div>
       <div class="order-first lg:order-none">
         <img
-          src={headshot}
+          src={heroPhoto}
           alt="Mike Gebremeskel"
-          width="448"
-          height="560"
-          class="mx-auto w-44 sm:w-52 lg:w-full max-w-xs aspect-[4/5] rounded-2xl border border-[var(--color-border)] object-cover object-top"
+          width="480"
+          height="600"
+          class="mx-auto w-44 sm:w-52 lg:w-full max-w-xs aspect-[4/5] rounded-2xl border border-[var(--color-border)] object-cover object-center"
         />
       </div>
     </div>

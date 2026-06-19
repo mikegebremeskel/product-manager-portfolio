@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Author** | Mike Gebremeskel |
-| **Status** | v2 (live on GitHub Pages) |
+| **Status** | v2.1 (live on GitHub Pages) |
 | **Last updated** | June 19, 2026 |
 | **Reviewers** | (self) |
 | **Related** | README.md, DESIGN.md, DECISIONS.md, /content |
@@ -101,7 +101,7 @@ Non-metrics (explicitly not chasing): traffic volume, SEO ranking for competitiv
 /contact
 ```
 
-Global navigation: Work, Experience, About, Contact (a hamburger menu on mobile). Persistent header with name linking home. Footer with the LinkedIn logo and a contact link. No exposed email anywhere.
+Global navigation: Work, Experience, About, Contact (a hamburger menu on mobile). Persistent header with name linking home. Footer with the LinkedIn and GitHub logos and a contact link; the contact page also surfaces LinkedIn and GitHub. No exposed email anywhere.
 
 ---
 

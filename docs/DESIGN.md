@@ -1,6 +1,6 @@
 # Design Direction
 
-> v2, last updated 2026-06-19. See [DECISIONS.md](DECISIONS.md).
+> v2.1, last updated 2026-06-19. See [DECISIONS.md](DECISIONS.md).
 
 The visual system is inherited from **Tekky** (mikegebremeskel/tekky), a prior product whose design system is fully defined in code. Reusing those tokens keeps this site consistent with my existing work and removes the design-from-scratch tax.
 
@@ -85,7 +85,7 @@ Lifted verbatim from `tailwind.config.ts`.
 ## Components to define (built from tekky tokens)
 
 - **Header / nav:** name on the left, links right (Work, About, Contact). Sticky, `bg-background-primary/80` with `backdrop-blur`, 1px bottom border.
-- **Footer:** LinkedIn link, "How this site was built" link to the repo, copyright. Quiet.
+- **Footer:** LinkedIn and GitHub profile icons, "How this site was built" link to the repo, copyright. Quiet.
 - **Case study card** (home index): `bg-background-card`, `rounded-lg`, hover lift to `background-elevated`. Title, one-line hook, thumbnail, competency chips.
 - **Case study page layout**:
   - Snapshot block: blockquote treatment on `background-surface`

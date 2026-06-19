@@ -1,6 +1,6 @@
 # Image asset manifest
 
-> v2, last updated 2026-06-19. See [docs/DECISIONS.md](docs/DECISIONS.md).
+> v2.1, last updated 2026-06-19. See [docs/DECISIONS.md](docs/DECISIONS.md).
 
 All images live in `public/assets/`. The Markdown in `src/content/` and the page components reference them by these exact filenames, so keep the names as-is.
 
@@ -23,7 +23,8 @@ All images live in `public/assets/`. The Markdown in `src/content/` and the page
 
 | File | Used in |
 |---|---|
-| `headshot.jpeg` | Home hero and About page |
+| `hero.jpeg` | Home hero (portrait) |
+| `headshot.jpeg` | About page |
 
 ## Recognition (home Recognition collage)
 
