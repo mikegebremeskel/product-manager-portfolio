@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Author** | Mike Gebremeskel |
-| **Status** | v2.9 (live at mikegebremeskel.com, HTTPS enforced) |
+| **Status** | v2.10 (live at mikegebremeskel.com, HTTPS enforced) |
 | **Last updated** | June 19, 2026 |
 | **Reviewers** | (self) |
 | **Related** | README.md, DESIGN.md, DECISIONS.md, src/content |
@@ -100,6 +100,7 @@ Non-metrics (explicitly not chasing): traffic volume, SEO ranking for competitiv
 /experience             Role timeline, education, leadership, honors
 /writing                Thought-leadership essays (index)
 /writing/<slug>         Individual essay
+/rss.xml                Full-content RSS feed of the essays
 /about
 /contact
 ```
@@ -171,7 +172,7 @@ Each essay carries `title`, `summary`, `date`, and `order` in frontmatter, plus 
 - **Performance:** Lighthouse Performance 95 or higher. Largest Contentful Paint under 1.5s and Cumulative Layout Shift under 0.1 on a standard broadband connection. Static pages, optimized and lazy-loaded images, lean initial page weight.
 - **Accessibility:** WCAG 2.1 AA. Lighthouse Accessibility 95 or higher and no critical axe-core violations. Semantic headings, alt text on every image, keyboard-navigable nav and form, color contrast at least 4.5:1.
 - **Responsive:** clean on mobile and desktop. Dense artifact images remain readable through zoom or a larger view.
-- **SEO basics:** Lighthouse SEO 95 or higher. Title and meta description per page, Open Graph tags with a custom 1200x630 share image, a sitemap, and Article structured data on essays so the work is discoverable and previews well when shared.
+- **SEO basics:** Lighthouse SEO 95 or higher. Title and meta description per page, Open Graph tags with a custom 1200x630 share image, a sitemap, a full-content RSS feed of the essays (also a clean source for syndication to Substack), and Article structured data on essays so the work is discoverable and previews well when shared.
 - **Browser support:** current versions of major browsers.
 - **Privacy:** no email exposed on the site or in the repo. No third-party tracking beyond what the form service requires.
 - **Hosting:** GitHub Pages, custom domain via CNAME, HTTPS enforced.
