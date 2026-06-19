@@ -1,6 +1,6 @@
 # Image asset manifest
 
-> v2.2, last updated 2026-06-19. See [docs/DECISIONS.md](docs/DECISIONS.md).
+> v2.4, last updated 2026-06-19. See [docs/DECISIONS.md](docs/DECISIONS.md).
 
 All images live in `public/assets/`. The Markdown in `src/content/` and the page components reference them by these exact filenames, so keep the names as-is.
 
@@ -35,6 +35,14 @@ All images live in `public/assets/`. The Markdown in `src/content/` and the page
 | `cssda-best-ui.png` | CSSDA Best UI Design medallion |
 | `cssda-best-ux.png` | CSSDA Best UX Design medallion |
 | `cssda-best-innovation.png` | CSSDA Best Innovation medallion |
+
+## Writing (essay images)
+
+| File | Used in |
+|---|---|
+| `speed-slack-report.png` | "Speed is a form of respect" (the 6:33am report and 6:35am reply; customer name anonymized) |
+| `speed-slack-resolution.png` | "Speed is a form of respect" (root cause and the 11:43am verification request) |
+| `speed-linkedin-recap.png` | "Speed is a form of respect" (the CEO's public LinkedIn recap of the morning) |
 
 ## Also in public/
 

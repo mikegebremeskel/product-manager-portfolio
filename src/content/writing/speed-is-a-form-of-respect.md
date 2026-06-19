@@ -22,6 +22,9 @@ The customer wrote back one minute later. "Thank you, Mike!"
 
 That tiny exchange did something important before any code was touched. It told the customer they were heard. Their problem was now our problem, and they did not have to wonder if it had disappeared into a void.
 
+![Slack thread showing the customer's 6:33am bug report and Mike's 6:35am reply](/assets/speed-slack-report.png)
+*The bug report at 6:33am, and the reply two minutes later. The fix had not started yet. The acknowledgment still mattered.*
+
 ## What happened over the next few hours
 
 The acknowledgment was the start, not the end. Behind it, the team moved fast.
@@ -29,6 +32,9 @@ The acknowledgment was the start, not the end. Behind it, the team moved fast.
 Within two minutes of the report I had also flagged it to our CTO. By 6:45am I had recreated the bug myself, so the engineer was not chasing a vague description but a confirmed, reproducible problem. A teammate was producing a fix shortly after. Our product lead jumped in around 6:55am to help. By 11am the fix was tested and ready, and we went back to the customer to ask them to confirm it on their end.
 
 So in one morning, a customer's report became a reproduced bug, a fix, a test, and a verification request. The customer never had to follow up. We followed up with them.
+
+![Slack thread showing the team confirming the root cause and asking the customer to verify the fix at 11:43am](/assets/speed-slack-resolution.png)
+*From report to tested fix in under five hours, with the customer kept in the loop the whole way.*
 
 ## Why speed is respect, not just service
 
@@ -43,6 +49,9 @@ And here is the part founders miss. Speed is one of the few advantages a small t
 None of this happens because of one fast reply. It happens because the team is built to move. My two minute acknowledgment was worth something only because I could flag it to the CTO immediately, recreate it within minutes, and trust that an engineer and a product lead would jump on it without being chased.
 
 That is the operator's job in a moment like this. Catch it, confirm it, route it, and keep the customer informed at every step, so the speed the customer feels is backed by real motion underneath. A fast reply with nothing behind it is just a nicer way to make someone wait.
+
+![LinkedIn post from Talisman's CEO recapping the morning, from the 6:33am report to the fix by 11am](/assets/speed-linkedin-recap.png)
+*Our CEO's write-up of the same morning. Customer obsession is not a slogan you put in a deck. It is what you do at 6:35am.*
 
 ## Where I land
 
