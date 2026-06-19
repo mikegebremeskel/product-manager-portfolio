@@ -1,63 +1,58 @@
 ---
-// Honest recognition framing: Product Hunt is the launch result Mike led as PM.
-// Awwwards / CSSDA are design awards the team earned together with the design
-// partners; the lead line credits that collaboration rather than claiming the
-// specific design honors personally.
-const items = [
+import { url } from '../lib/url';
+
+// The Awwwards piece is a portrait "certificate" render with its own dark mat,
+// so it sits directly on the page background. The Product Hunt + CSSDA marks have
+// mixed backgrounds (light / black / purple), so they go on uniform white tiles
+// so every one reads consistently on the dark site.
+const medals = [
   {
-    org: 'Product Hunt',
-    honor: '#1 SaaS Product of the Week, #2 Product of the Day',
-    year: '2024',
+    src: url('assets/producthunt-potd.svg'),
+    alt: 'Product Hunt badge: #2 Product of the Day',
+    caption: '#1 SaaS Product of the Week',
+    wide: true,
     href: 'https://www.producthunt.com/products/talisman-2',
   },
-  {
-    org: 'This Week in Fintech',
-    honor: 'Fintech Startup of the Year',
-    year: '2024',
-  },
-  {
-    org: 'Awwwards',
-    honor: 'Honors',
-    year: '2024',
-  },
-  {
-    org: 'CSSDA',
-    honor: 'Best UI, Best UX & Best Innovation',
-    year: '2024',
-  },
+  { src: url('assets/cssda-best-ui.png'), alt: 'CSSDA Best UI Design award', caption: 'CSSDA · Best UI' },
+  { src: url('assets/cssda-best-ux.png'), alt: 'CSSDA Best UX Design award', caption: 'CSSDA · Best UX' },
+  { src: url('assets/cssda-best-innovation.png'), alt: 'CSSDA Best Innovation award', caption: 'CSSDA · Best Innovation' },
 ];
 ---
-<section class="mx-auto max-w-5xl px-6 pb-24">
+<section class="mx-auto max-w-6xl px-6 pb-24">
   <h2 class="text-sm uppercase tracking-widest text-[var(--color-text-secondary)] mb-3">Recognition</h2>
-  <p class="max-w-2xl text-[var(--color-text-secondary)] leading-relaxed text-pretty mb-8">
-    I led Talisman's February 2024 launch as product manager and co-founder, working closely with our design partners. The launch and its design earned:
+  <p class="max-w-3xl text-[var(--color-text-secondary)] leading-relaxed text-pretty mb-10">
+    I led Talisman's February 2024 launch as product manager and co-founder, working closely with our design partners. The launch reached #1 SaaS Product of the Week on Product Hunt and was named Fintech Startup of the Year by This Week in Fintech, and the design earned Awwwards Honors and CSSDA awards for UI, UX, and Innovation.
   </p>
-  <ul class="grid gap-4 sm:grid-cols-2">
-    {items.map((item) => {
-      const inner = (
-        <div class="flex items-baseline justify-between gap-4 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 h-full transition-colors group-hover:bg-[var(--color-bg-elevated)]">
-          <div>
-            <p class="font-medium text-[var(--color-text-primary)]">{item.org}</p>
-            <p class="mt-1 text-sm text-[var(--color-text-secondary)] text-pretty">{item.honor}</p>
+
+  <div class="grid gap-8 lg:grid-cols-[260px_1fr] lg:items-center">
+    <figure class="mx-auto w-full max-w-[260px]">
+      <img
+        src={url('assets/awwwards-honors.png')}
+        alt="Awwwards Honors certificate awarded to Talisman, March 2024"
+        class="w-full rounded-xl"
+        loading="lazy"
+      />
+      <figcaption class="mt-3 text-center text-xs text-[var(--color-text-secondary)]">
+        Awwwards · Honors · 2024
+      </figcaption>
+    </figure>
+
+    <ul class="grid grid-cols-3 gap-4">
+      {medals.map((m) => {
+        const tile = (
+          <div class="flex h-28 items-center justify-center rounded-xl bg-white p-4">
+            <img src={m.src} alt={m.alt} class="max-h-16 w-auto" loading="lazy" />
           </div>
-          <span class="shrink-0 text-sm font-medium text-[var(--color-accent-gold)]">{item.year}</span>
-        </div>
-      );
-      return (
-        <li>
-          {item.href ? (
-            <a
-              href={item.href}
-              rel="noopener"
-              class="group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-green)] rounded-lg"
-            >
-              {inner}
-            </a>
-          ) : (
-            <div class="group">{inner}</div>
-          )}
-        </li>
-      );
-    })}
-  </ul>
+        );
+        return (
+          <li class={m.wide ? 'col-span-3' : ''}>
+            {m.href ? (
+              <a href={m.href} rel="noopener" class="block rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-green)]">{tile}</a>
+            ) : tile}
+            <p class="mt-2 text-center text-xs text-[var(--color-text-secondary)]">{m.caption}</p>
+          </li>
+        );
+      })}
+    </ul>
+  </div>
 </section>
