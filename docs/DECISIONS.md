@@ -6,16 +6,21 @@ The running record of significant decisions and document versions for this proje
 
 | Document | Version | Last updated |
 |---|---|---|
-| [PRD.md](PRD.md) | v2.8 | 2026-06-19 |
-| [PRFAQ.md](PRFAQ.md) | v1.2 | 2026-06-19 |
+| [PRD.md](PRD.md) | v2.9 | 2026-06-19 |
+| [PRFAQ.md](PRFAQ.md) | v1.3 | 2026-06-19 |
 | [DESIGN.md](DESIGN.md) | v2.5 | 2026-06-19 |
-| [DECISIONS.md](DECISIONS.md) | v1.11 | 2026-06-19 |
+| [DECISIONS.md](DECISIONS.md) | v1.12 | 2026-06-19 |
 | [../README.md](../README.md) | v1.4 | 2026-06-19 |
 | [../ASSETS.md](../ASSETS.md) | v2.5 | 2026-06-19 |
 
 Versioning convention: bump the minor (v1 to v1.1) for edits and clarifications; bump the major (v1 to v2) for a structural change or a reversed decision.
 
 ## Decisions
+
+### 2026-06-19 (essay re-sync, follow-ups)
+
+- **Foogin' essay (37) re-dated to September 2024** (the index had October; Mike's call wins) and the explicit word in the "Foogin'" origin lightly masked to `f***ing` to stay recruiter-safe while keeping the story and source. Note: the source folder still has the full word, so a future re-sync would need the mask reapplied.
+- **PRD (v2.9) and PR/FAQ (v1.3) updated** to reflect the 20-essay Writing collection with inline diagrams and preserved source citations.
 
 ### 2026-06-19 (essay re-sync from folder)
 

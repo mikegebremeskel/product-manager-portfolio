@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | **Author** | Mike Gebremeskel |
-| **Status** | v1.2 |
+| **Status** | v1.3 |
 | **Last updated** | June 19, 2026 |
 | **Format** | Amazon Working Backwards PR/FAQ. This document defines the customers and the why. The build spec lives in PRD.md. |
 
@@ -56,7 +56,7 @@ Through the contact form on the site. His email is not exposed publicly.
 The four case studies map to four distinct PM competencies: product strategy, execution and data-driven iteration, zero-to-one in a new market, and operating discipline (prioritization, specs, quality).
 
 **What else is on the site besides the case studies?**
-An experience timeline (roles, education, leadership, and honors), a short set of essays on how Mike thinks about product, and an about page. On the home page you also see the awards the work earned and recommendations from people Mike has worked with. The case studies are the core; the rest is depth if you want it.
+An experience timeline (roles, education, leadership, and honors), a growing collection of essays on how Mike thinks about product (20 today, several with diagrams, each citing the real moment or source it came from), and an about page. On the home page you also see the awards the work earned and recommendations from people Mike has worked with. The case studies are the core; the rest is depth if you want it.
 
 ### For the PM-minded reviewer (how the product was built)
 

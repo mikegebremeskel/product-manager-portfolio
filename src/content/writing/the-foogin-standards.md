@@ -1,7 +1,7 @@
 ---
 title: "The Foogin' Standards: building a culture of excellence"
 summary: "Building a culture of excellence, inspired by how Arteta rebuilt Arsenal. Standards written down, held by everyone, even when it costs you."
-date: 2024-10-01
+date: 2024-09-01
 order: 37
 related: ["culture-is-built-in-small-interactions", "quality-is-a-process-not-a-vibe"]
 ---
@@ -18,7 +18,7 @@ The name and the whole idea came from outside my industry, and that was the poin
 
 I am an Arsenal fan, and Mikel Arteta is a role model for me in how he builds. When Arteta took over Arsenal in 2019, the club had fallen from its heights. He turned it around by installing a set of standards from day one that everyone had to meet, from the highest earners to the academy kids. The ones who would not meet them, even big stars, were moved on. As The Athletic put it, those who continually fell short were dispensed with, which led to high-profile exits.
 
-"Foogin'" is how the phrase "fucking standards" sounds in Arteta's Spanish accent. I borrowed it on purpose, because it captured the energy I wanted. Not corporate, not soft, just a clear bar and the will to hold it.
+"Foogin'" is how the phrase "f***ing standards" sounds in Arteta's Spanish accent. I borrowed it on purpose, because it captured the energy I wanted. Not corporate, not soft, just a clear bar and the will to hold it.
 
 Here is the deeper move, though. I did not get this from a management book. I got it from soccer. Inspiration can and should come from outside your domain. A football club and a software company are not as different as they look. Neither can be carried by one person. Both need a group in sync, holding a standard, to win.
 

@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Author** | Mike Gebremeskel |
-| **Status** | v2.8 (live at mikegebremeskel.com, HTTPS enforced) |
+| **Status** | v2.9 (live at mikegebremeskel.com, HTTPS enforced) |
 | **Last updated** | June 19, 2026 |
 | **Reviewers** | (self) |
 | **Related** | README.md, DESIGN.md, DECISIONS.md, src/content |
@@ -143,8 +143,9 @@ Each essay carries `title`, `summary`, `date`, and `order` in frontmatter, plus 
 - Ends in a contact CTA. No resume download (resume requests come through the form).
 
 **Writing**
+- A growing collection (20 essays today), each one editable as a single Markdown file.
 - Index: a list of essays (title, date, and one-line summary), sorted newest first.
-- Essay page: long-form prose, a subtle date, an author block (Get in touch, See my work, social links), related-essay links, and Article JSON-LD for SEO.
+- Essay page: long-form prose, a subtle date, inline SVG diagrams where relevant, preserved source citations (the original LinkedIn post or external source), an author block (Get in touch, See my work, social links), related-essay links, and Article JSON-LD for SEO.
 
 **About**
 - Renders the About Markdown, with a headshot and a personal narrative.
