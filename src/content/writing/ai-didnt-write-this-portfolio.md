@@ -1,6 +1,6 @@
 ---
-title: "AI didn't write this portfolio. My own archive did."
-summary: "How this whole collection was built. The model is a commodity; the proprietary archive and the judgment to shape it are the moat"
+title: "AI didn't write this portfolio. My own archive did"
+summary: "How this whole collection was built. The model is a commodity; the proprietary archive and the judgment to shape it are the moat."
 date: 2026-06-02
 order: 36
 related: ["the-durable-skills-in-the-ai-era", "your-lived-experience-is-a-product-superpower"]
