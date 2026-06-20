@@ -17,15 +17,15 @@
     position: relative;
     overflow: hidden;
   }
-  /* soft brand glow, top-right (the signature accent bloom) */
+  /* soft neutral bloom, top-right (kept monochrome to match the icon) */
   .glow {
     position: absolute; top: -200px; right: -160px;
     width: 620px; height: 620px; border-radius: 50%;
-    background: radial-gradient(circle, rgba(0,113,227,0.30), rgba(0,113,227,0) 70%);
+    background: radial-gradient(circle, rgba(0,0,0,0.06), rgba(0,0,0,0) 70%);
   }
   .mono {
     width: 76px; height: 76px; border-radius: 18px;
-    background: #0066CC; color: #FFFFFF;
+    background: #1D1D1F; color: #FFFFFF;
     font-weight: 700; font-size: 38px; letter-spacing: -1px;
     display: flex; align-items: center; justify-content: center;
     position: relative; z-index: 1;
@@ -39,13 +39,13 @@
     color: #1D1D1F; font-size: 72px; font-weight: 600;
     line-height: 1.08; letter-spacing: -2px; max-width: 1010px;
   }
-  h1 .dot { color: #0071E3; }
+  h1 .dot { color: #1D1D1F; }
   .bottom {
     display: flex; align-items: baseline; justify-content: space-between;
     position: relative; z-index: 1;
     border-top: 1px solid rgba(0,0,0,0.08); padding-top: 28px;
   }
-  .name { color: #0058B9; font-size: 30px; font-weight: 600; }
+  .name { color: #1D1D1F; font-size: 30px; font-weight: 600; }
   .url { color: #6E6E73; font-size: 26px; font-weight: 500; }
 </style>
 </head>
