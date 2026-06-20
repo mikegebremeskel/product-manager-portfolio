@@ -16,12 +16,16 @@ import { url } from '../lib/url';
     I led Talisman's February 2024 launch as product manager and co-founder, working closely with our design partners. It reached #1 SaaS Product of the Week on Product Hunt, was named Fintech Startup of the Year by This Week in Fintech, and earned Awwwards Honors and CSSDA awards for UI, UX, and Innovation.
   </p>
 
-  <div class="reveal relative mx-auto mt-10 w-full max-w-2xl lg:max-w-3xl aspect-[6/5]">
+  {/*
+    Below sm: a centered flex-wrap of legibly-sized badges (no overlap, no rotation).
+    At sm+: the original absolute, overlapping, rotated collage inside a 6:5 box.
+  */}
+  <div class="reveal mx-auto mt-10 flex w-full max-w-2xl flex-wrap items-center justify-center gap-6 sm:relative sm:mt-12 sm:block sm:gap-0 sm:aspect-[6/5] lg:max-w-3xl">
     <!-- Awwwards certificate (base) -->
     <img
       src={url('assets/awwwards-honors.png')}
       alt="Awwwards Honors certificate awarded to Talisman, March 2024"
-      class="absolute left-[14%] top-0 z-10 w-[44%] -rotate-3"
+      class="w-32 sm:absolute sm:left-[14%] sm:top-0 sm:z-10 sm:w-[44%] sm:-rotate-3"
       style="filter: drop-shadow(var(--shadow-collage));"
       loading="lazy"
     />
@@ -29,31 +33,31 @@ import { url } from '../lib/url';
     <a
       href="https://www.producthunt.com/products/talisman-2"
       rel="noopener"
-      class="absolute left-[2%] top-[44%] z-30 block w-[62%] -rotate-2 rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-strong)]"
+      class="block w-44 rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-strong)] sm:absolute sm:left-[2%] sm:top-[44%] sm:z-30 sm:w-[62%] sm:-rotate-2"
       style="filter: drop-shadow(var(--shadow-overlay));"
       aria-label="Product Hunt: #1 SaaS Product of the Week"
     >
       <img src={url('assets/producthunt-1-saas.svg')} alt="Product Hunt badge: #1 SaaS Product of the Week" class="w-full" />
     </a>
-    <!-- CSSDA medallions, clustered bottom-right and overlapping -->
+    <!-- CSSDA medallions, clustered bottom-right and overlapping at sm+ -->
     <img
       src={url('assets/cssda-best-ui.png')}
       alt="CSSDA Best UI Design award"
-      class="absolute right-[24%] top-[28%] z-20 w-[27%] -rotate-6"
+      class="w-24 sm:absolute sm:right-[24%] sm:top-[28%] sm:z-20 sm:w-[27%] sm:-rotate-6"
       style="filter: drop-shadow(var(--shadow-overlay));"
       loading="lazy"
     />
     <img
       src={url('assets/cssda-best-ux.png')}
       alt="CSSDA Best UX Design award"
-      class="absolute right-[6%] top-[37%] z-30 w-[27%] rotate-6"
+      class="w-24 sm:absolute sm:right-[6%] sm:top-[37%] sm:z-30 sm:w-[27%] sm:rotate-6"
       style="filter: drop-shadow(var(--shadow-overlay));"
       loading="lazy"
     />
     <img
       src={url('assets/cssda-best-innovation.png')}
       alt="CSSDA Best Innovation award"
-      class="absolute right-[16%] bottom-[2%] z-40 w-[31%] rotate-3"
+      class="w-24 sm:absolute sm:right-[16%] sm:bottom-[2%] sm:z-40 sm:w-[31%] sm:rotate-3"
       style="filter: drop-shadow(var(--shadow-collage));"
       loading="lazy"
     />

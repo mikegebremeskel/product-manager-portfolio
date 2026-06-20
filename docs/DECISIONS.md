@@ -6,16 +6,29 @@ The running record of significant decisions and document versions for this proje
 
 | Document | Version | Last updated |
 |---|---|---|
-| [PRD.md](PRD.md) | v2.11 | 2026-06-19 |
+| [PRD.md](PRD.md) | v2.12 | 2026-06-19 |
 | [PRFAQ.md](PRFAQ.md) | v1.3 | 2026-06-19 |
-| [DESIGN.md](DESIGN.md) | v3.0 | 2026-06-19 |
-| [DECISIONS.md](DECISIONS.md) | v1.15 | 2026-06-19 |
-| [../README.md](../README.md) | v1.5 | 2026-06-19 |
-| [../ASSETS.md](../ASSETS.md) | v2.6 | 2026-06-19 |
+| [DESIGN.md](DESIGN.md) | v3.1 | 2026-06-19 |
+| [DECISIONS.md](DECISIONS.md) | v1.16 | 2026-06-19 |
+| [../README.md](../README.md) | v1.6 | 2026-06-19 |
+| [../ASSETS.md](../ASSETS.md) | v2.7 | 2026-06-19 |
 
 Versioning convention: bump the minor (v1 to v1.1) for edits and clarifications; bump the major (v1 to v2) for a structural change or a reversed decision.
 
 ## Decisions
+
+### 2026-06-19 (accent → Apple blue + responsive/a11y pass)
+
+Acting on a Claude Code review of the live reskin.
+
+- **Accent switched from lavender to Apple blue** (Mike's call). Tokens, measured against the warm-white page / white card rather than trusting comments: `--color-accent #0066CC` (button fills/selection, white text ~5.6:1), `--color-accent-hover`/`--color-accent-strong #0058B9` (links/focus ~6.6:1), `--color-accent-contrast #FFFFFF`, glow `--glow-color 0,113,227` (#0071E3) at lower alpha so the bloom stays soft. The fill is a touch darker than canonical `#0071E3` (which is only ~4.7:1 on white) because the CTAs use small text. `::selection` text flipped to white.
+- **Contrast fixes surfaced by measuring (the earlier Lighthouse run only covered home):** `--color-accent-gold` darkened `#B7791F`→`#946700` (3.5:1→4.8:1; it labels the honors years on Experience) and `--color-positive` `#00875A`→`#00794D` (4.4:1→5.3:1; the form-success message).
+- **Removed the `--color-accent-green` back-compat alias** and pointed all references at `--color-accent-strong` directly.
+- **Responsive + a11y:** Recognition collage now renders as a centered flex-wrap of legible badges below `sm` (the absolute overlapping collage only at `sm+`); 44px hamburger target; hero display tracking only at `lg+`, and the headline now leads on mobile with the photo following (`order-first` dropped); skip-to-content link + `id="main"`; `IntersectionObserver` fallback reveals all content; testimonials switched to CSS `columns` (masonry) so the long quote no longer unbalances the grid; prev/next case-study nav wraps on narrow screens.
+- **OG card re-rendered in blue** to match (favicon/monogram/wordmark from the design system were already blue).
+- **Hero glow made full-bleed** (the section is now full width with the content capped at `max-w-7xl` inside), so the bloom spans the viewport instead of stopping at the centered column on wide screens.
+- **Hero copy de-named:** dropped "Talisman" from the home hero and meta description, now "I co-founded a venture-backed B2B SaaS startup and led product through its award-winning launch." (Talisman still appears in the case studies, Recognition, and About.)
+- **Verified:** clean build, zero em dashes, no email in source; Lighthouse on home/experience/contact each P≥96 / A11y 100 / SEO 100 / BP 100 with the color-contrast audit passing; no horizontal scroll and no overlap at 320/375/768/1280/1920; reduced-motion still disables the reveal transform and the glow breathe.
 
 ### 2026-06-19 (reskin to the Apple-editorial light design system)
 

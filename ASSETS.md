@@ -1,6 +1,6 @@
 # Image asset manifest
 
-> v2.6, last updated 2026-06-19. See [docs/DECISIONS.md](docs/DECISIONS.md).
+> v2.7, last updated 2026-06-19. See [docs/DECISIONS.md](docs/DECISIONS.md).
 
 All images live in `public/assets/`. The Markdown in `src/content/` and the page components reference them by these exact filenames, so keep the names as-is.
 
@@ -61,7 +61,7 @@ Inline SVG figures, referenced from the essays and rendered as white figure card
 
 - `favicon.svg`: light "MG" monogram (warm-white tile, dark ink, accent-blue underline) from the design system.
 - `assets/monogram.svg`, `assets/logo-wordmark.svg`: the design system's brand marks (typographic MG tile and `Mike Gebremeskel` wordmark with a trailing accent underline). Available for share cards and future use.
-- `og.png`: the 1200x630 social share card (Open Graph / Twitter image), regenerated for light: lavender monogram and glow, dark headline with a violet accent period, violet name. A branded statement card, not a photo, generated from `scripts/og-card.html` and referenced in `BaseLayout.astro`.
+- `og.png`: the 1200x630 social share card (Open Graph / Twitter image), light with the Apple blue accent: blue monogram and glow, dark headline with a blue accent period, blue name. A branded statement card, not a photo, generated from `scripts/og-card.html` and referenced in `BaseLayout.astro`.
 - `CNAME`: custom domain (mikegebremeskel.com).
 
 ## Notes

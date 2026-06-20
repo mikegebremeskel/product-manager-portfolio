@@ -19,20 +19,17 @@
   --color-text-secondary: #6E6E73; /* meta, secondary - ~4.9:1 */
   --color-text-muted: #86868B;     /* placeholder / UI only */
 
-  /* Accent - lavender brand + readable violet for text/links */
-  --color-accent: #ADA8FF;            /* button fills, glow, decorative */
-  --color-accent-hover: #9B95FF;
-  --color-accent-strong: #5B50D6;     /* links, focus, accent text (~5.8:1) */
-  --color-accent-contrast: #1D1D1F;   /* dark ink on a lavender fill (~7.9:1) */
-  --color-positive: #00875A;          /* positive outcomes/metrics (~4.6:1) */
-
-  /* Back-compat: existing var(--color-accent-green) refs resolve to the
-     readable violet, so links/dots/focus stay AA without per-file edits.
-     Button fills are upgraded to --color-accent explicitly. */
-  --color-accent-green: var(--color-accent-strong);
+  /* Accent - Apple blue. The fill is darkened to #0066CC for white-text
+     headroom (the CTAs use small text); the brighter #0071E3 is kept only
+     for the soft glow bloom. */
+  --color-accent: #0066CC;            /* button fills, selection (white text ~5.6:1) */
+  --color-accent-hover: #0058B9;      /* darker on hover */
+  --color-accent-strong: #0058B9;     /* links, focus, accent text (~6.8:1 on white) */
+  --color-accent-contrast: #FFFFFF;   /* white on a blue fill */
+  --color-positive: #00794D;          /* positive outcomes/metrics, form success (5.3:1 on white) */
 
   /* Recognition (awards only) */
-  --color-accent-gold: #B7791F;       /* amber on light (~4.5:1) */
+  --color-accent-gold: #946700;       /* amber, awards only; AA as text (4.8:1 on white) */
 
   /* Status */
   --color-status-red: #D70015;
@@ -57,11 +54,11 @@
 
 /* Non-utility tokens: the glow motif + motion (kept off @theme). */
 :root {
-  --glow-color: 173, 168, 255; /* accent as raw RGB so alpha is tweakable */
+  --glow-color: 0, 113, 227; /* Apple blue #0071E3 as raw RGB; alpha kept low so the bloom stays soft, not a heavy wash */
   --glow-hero:
-    radial-gradient(60% 70% at 72% 8%, rgba(var(--glow-color), 0.22), transparent 70%),
-    radial-gradient(50% 60% at 18% 0%, rgba(var(--glow-color), 0.12), transparent 72%);
-  --glow-spot: radial-gradient(closest-side, rgba(var(--glow-color), 0.30), transparent);
+    radial-gradient(60% 70% at 72% 8%, rgba(var(--glow-color), 0.16), transparent 70%),
+    radial-gradient(50% 60% at 18% 0%, rgba(var(--glow-color), 0.08), transparent 72%);
+  --glow-spot: radial-gradient(closest-side, rgba(var(--glow-color), 0.22), transparent);
 
   --shadow-overlay: 0 10px 30px rgba(0, 0, 0, 0.18);
   --shadow-collage: 0 12px 32px rgba(0, 0, 0, 0.16);
@@ -92,7 +89,7 @@
   }
   ::selection {
     background-color: var(--color-accent);
-    color: var(--color-text-primary);
+    color: var(--color-accent-contrast);
   }
   a {
     color: inherit;

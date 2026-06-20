@@ -56,14 +56,14 @@ const next = idx < all.length - 1 ? all[idx + 1] : null;
       <Content />
     </div>
 
-    <nav class="mt-16 flex items-center justify-between border-t border-[var(--color-border)] pt-6 text-sm">
+    <nav class="mt-16 flex flex-wrap items-start justify-between gap-4 border-t border-[var(--color-border)] pt-6 text-sm">
       {prev ? (
-        <a href={url(`work/${prev.id}`)} class="text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors">
+        <a href={url(`work/${prev.id}`)} class="min-w-0 text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors">
           ← {prev.data.title}
         </a>
       ) : <span />}
       {next ? (
-        <a href={url(`work/${next.id}`)} class="text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors text-right">
+        <a href={url(`work/${next.id}`)} class="min-w-0 text-right text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors">
           {next.data.title} →
         </a>
       ) : <span />}
