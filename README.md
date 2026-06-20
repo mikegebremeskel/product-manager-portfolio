@@ -64,7 +64,7 @@ Content lives in `src/content/` as plain Markdown, separate from the presentatio
 
 - A static site built with **Astro**, styled with **Tailwind CSS v4**, case studies authored in Markdown and kept separate from presentation.
 - Hosted free on **GitHub Pages** via a GitHub Actions workflow, served from the custom domain **mikegebremeskel.com**.
-- The visual system (typography, color, spacing, icons) is borrowed from the design system of a prior product I built, so the look is consistent with my existing work.
+- The visual system is a dedicated "Apple Editorial + glow" design system built for this portfolio: a light, warm-white base with SF Pro (Inter as the fallback), hairline cards, pill buttons, a custom lavender accent, and a soft accent "glow" behind the hero.
 - Built with **Claude Code** as an intentional, AI-assisted workflow. That is a deliberate choice, documented rather than hidden.
 - Stack: Astro, Tailwind CSS v4, Markdown content collections, deployed to GitHub Pages.
 

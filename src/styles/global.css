@@ -1,30 +1,80 @@
 @import "tailwindcss";
 @import "@fontsource-variable/inter/index.css";
 
-/* ── Tekky design tokens (see docs/DESIGN.md) ──────────────────────── */
+/* ── Apple-editorial light design tokens (see docs/DESIGN.md) ──────────
+   Light, warm-white base. Hierarchy from a surface scale + hairline
+   borders, almost no shadow. One brand accent (lavender) drives fills
+   and the signature "glow"; a derived darker violet carries text/links
+   so every pairing meets WCAG AA. Green only for positive outcomes,
+   amber only for awards. */
 @theme {
-  --color-bg-primary: #0B0E11;
-  --color-bg-surface: #141920;
-  --color-bg-card: #1C2330;
-  --color-bg-elevated: #243040;
+  /* Surfaces */
+  --color-bg-primary: #FBFBFD;   /* page - Apple warm white */
+  --color-bg-surface: #F5F5F7;   /* alternating sections, inputs */
+  --color-bg-card: #FFFFFF;      /* cards, artifact frames */
+  --color-bg-elevated: #FFFFFF;  /* modals/popovers (paired with shadow) */
 
-  --color-text-primary: #FFFFFF;
-  --color-text-secondary: #8A9BB0;
-  --color-text-muted: #4A5568;
+  /* Text on light */
+  --color-text-primary: #1D1D1F;   /* headings & body - ~17:1 */
+  --color-text-secondary: #6E6E73; /* meta, secondary - ~4.9:1 */
+  --color-text-muted: #86868B;     /* placeholder / UI only */
 
-  --color-accent-green: #05C46B;
-  --color-accent-gold: #F5C842;
+  /* Accent - lavender brand + readable violet for text/links */
+  --color-accent: #ADA8FF;            /* button fills, glow, decorative */
+  --color-accent-hover: #9B95FF;
+  --color-accent-strong: #5B50D6;     /* links, focus, accent text (~5.8:1) */
+  --color-accent-contrast: #1D1D1F;   /* dark ink on a lavender fill (~7.9:1) */
+  --color-positive: #00875A;          /* positive outcomes/metrics (~4.6:1) */
 
-  --color-status-red: #E53E3E;
-  --color-status-blue: #3B82F6;
+  /* Back-compat: existing var(--color-accent-green) refs resolve to the
+     readable violet, so links/dots/focus stay AA without per-file edits.
+     Button fills are upgraded to --color-accent explicitly. */
+  --color-accent-green: var(--color-accent-strong);
 
-  --color-border: rgba(255, 255, 255, 0.08);
+  /* Recognition (awards only) */
+  --color-accent-gold: #B7791F;       /* amber on light (~4.5:1) */
 
-  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  /* Status */
+  --color-status-red: #D70015;
+  --color-status-blue: #0071E3;
 
-  --radius-lg: 0.5rem;
-  --radius-md: 0.375rem;
+  /* Lines */
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-border-strong: rgba(0, 0, 0, 0.14);
+
+  /* Type - Apple system stack (true SF Pro on Apple); self-hosted Inter
+     as the cross-platform fallback. Mono for small uppercase labels. */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Radius */
   --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-2xl: 1rem;     /* cards, hero photo */
+  --radius-full: 9999px;  /* pill buttons */
+}
+
+/* Non-utility tokens: the glow motif + motion (kept off @theme). */
+:root {
+  --glow-color: 173, 168, 255; /* accent as raw RGB so alpha is tweakable */
+  --glow-hero:
+    radial-gradient(60% 70% at 72% 8%, rgba(var(--glow-color), 0.22), transparent 70%),
+    radial-gradient(50% 60% at 18% 0%, rgba(var(--glow-color), 0.12), transparent 72%);
+  --glow-spot: radial-gradient(closest-side, rgba(var(--glow-color), 0.30), transparent);
+
+  --shadow-overlay: 0 10px 30px rgba(0, 0, 0, 0.18);
+  --shadow-collage: 0 12px 32px rgba(0, 0, 0, 0.16);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-base: 200ms;
+  --duration-reveal: 500ms;
+  --reveal-shift: 14px;
+
+  --tracking-tighter: -0.035em; /* 60px+ hero */
+  --tracking-tight: -0.022em;   /* headings */
 }
 
 @layer base {
@@ -33,6 +83,7 @@
     color: var(--color-text-primary);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
   }
   body {
@@ -40,12 +91,17 @@
     color: var(--color-text-primary);
   }
   ::selection {
-    background-color: var(--color-accent-green);
-    color: var(--color-bg-primary);
+    background-color: var(--color-accent);
+    color: var(--color-text-primary);
   }
   a {
     color: inherit;
     text-decoration: none;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent-strong);
+    outline-offset: 2px;
+    border-radius: 2px;
   }
 }
 
@@ -56,39 +112,80 @@
   .text-pretty {
     text-wrap: pretty;
   }
+  /* Mono uppercase eyebrow label (the one Teenage-Engineering touch). */
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-secondary);
+  }
 }
 
-/* Reveal-on-scroll: opacity/translate, with reduced-motion respect.
-   Toggled by IntersectionObserver in src/scripts/reveal.ts. */
-.reveal {
-  opacity: 0;
-  transform: translateY(8px);
-  transition: opacity 500ms ease-out, transform 500ms ease-out;
+/* ── The GLOW field ──
+   Drop <div class="glow-field"></div> as the first child of a
+   position:relative hero/section; it paints the accent bloom behind
+   content (pointer-events:none, z-index:0). Put real content above it
+   with position:relative. */
+.glow-field {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: var(--glow-hero);
+  -webkit-mask-image: radial-gradient(120% 120% at 50% 30%, #000 55%, transparent 100%);
+          mask-image: radial-gradient(120% 120% at 50% 30%, #000 55%, transparent 100%);
 }
-.reveal.is-visible {
-  opacity: 1;
-  transform: none;
+@keyframes glow-breathe {
+  0%, 100% { opacity: 0.85; transform: scale(1); }
+  50%      { opacity: 1;    transform: scale(1.04); }
+}
+.glow-field--breathe { animation: glow-breathe 9s var(--ease-out) infinite; }
+.glow-spot {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  background: var(--glow-spot);
+}
+
+/* Reveal-on-scroll: a gentle RISE (transform-only - never opacity, which a
+   compositor can pin at 0 and hide content). Toggled by IntersectionObserver
+   in src/scripts/reveal.ts, which also adds .motion-ready to <html>. If JS
+   never runs, elements keep their default un-transformed (visible) state. */
+.reveal {
+  transition: transform var(--duration-reveal) var(--ease-out);
+  will-change: transform;
+}
+html.motion-ready .reveal:not(.is-visible) {
+  transform: translateY(var(--reveal-shift));
 }
 @media (prefers-reduced-motion: reduce) {
-  .reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
+  html.motion-ready .reveal:not(.is-visible) { transform: none; }
+  .reveal { transition: none; will-change: auto; }
+  .glow-field--breathe { animation: none; }
 }
 
 /* Long-form prose: case studies, About, and Writing essays all share this. */
 .prose-portfolio { color: var(--color-text-primary); line-height: 1.75; max-width: 65ch; }
 .prose-portfolio > * + * { margin-top: 1.25em; }
-.prose-portfolio h2 { font-size: 1.5rem; font-weight: 600; margin-top: 3rem; text-wrap: balance; }
-.prose-portfolio h3 { font-size: 1.125rem; font-weight: 600; margin-top: 2rem; }
+.prose-portfolio h2 { font-size: 1.5rem; font-weight: 600; letter-spacing: var(--tracking-tight); margin-top: 3rem; text-wrap: balance; }
+.prose-portfolio h3 { font-size: 1.125rem; font-weight: 600; letter-spacing: var(--tracking-tight); margin-top: 2rem; }
 .prose-portfolio p { color: var(--color-text-primary); }
 .prose-portfolio strong { color: var(--color-text-primary); font-weight: 600; }
-.prose-portfolio a { color: var(--color-accent-green); text-decoration: underline; text-underline-offset: 3px; }
+.prose-portfolio a {
+  color: var(--color-accent-strong);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--color-border-strong);
+  transition: text-decoration-color var(--duration-fast) var(--ease-standard);
+}
+.prose-portfolio a:hover { text-decoration-color: var(--color-accent-strong); }
 .prose-portfolio ul { padding-left: 1.25rem; list-style: disc; }
 .prose-portfolio li + li { margin-top: 0.5rem; }
 .prose-portfolio blockquote {
-  border-left: 3px solid var(--color-accent-gold);
+  border-left: 3px solid var(--color-accent);
   padding: 1rem 1.25rem;
   background: var(--color-bg-surface);
   border-radius: var(--radius-md);
@@ -118,4 +215,5 @@
   padding: 0.125rem 0.375rem;
   border-radius: var(--radius-sm);
   font-size: 0.875em;
+  font-family: var(--font-mono);
 }

@@ -1,6 +1,6 @@
 # Image asset manifest
 
-> v2.5, last updated 2026-06-19. See [docs/DECISIONS.md](docs/DECISIONS.md).
+> v2.6, last updated 2026-06-19. See [docs/DECISIONS.md](docs/DECISIONS.md).
 
 All images live in `public/assets/`. The Markdown in `src/content/` and the page components reference them by these exact filenames, so keep the names as-is.
 
@@ -31,7 +31,7 @@ All images live in `public/assets/`. The Markdown in `src/content/` and the page
 | File | What it is |
 |---|---|
 | `producthunt-1-saas.svg` | Recreated Product Hunt "#1 SaaS Product of the Week" badge (static; the live embed is dynamic and drifts) |
-| `awwwards-honors.png` | Awwwards Honors certificate (dark mat blends into the dark page) |
+| `awwwards-honors.png` | Awwwards Honors certificate (on light, each collage piece gets a soft drop-shadow to read as a floating object) |
 | `cssda-best-ui.png` | CSSDA Best UI Design medallion |
 | `cssda-best-ux.png` | CSSDA Best UX Design medallion |
 | `cssda-best-innovation.png` | CSSDA Best Innovation medallion |
@@ -46,7 +46,7 @@ All images live in `public/assets/`. The Markdown in `src/content/` and the page
 
 ## Writing (diagrams)
 
-Inline SVG figures, referenced from the essays and rendered as white figure cards on the dark site. They have a transparent-free white background and scale cleanly.
+Inline SVG figures, referenced from the essays and rendered as white figure cards inside hairline-bordered frames on the warm-white site. They scale cleanly and stay legible.
 
 | File | Used in |
 |---|---|
@@ -59,8 +59,9 @@ Inline SVG figures, referenced from the essays and rendered as white figure card
 
 ## Also in public/
 
-- `favicon.svg`: green "MG" monogram on the dark background.
-- `og.png`: the 1200x630 social share card (Open Graph / Twitter image). A branded statement card, not a photo, generated from `scripts/og-card.html` and referenced in `BaseLayout.astro`.
+- `favicon.svg`: light "MG" monogram (warm-white tile, dark ink, accent-blue underline) from the design system.
+- `assets/monogram.svg`, `assets/logo-wordmark.svg`: the design system's brand marks (typographic MG tile and `Mike Gebremeskel` wordmark with a trailing accent underline). Available for share cards and future use.
+- `og.png`: the 1200x630 social share card (Open Graph / Twitter image), regenerated for light: lavender monogram and glow, dark headline with a violet accent period, violet name. A branded statement card, not a photo, generated from `scripts/og-card.html` and referenced in `BaseLayout.astro`.
 - `CNAME`: custom domain (mikegebremeskel.com).
 
 ## Notes
