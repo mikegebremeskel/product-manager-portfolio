@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Author** | Mike Gebremeskel |
-| **Status** | v2.11 (live at mikegebremeskel.com, HTTPS enforced; reskinned to the Apple-editorial light design system) |
+| **Status** | v2.12 (live at mikegebremeskel.com, HTTPS enforced; Apple-editorial light design system, Apple blue accent) |
 | **Last updated** | June 19, 2026 |
 | **Reviewers** | (self) |
 | **Related** | README.md, DESIGN.md, DECISIONS.md, src/content |
@@ -181,7 +181,7 @@ Each essay carries `title`, `summary`, `date`, and `order` in frontmatter, plus 
 
 ## 10. Design
 
-The design is settled (see DESIGN.md). The visual system is a dedicated "Apple Editorial + glow" design system built for this portfolio (the `mike-gebremeskel-design` Claude Design skill): a light, warm-white base with SF Pro via the Apple system stack (Inter as the cross-platform fallback), hairline cards, pill buttons, a custom lavender accent (`#ADA8FF`, with a derived darker violet for text/links), and a signature soft accent "glow" behind the hero. It replaces the earlier dark, tekky-derived look.
+The design is settled (see DESIGN.md). The visual system is a dedicated "Apple Editorial + glow" design system built for this portfolio (the `mike-gebremeskel-design` Claude Design skill): a light, warm-white base with SF Pro via the Apple system stack (Inter as the cross-platform fallback), hairline cards, pill buttons, an Apple blue accent (`#0066CC` fills / `#0058B9` links), and a signature soft accent "glow" behind the hero. It replaces the earlier dark, tekky-derived look.
 
 Principles to hold:
 - Taste first. This site is itself a judgment sample, so restraint and polish matter more than features.
@@ -224,7 +224,7 @@ Principles to hold:
 
 Resolved (see DECISIONS.md for the full log):
 - Stack: Astro + Tailwind v4 + MDX, deployed to GitHub Pages via Actions.
-- Design: dedicated "Apple Editorial + glow" light design system, custom lavender accent, light mode only.
+- Design: dedicated "Apple Editorial + glow" light design system, Apple blue accent, light mode only.
 - Form service: Formspree (live).
 - Headshot: on the home hero and the About page.
 - Custom domain: mikegebremeskel.com, connected with HTTPS enforced.

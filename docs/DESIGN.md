@@ -1,6 +1,6 @@
 # Design Direction
 
-> v3.0, last updated 2026-06-19. See [DECISIONS.md](DECISIONS.md).
+> v3.1, last updated 2026-06-19. See [DECISIONS.md](DECISIONS.md).
 
 The visual system is a dedicated **"Apple Editorial + glow"** design system built for this portfolio (the `mike-gebremeskel-design` Claude Design skill). It replaces the earlier dark, tekky-derived look. The skill is the brand source of truth (tokens, type, components, guidelines, a reference UI kit); this site's `src/styles/global.css` mirrors the subset it needs.
 
@@ -39,20 +39,20 @@ Defined in `src/styles/global.css` (Tailwind v4 `@theme`). Component markup refe
 | `text-secondary` | `#6E6E73` | Meta labels, secondary copy (~4.9:1) |
 | `text-muted` | `#86868B` | Placeholders, UI-only (large text) |
 
-### Accent (custom: lavender brand + readable violet)
+### Accent (Apple blue)
 
-The accent is a single swappable brand color. Mike chose lavender `#ADA8FF`. Because that hue is light, the role splits so every pairing stays AA:
+The accent is a single swappable brand color. All ratios below are measured against the warm-white page (`#FBFBFD`) / white card.
 
 | Token | Hex | Use |
 |---|---|---|
-| `accent` | `#ADA8FF` | Button fills, the glow, decorative accents |
-| `accent-hover` | `#9B95FF` | Button hover |
-| `accent-strong` | `#5B50D6` | Links, focus rings, accent text on light (~5.8:1) |
-| `accent-contrast` | `#1D1D1F` | Dark ink text on a lavender fill (~7.9:1) |
-| `positive` | `#00875A` | Positive outcomes/metrics, form success (~4.6:1) |
-| `accent-gold` | `#B7791F` | Awards/recognition only (~4.5:1) |
+| `accent` | `#0066CC` | Button fills, selection (white text, ~5.6:1) |
+| `accent-hover` | `#0058B9` | Button hover (darker) |
+| `accent-strong` | `#0058B9` | Links, focus rings, accent text (~6.6:1) |
+| `accent-contrast` | `#FFFFFF` | White text/icon on an accent fill |
+| `positive` | `#00794D` | Positive outcomes/metrics, form success (~5.3:1) |
+| `accent-gold` | `#946700` | Awards/recognition only; AA as text (~4.8:1) |
 
-`--color-accent-green` is kept as a back-compat alias to `--color-accent-strong`, so prior references resolve to the readable violet automatically.
+The fill (`#0066CC`) is deliberately a touch darker than canonical Apple blue (`#0071E3`) so white text on the small-text CTAs clears AA with headroom; the brighter `#0071E3` is used only for the soft glow bloom (`--glow-color`).
 
 ### Status & lines
 
@@ -96,9 +96,9 @@ The signature motif: a feathered, low-opacity radial bloom in the accent hue beh
 - **Recognition collage:** overlapping award arrangement ("Loved by users, awarded by peers"). On light, each piece gets a soft drop-shadow (`--shadow-collage` / `--shadow-overlay`) so it reads as a floating object; no white-edge hack.
 - **Testimonials:** equal-height hairline cards, hover-lift, linked to LinkedIn.
 - **Experience timeline:** vertical role list with accent dots, leadership and honors lists, a pill contact CTA.
-- **Contact form:** inputs on `bg-surface` with hairline borders; pill **Send** button (lavender fill, dark ink); success in `positive`, errors in `status-red`; Formspree, no email in source.
+- **Contact form:** inputs on `bg-surface` with hairline borders; pill **Send** button (blue fill, white text); success in `positive`, errors in `status-red`; Formspree, no email in source.
 - **Lightbox:** click any article image to open full-size on a neutral dark scrim; Escape / backdrop to close.
-- **Buttons:** full pills (`--radius-full`); primary = lavender fill + dark ink, hover to `accent-hover`.
+- **Buttons:** full pills (`--radius-full`); primary = blue fill + white text, hover darkens to `accent-hover`.
 - **404:** minimal eyebrow, heading, one line, link home.
 
 ## Targets this design must hit (from the PRD)

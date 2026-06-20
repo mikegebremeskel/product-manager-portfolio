@@ -39,21 +39,23 @@ const testimonials = [
     <a
       href="https://www.linkedin.com/in/mikegebremeskel/details/recommendations/"
       rel="noopener"
-      class="text-sm text-[var(--color-accent-green)] hover:underline underline-offset-4 whitespace-nowrap"
+      class="text-sm text-[var(--color-accent-strong)] hover:underline underline-offset-4 whitespace-nowrap"
     >
       Read on LinkedIn ↗
     </a>
   </div>
-  <div class="grid gap-4 sm:grid-cols-2">
+  {/* CSS columns (masonry): cards pack by content height, so the long
+      multi-paragraph quote no longer leaves a tall gap in a fixed grid. */}
+  <div class="columns-1 gap-4 sm:columns-2">
     {testimonials.map((t) => (
       <a
         href="https://www.linkedin.com/in/mikegebremeskel/details/recommendations/"
         rel="noopener"
-        class="group flex flex-col rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 transition-[transform,border-color] duration-200 hover:-translate-y-0.5 hover:border-[var(--color-border-strong)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-strong)]">
+        class="group mb-4 block break-inside-avoid rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 transition-[transform,border-color] duration-200 hover:-translate-y-0.5 hover:border-[var(--color-border-strong)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-strong)]">
         <blockquote class="mb-6 space-y-3 text-[var(--color-text-primary)] leading-relaxed text-pretty">
           {t.quote.split('\n\n').map((p) => <p>{p}</p>)}
         </blockquote>
-        <figcaption class="mt-auto border-t border-[var(--color-border)] pt-4">
+        <figcaption class="border-t border-[var(--color-border)] pt-4">
           <p class="font-medium text-[var(--color-text-primary)]">{t.name}</p>
           <p class="mt-0.5 text-sm text-[var(--color-text-secondary)]">{t.title}</p>
           <p class="mt-0.5 text-xs text-[var(--color-text-secondary)]">{t.relation}</p>
