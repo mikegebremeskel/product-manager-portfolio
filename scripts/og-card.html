@@ -17,7 +17,7 @@
     position: relative;
     overflow: hidden;
   }
-  /* soft neutral bloom, top-right (kept monochrome to match the icon) */
+  /* soft neutral bloom, top-right (monochrome to match the icon) */
   .glow {
     position: absolute; top: -200px; right: -160px;
     width: 620px; height: 620px; border-radius: 50%;
@@ -31,21 +31,16 @@
     position: relative; z-index: 1;
   }
   .mid { position: relative; z-index: 1; }
-  .eyebrow {
-    color: #6E6E73; font-size: 22px; font-weight: 600;
-    letter-spacing: 4px; text-transform: uppercase; margin-bottom: 22px;
-  }
   h1 {
-    color: #1D1D1F; font-size: 72px; font-weight: 600;
-    line-height: 1.08; letter-spacing: -2px; max-width: 1010px;
+    color: #1D1D1F; font-size: 88px; font-weight: 600;
+    line-height: 1.05; letter-spacing: -3px;
   }
-  h1 .dot { color: #1D1D1F; }
+  .sub { margin-top: 20px; color: #6E6E73; font-size: 32px; font-weight: 500; }
+  .proof { margin-top: 10px; color: #1D1D1F; font-size: 32px; font-weight: 500; }
   .bottom {
-    display: flex; align-items: baseline; justify-content: space-between;
     position: relative; z-index: 1;
     border-top: 1px solid rgba(0,0,0,0.08); padding-top: 28px;
   }
-  .name { color: #1D1D1F; font-size: 30px; font-weight: 600; }
   .url { color: #6E6E73; font-size: 26px; font-weight: 500; }
 </style>
 </head>
@@ -54,11 +49,11 @@
     <div class="glow"></div>
     <div class="mono">MG</div>
     <div class="mid">
-      <div class="eyebrow">Product Manager</div>
-      <h1>I empathize with users to build intuitive products<span class="dot">.</span></h1>
+      <h1>Mike Gebremeskel</h1>
+      <div class="sub">Product manager</div>
+      <div class="proof">Co-founder &middot; award-winning B2B SaaS launch</div>
     </div>
     <div class="bottom">
-      <span class="name">Mike Gebremeskel</span>
       <span class="url">mikegebremeskel.com</span>
     </div>
   </div>
