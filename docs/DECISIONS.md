@@ -26,6 +26,8 @@ Acting on a Claude Code review of the live reskin.
 - **Removed the `--color-accent-green` back-compat alias** and pointed all references at `--color-accent-strong` directly.
 - **Responsive + a11y:** Recognition collage now renders as a centered flex-wrap of legible badges below `sm` (the absolute overlapping collage only at `sm+`); 44px hamburger target; hero display tracking only at `lg+`, and the headline now leads on mobile with the photo following (`order-first` dropped); skip-to-content link + `id="main"`; `IntersectionObserver` fallback reveals all content; testimonials switched to CSS `columns` (masonry) so the long quote no longer unbalances the grid; prev/next case-study nav wraps on narrow screens.
 - **OG card re-rendered in blue** to match (favicon/monogram/wordmark from the design system were already blue).
+- **Hero glow made full-bleed** (the section is now full width with the content capped at `max-w-7xl` inside), so the bloom spans the viewport instead of stopping at the centered column on wide screens.
+- **Hero copy de-named:** dropped "Talisman" from the home hero and meta description, now "I co-founded a venture-backed B2B SaaS startup and led product through its award-winning launch." (Talisman still appears in the case studies, Recognition, and About.)
 - **Verified:** clean build, zero em dashes, no email in source; Lighthouse on home/experience/contact each P≥96 / A11y 100 / SEO 100 / BP 100 with the color-contrast audit passing; no horizontal scroll and no overlap at 320/375/768/1280/1920; reduced-motion still disables the reveal transform and the glow breathe.
 
 ### 2026-06-19 (reskin to the Apple-editorial light design system)
