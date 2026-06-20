@@ -1,8 +1,9 @@
 // Tiny lightbox: clicking any <img> inside an .article-body opens a full-bleed
-// overlay on background-elevated. Closes on Escape or backdrop click.
+// overlay with a neutral dark scrim (a lightbox dims the page regardless of
+// theme). Closes on Escape or backdrop click.
 const overlay = document.createElement('div');
 overlay.className =
-  'fixed inset-0 z-50 hidden items-center justify-center bg-[#243040]/95 p-6 backdrop-blur-sm';
+  'fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-6 backdrop-blur-sm';
 overlay.setAttribute('role', 'dialog');
 overlay.setAttribute('aria-modal', 'true');
 overlay.setAttribute('aria-label', 'Enlarged artifact');

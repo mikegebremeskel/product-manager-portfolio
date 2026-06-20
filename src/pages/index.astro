@@ -11,11 +11,12 @@ const heroPhoto = url('assets/hero.jpeg');
 const work = (await getCollection('work')).sort((a, b) => a.data.order - b.data.order);
 ---
 <BaseLayout title="Mike Gebremeskel" description="Product manager. Co-founder of Talisman, a venture-backed B2B SaaS startup, and the PM behind its award-winning launch.">
-  <section class="mx-auto max-w-7xl px-6 pt-24 pb-20 lg:pt-32 lg:pb-28">
-    <div class="grid items-center gap-10 lg:grid-cols-[1.6fr_1fr] lg:gap-16">
+  <section class="relative mx-auto max-w-7xl px-6 pt-24 pb-20 lg:pt-32 lg:pb-28">
+    <div class="glow-field"></div>
+    <div class="relative z-10 grid items-center gap-10 lg:grid-cols-[1.6fr_1fr] lg:gap-16">
       <div>
-        <p class="text-sm lg:text-base uppercase tracking-widest text-[var(--color-text-secondary)]">Product manager</p>
-        <h1 class="mt-5 text-4xl font-semibold tracking-tight text-balance sm:text-5xl md:text-6xl lg:text-7xl">
+        <p class="eyebrow">Product manager</p>
+        <h1 class="mt-5 text-4xl font-semibold tracking-tight text-balance sm:text-5xl md:text-6xl lg:text-7xl" style="letter-spacing: var(--tracking-tighter);">
           I empathize with users to build intuitive products.
         </h1>
         <p class="mt-8 max-w-2xl text-lg lg:text-xl text-[var(--color-text-secondary)] leading-relaxed text-pretty">
@@ -35,7 +36,7 @@ const work = (await getCollection('work')).sort((a, b) => a.data.order - b.data.
   </section>
 
   <section id="work" class="mx-auto max-w-7xl px-6 pb-24">
-    <h2 class="text-sm uppercase tracking-widest text-[var(--color-text-secondary)] mb-6">Case studies</h2>
+    <h2 class="eyebrow mb-6">Case studies</h2>
     <div class="grid gap-4 sm:grid-cols-2">
       {work.map((entry) => (
         <CaseStudyCard

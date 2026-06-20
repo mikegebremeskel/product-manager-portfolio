@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Author** | Mike Gebremeskel |
-| **Status** | v2.10 (live at mikegebremeskel.com, HTTPS enforced) |
+| **Status** | v2.11 (live at mikegebremeskel.com, HTTPS enforced; reskinned to the Apple-editorial light design system) |
 | **Last updated** | June 19, 2026 |
 | **Reviewers** | (self) |
 | **Related** | README.md, DESIGN.md, DECISIONS.md, src/content |
@@ -83,7 +83,7 @@ Non-metrics (explicitly not chasing): traffic volume, SEO ranking for competitiv
 - A CMS or admin interface (content is Markdown in the repo)
 - User accounts or any login
 - Analytics dashboards or A/B testing
-- Dark/light theme toggle (the site is dark only)
+- Dark/light theme toggle (the site is light only)
 - Animation beyond light, purposeful motion
 - Resume download (by design: resume requests come through the contact form)
 
@@ -181,7 +181,7 @@ Each essay carries `title`, `summary`, `date`, and `order` in frontmatter, plus 
 
 ## 10. Design
 
-The design is settled (see DESIGN.md). The visual system is inherited from a prior product Mike built (tekky): the tokens (typography, color, spacing, iconography), Inter as the typeface, and a dark-only palette. Borrowing them keeps the site consistent with his existing work and saved design time.
+The design is settled (see DESIGN.md). The visual system is a dedicated "Apple Editorial + glow" design system built for this portfolio (the `mike-gebremeskel-design` Claude Design skill): a light, warm-white base with SF Pro via the Apple system stack (Inter as the cross-platform fallback), hairline cards, pill buttons, a custom lavender accent (`#ADA8FF`, with a derived darker violet for text/links), and a signature soft accent "glow" behind the hero. It replaces the earlier dark, tekky-derived look.
 
 Principles to hold:
 - Taste first. This site is itself a judgment sample, so restraint and polish matter more than features.
@@ -224,7 +224,7 @@ Principles to hold:
 
 Resolved (see DECISIONS.md for the full log):
 - Stack: Astro + Tailwind v4 + MDX, deployed to GitHub Pages via Actions.
-- Design: tekky tokens, dark mode only.
+- Design: dedicated "Apple Editorial + glow" light design system, custom lavender accent, light mode only.
 - Form service: Formspree (live).
 - Headshot: on the home hero and the About page.
 - Custom domain: mikegebremeskel.com, connected with HTTPS enforced.

@@ -6,16 +6,25 @@ The running record of significant decisions and document versions for this proje
 
 | Document | Version | Last updated |
 |---|---|---|
-| [PRD.md](PRD.md) | v2.10 | 2026-06-19 |
+| [PRD.md](PRD.md) | v2.11 | 2026-06-19 |
 | [PRFAQ.md](PRFAQ.md) | v1.3 | 2026-06-19 |
-| [DESIGN.md](DESIGN.md) | v2.5 | 2026-06-19 |
-| [DECISIONS.md](DECISIONS.md) | v1.14 | 2026-06-19 |
-| [../README.md](../README.md) | v1.4 | 2026-06-19 |
-| [../ASSETS.md](../ASSETS.md) | v2.5 | 2026-06-19 |
+| [DESIGN.md](DESIGN.md) | v3.0 | 2026-06-19 |
+| [DECISIONS.md](DECISIONS.md) | v1.15 | 2026-06-19 |
+| [../README.md](../README.md) | v1.5 | 2026-06-19 |
+| [../ASSETS.md](../ASSETS.md) | v2.6 | 2026-06-19 |
 
 Versioning convention: bump the minor (v1 to v1.1) for edits and clarifications; bump the major (v1 to v2) for a structural change or a reversed decision.
 
 ## Decisions
+
+### 2026-06-19 (reskin to the Apple-editorial light design system)
+
+- **Replaced the dark, tekky-derived look with a dedicated "Apple Editorial + glow" design system** (the `mike-gebremeskel-design` Claude Design skill, reverse-engineered from this repo and chosen by Mike from three explorations). Structure, copy, awards, and photos carry over verbatim; the visual language is new: light warm-white base (`#FBFBFD`), near-black ink, hairline cards with almost no shadow, pill buttons, SF Pro via the Apple system stack (self-hosted Inter as the cross-platform fallback, no CDN), mono uppercase eyebrows, and a signature soft accent "glow" behind the hero. DESIGN.md rewritten (v3.0).
+- **Custom accent: lavender `#ADA8FF`.** Because it is a light hue, the role splits to stay WCAG AA: `--color-accent` (`#ADA8FF`) for fills/glow with dark-ink text (`#1D1D1F`, ~7.9:1); `--color-accent-strong` (`#5B50D6`) for links/focus/accent-text (~5.8:1). `--color-accent-green` kept as a back-compat alias to `--color-accent-strong`. Green (`#00875A`) reserved for positive outcomes, amber (`#B7791F`) for awards.
+- **Token-driven flip.** Components reference `var(--color-*)`, so remapping the `@theme` values in `src/styles/global.css` flipped most of the site; targeted fixes covered the Recognition collage (soft drop-shadows instead of the dark-only white-edge hack), the lightbox scrim (neutral black), the scroll reveal (now transform-only, gated by `.motion-ready`, so content can never be pinned hidden), and the sticky header (transparent at top, translucent blur on scroll).
+- **Assets regenerated for light:** light favicon, a light OG card (lavender monogram + glow, violet accents), plus the design system's `monogram.svg` and `logo-wordmark.svg` added to `public/assets/`.
+- **Verified:** clean build (30 pages), zero em dashes, Lighthouse Performance 96 / Accessibility 100 / SEO 100 / Best-practices 100. Built on a `redesign/apple-editorial` branch and merged to `main` so the live flip was atomic.
+- **The design-system skill is local tooling** (`~/.claude/skills/mike-gebremeskel-design/`, gitignored), not committed. It is the brand source of truth; `global.css` mirrors the subset the site uses.
 
 ### 2026-06-19 (experience synced to resume v8)
 

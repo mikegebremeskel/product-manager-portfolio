@@ -90,7 +90,7 @@ const honors = [
 
     <!-- Education & certification -->
     <section class="mt-14">
-      <h2 class="text-sm uppercase tracking-widest text-[var(--color-text-secondary)]">Education & certification</h2>
+      <h2 class="eyebrow">Education & certification</h2>
       <div class="mt-4 space-y-1">
         <p class="text-[var(--color-text-primary)]">B.A., Psychology, Oklahoma State University, 2016</p>
         <p class="text-[var(--color-text-primary)]">Lean Six Sigma Green Belt (LSSGB)</p>
@@ -99,7 +99,7 @@ const honors = [
 
     <!-- Leadership & community -->
     <section class="mt-14">
-      <h2 class="text-sm uppercase tracking-widest text-[var(--color-text-secondary)]">Leadership & community</h2>
+      <h2 class="eyebrow">Leadership & community</h2>
       <ul class="mt-5 space-y-5">
         {leadership.map((l) => (
           <li>
@@ -115,7 +115,7 @@ const honors = [
 
     <!-- Honors & recognition -->
     <section class="mt-14">
-      <h2 class="text-sm uppercase tracking-widest text-[var(--color-text-secondary)]">Honors & recognition</h2>
+      <h2 class="eyebrow">Honors & recognition</h2>
       <ul class="mt-5 space-y-4">
         {honors.map((h) => (
           <li>
@@ -130,14 +130,14 @@ const honors = [
     </section>
 
     <!-- CTA -->
-    <section class="mt-16 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 text-center">
+    <section class="mt-16 rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 text-center">
       <h2 class="text-xl font-medium text-[var(--color-text-primary)]">Want the full resume?</h2>
       <p class="mx-auto mt-2 max-w-md text-[var(--color-text-secondary)] text-pretty">
         Reach out and I’ll send it over. The contact form is the fastest way to start a conversation.
       </p>
       <a
         href={url('contact')}
-        class="mt-5 inline-block rounded-md bg-[var(--color-accent-green)] px-5 py-2.5 text-sm font-medium text-[var(--color-bg-primary)] hover:opacity-90 transition-opacity"
+        class="mt-5 inline-block rounded-full bg-[var(--color-accent)] px-5 py-2.5 text-sm font-medium text-[var(--color-accent-contrast)] hover:bg-[var(--color-accent-hover)] transition-colors"
       >
         Get in touch
       </a>

@@ -12,8 +12,8 @@ const { href, title, summary, competencies } = Astro.props;
   announces just the case study title as the link name. The link's ::after
   overlay makes the whole card clickable, and focus-within rings the card.
 */}
-<article class="reveal group relative flex flex-col rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 transition-colors hover:bg-[var(--color-bg-elevated)] focus-within:outline-none focus-within:ring-2 focus-within:ring-[var(--color-accent-green)]">
-  <h3 class="text-xl font-medium text-[var(--color-text-primary)] transition-colors group-hover:text-[var(--color-accent-green)]">
+<article class="reveal group relative flex flex-col rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 transition-[transform,border-color] duration-200 hover:-translate-y-0.5 hover:border-[var(--color-border-strong)] focus-within:outline-none focus-within:ring-2 focus-within:ring-[var(--color-accent-strong)]">
+  <h3 class="text-xl font-medium text-[var(--color-text-primary)] transition-colors group-hover:text-[var(--color-accent-strong)]">
     <a href={href} class="after:absolute after:inset-0 after:content-[''] focus:outline-none">
       {title}
     </a>
