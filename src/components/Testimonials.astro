@@ -1,7 +1,7 @@
 ---
-// LinkedIn recommendations. Quotes are faithful excerpts (trimmed for length,
-// two obvious typos in the original lightly corrected). To add more, append to
-// this array; the grid handles any count.
+// LinkedIn recommendations. Quotes are faithful excerpts (lightly corrected for
+// two obvious typos). Long quotes are clamped to a uniform height on load with a
+// "Show more" toggle (see the script below), so the grid stays aligned.
 const testimonials = [
   {
     quote:
@@ -19,7 +19,7 @@ const testimonials = [
   },
   {
     quote:
-      "Michael is an extraordinary talent and a valued commodity to any organization which he is affiliated. He is definitely one to think outside of the box and able to reach a viable resolution to any problem that is presented. Mike is a true innovator and will undoubtedly bring his team to a next level of thinking. Anyone who has the good fortune of being on his team will always speak of his positive attitude, fantastic work ethic, and willingness to assist in any way possible.",
+      "Michael is an extraordinary talent and a valued commodity to any organization which he is affiliated. He is definitely one to think outside of the box and able to reach a viable resolution to any problem that is presented. His contribution to various department organizations and committees surpassed and exceeded all expectations set forth. Mike is a true innovator and will undoubtedly bring his team to a next level of thinking. Anyone who has the good fortune of being on his team will always speak of his positive attitude, fantastic work ethic, willingness to assist in any way possible, and I know that he is going to do amazing things in his career. Working with Mike has been a very memorable experience and I look forward to seeing how he continues his path of success.\n\nThank you so much for always being resilient, staying strong with your ideas, adapting to any change, and always having an optimistic outlook for any situation. You will do great things!",
     name: 'Kyndra Krensavage, BGS',
     title: 'Manager, Customer Onboarding, McKesson',
     relation: 'Managed Mike directly',
@@ -44,23 +44,59 @@ const testimonials = [
       Read on LinkedIn ↗
     </a>
   </div>
-  {/* Even 2-up grid in reading order; flex-col + mt-auto bottom-aligns the
-      attributions so same-row cards stay tidy. */}
+  {/* Even 2-up grid in reading order; long quotes clamp to a uniform height
+      with a Show more toggle so the cards line up on first visit. */}
   <div class="grid gap-4 sm:grid-cols-2">
     {testimonials.map((t) => (
-      <a
-        href="https://www.linkedin.com/in/mikegebremeskel/details/recommendations/"
-        rel="noopener"
-        class="group flex flex-col rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 transition-[transform,border-color] duration-200 hover:-translate-y-0.5 hover:border-[var(--color-border-strong)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-strong)]">
-        <blockquote class="mb-6 space-y-3 text-[var(--color-text-primary)] leading-relaxed text-pretty">
+      <article class="flex flex-col rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
+        <blockquote class="tq relative space-y-3 text-[var(--color-text-primary)] leading-relaxed text-pretty">
           {t.quote.split('\n\n').map((p) => <p>{p}</p>)}
         </blockquote>
-        <figcaption class="mt-auto border-t border-[var(--color-border)] pt-4">
+        <button
+          type="button"
+          class="tq-more hidden mt-3 self-start text-sm font-medium text-[var(--color-accent-strong)] hover:underline underline-offset-4"
+          aria-expanded="false"
+        >
+          Show more
+        </button>
+        <figcaption class="mt-6 border-t border-[var(--color-border)] pt-4">
           <p class="font-medium text-[var(--color-text-primary)]">{t.name}</p>
           <p class="mt-0.5 text-sm text-[var(--color-text-secondary)]">{t.title}</p>
           <p class="mt-0.5 text-xs text-[var(--color-text-secondary)]">{t.relation}</p>
         </figcaption>
-      </a>
+      </article>
     ))}
   </div>
 </section>
+
+<style>
+  /* Clamp long quotes to a uniform height; the script reveals the toggle and
+     adds .is-clamped only on cards that actually overflow. */
+  .tq { max-height: 11em; overflow: hidden; }
+  .tq.is-open { max-height: none; }
+  .tq.is-clamped:not(.is-open)::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    height: 3em;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--color-bg-card));
+    pointer-events: none;
+  }
+</style>
+<script>
+  for (const q of document.querySelectorAll<HTMLElement>('.tq')) {
+    if (q.scrollHeight > q.clientHeight + 2) {
+      q.classList.add('is-clamped');
+      const btn = q.parentElement?.querySelector<HTMLButtonElement>('.tq-more');
+      if (btn) {
+        btn.classList.remove('hidden');
+        btn.addEventListener('click', () => {
+          const open = q.classList.toggle('is-open');
+          btn.textContent = open ? 'Show less' : 'Show more';
+          btn.setAttribute('aria-expanded', String(open));
+        });
+      }
+    }
+  }
+</script>
