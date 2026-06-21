@@ -30,8 +30,6 @@ This connects to something I believe about products in general. Especially early
 
 Being deliberate here is how you keep the trust you worked hard to build. It is unglamorous. Nobody sees the training toggle you turned off. But it is exactly the kind of quiet, responsible decision that separates a team that respects its customers from one that just ships fast and hopes nobody asks.
 
-## Where I land
-
 Adopting AI is easy. Adopting it responsibly is a series of small, deliberate decisions about data that nobody will praise you for and everybody would blame you for getting wrong.
 
 So when you turn on the next AI feature, do not stop at "does it work." Ask what it touches and what it learns from, and decide on purpose. What is the default setting in your AI tools that you have never actually checked?

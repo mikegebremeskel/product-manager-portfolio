@@ -46,8 +46,6 @@ So a requirement did not read, "build a spend graph." It read, "I want to view m
 
 When you start from the job, you are far less likely to fall in love with a screen the user never asked for. The job keeps you honest.
 
-## Where I land
-
 You can hold a strong opinion about what users want. I do. But the opinion is a hypothesis, and the user's behavior is the test. When the two disagree, the behavior wins every time.
 
 Watch what people do. Treat one person's confusion as a signal, not a one off. Ask them less and observe them more. And when you write down what to build, write it as their job, so the product stays pointed at them instead of at your own idea.

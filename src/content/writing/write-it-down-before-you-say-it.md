@@ -42,7 +42,7 @@ Writing first is more work up front. You cannot fake it. You have to actually kn
 
 But that discomfort is the feature. The blank page does the thinking the meeting used to waste time on.
 
-So here is where I land. If your meetings feel slow, do not reach for a better agenda or a shorter time box. Change the order. Make the idea show up on paper before it shows up in the room.
+So if your meetings feel slow, do not reach for a better agenda or a shorter time box. Change the order. Make the idea show up on paper before it shows up in the room.
 
 Talking feels faster. It is not. The doc does the thinking. The meeting just confirms it.
 

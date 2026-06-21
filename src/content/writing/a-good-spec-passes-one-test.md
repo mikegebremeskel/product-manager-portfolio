@@ -38,8 +38,6 @@ This is more work for the person writing the spec, and that is exactly why peopl
 
 It is not faster. It just moves the work from one careful hour of yours to many interrupted hours across the team, plus the rework when someone guesses wrong. Front loading the clarity is the cheaper path. It only looks more expensive because the cost is visible and lands on you.
 
-## Where I land
-
 A spec is not a description of what you want. It is a set of instructions precise enough that someone else can act on them without you in the room. That is a higher bar than most tickets clear, and it is the bar worth holding.
 
 Before you hand off your next ticket, read it once as the person who has to build it. Could they finish it without a single question for you? If not, you are not done writing yet.

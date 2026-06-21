@@ -44,8 +44,6 @@ I see it the other way. On an early team, getting good ideas out the door is the
 
 I also tried to do it generously. Keeping the machine running gave me a clear view of who was carrying the load, so I made a point of crediting them out loud. We could not hit a release date, I once said, if we did not have someone like our lead developer. Running the operation and lifting the people in it are the same job.
 
-## Where I land
-
 If you are early in your career and you are the person who naturally catches the dropped ball, do not undersell it. That instinct is rare and it is valuable. Name it, own it, and get great at it.
 
 And if you are building a team, look past the loudest idea in the room. Ask a quieter question. Who here keeps the handoffs from dropping? In my experience, that person is holding the whole thing together, and they are usually the last to tell you so.

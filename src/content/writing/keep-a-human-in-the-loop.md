@@ -40,8 +40,6 @@ There is one more reason this design is not a compromise. It is a flywheel. Ever
 
 So the human queue is not a fixed cost you carry forever. It is the exact set of cases the model has not learned yet, and it shrinks as the model learns from the reviews. You start with a conservative threshold and more human review, and over time more of the volume crosses the bar automatically. The people are not just catching errors. They are teaching the system to need them less.
 
-## Where I land
-
 AI does not change the oldest rule of building trustworthy products, it sharpens it. The more it costs to be wrong, the more a human belongs in the loop, and the model should be handling volume, not high-stakes judgment calls it is unsure about.
 
 So before you fully automate something, ask the real question. Not "can AI do this," but "what happens to my customer's trust when it gets this wrong?" Where in your product would an AI mistake be cheap, and where would it be unforgivable?

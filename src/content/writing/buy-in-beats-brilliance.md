@@ -30,8 +30,6 @@ Buy-in is not a vote you call at the end. It is built along the way. You listen 
 
 Do that and adoption stops being a fight. The solution arrives already half-believed, because the people who have to use it were part of making it.
 
-## Where I land
-
 If you have ever watched a clearly correct idea fail while a messier one succeeded, this is usually why. The messier one had buy-in. The correct one did not.
 
 So when you are pushing something you know is right, spend at least as much energy on belief as on the idea itself. Who needs to believe in this for it to actually happen, and have you earned that yet? The answer to that question matters more than how good your solution is.

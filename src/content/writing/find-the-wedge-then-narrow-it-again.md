@@ -50,8 +50,6 @@ The lesson I pulled for us was simple. Even inside your target segment, there is
 
 That is the part people skip. They pick a wedge once and treat it as settled. The wedge is not a one time decision. It is a habit of narrowing every time the evidence lets you.
 
-## Where I land
-
 You do not pick the wedge that looks most impressive on a roadmap. You pick the one that is easiest to ship and closest to a real, narrow customer. Then you hold it loosely enough that the customer can move you.
 
 We thought we were building spend, access, and IT. The customers told us we were building one screen. So we became that screen, and we got a lot less confused about what to do next.

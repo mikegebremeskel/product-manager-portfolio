@@ -36,8 +36,6 @@ When you do this, you get two things at once. You build a better product, becaus
 
 I never did get that org-behavior master's, at least not yet. Instead I got to roll up my sleeves and build a company where these ideas are not theory. They are how we work.
 
-## Where I land
-
 You are not just your job title. The most valuable thing you bring to a product might be the part of your life that has nothing to do with your role on paper.
 
 So the next time you are stuck on a customer problem, do not only open the research. Ask who on your team has lived this, and what their life is trying to tell you. What is one thing from your own life, outside of work, that quietly makes you better at the work?

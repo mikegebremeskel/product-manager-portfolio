@@ -56,8 +56,6 @@ The fair question is whether using AI like this makes the work less mine. I do n
 
 If anything, being open about this is the credibility, not the weakness. I am not pretending a machine made me a better thinker. I am showing that I had a real body of work and the judgment to shape it, and that I know how to use modern tools to move fast without lowering the bar. That last part is not a confession. In this market, it is the skill.
 
-## Where I land
-
 The takeaway is not "use AI to write your portfolio." It is something more durable. The value in the AI era is not the model, which everyone has. It is having something real to feed it and the judgment to shape what comes back. Your accumulated, specific experience is the moat. AI just makes it finally legible at scale.
 
 So the question I would ask you is the one I had to ask myself. If you pointed the best AI in the world at your own archive tomorrow, would it find a deep body of real work to draw from, or a blank page? The answer to that is mostly written years before you ever open the tool.

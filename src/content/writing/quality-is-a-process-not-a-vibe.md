@@ -36,8 +36,6 @@ My pinned standard was the Definition of Done for that first launch. It was not 
 
 So the discipline is two sided. High enough that you are proud of what goes out, and bounded enough that it actually goes out. You write down what done means for this release, you hit all of it, and you do not let "done" quietly expand while the deadline sits still.
 
-## Where I land
-
 If your team argues about whether something is ready, you do not have a quality problem. You have a definition problem. Nobody wrote down what good looks like, so everyone is using their own private version.
 
 Fix it upstream. Write the Definition of Done before you build. Hold the bar at every handoff, not just the last one. Keep it scoped to the release in front of you. Quality stops being a feeling you argue about and becomes a line everyone can see.

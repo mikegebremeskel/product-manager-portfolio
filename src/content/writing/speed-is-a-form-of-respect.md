@@ -50,8 +50,6 @@ That is the operator's job in a moment like this. Catch it, confirm it, route it
 
 [SCREENSHOT 3: Chiko's LinkedIn post recapping the timeline and the "customer obsessed" ethos. Caption: "Our CEO's write-up of the same morning. Customer obsession is not a slogan you put in a deck. It is what you do at 6:35am."]
 
-## Where I land
-
 A customer found a bug at 6:33am. By 6:35 we had replied, and by 11 it was fixed. I am as proud of the two minute reply as I am of the fix, because the reply is what told the customer they mattered.
 
 If you want customers to trust you, do not wait until you have the answer to respond. Respond first, then go solve it fast. Speed is the clearest way to show someone you respect them. How long does a customer of yours currently wait just to hear that you heard them?

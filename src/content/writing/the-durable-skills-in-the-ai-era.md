@@ -36,8 +36,6 @@ So the move is not to stop learning AI tools. Learn them, use them, stay current
 
 Develop range, too. The person who can connect customer insight to clear communication to a sound prioritization call is far more resilient than the person who is the world's expert in one tool that may be obsolete in eighteen months. Range plus compounding fundamentals is a career that adapts. A stack of expiring certifications is a career that reacts.
 
-## Where I land
-
 The skills that protect your career in the AI era are not the newest ones. They are the oldest ones. Customer empathy, communication, buy-in, judgment, taste, prioritization. AI raises their value rather than threatening it, because it makes everything except judgment cheap.
 
 So by all means, learn the tools. But invest most in the things that have not changed and will not, because those are the ones that compound. If you could only get meaningfully better at one durable skill this year, one that will still matter in a decade no matter what the tools do, which one would you choose?
