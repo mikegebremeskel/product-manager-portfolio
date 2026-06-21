@@ -1,6 +1,6 @@
 # Image asset manifest
 
-> v2.7, last updated 2026-06-19. See [docs/DECISIONS.md](docs/DECISIONS.md).
+> v2.8, last updated 2026-06-20. See [docs/DECISIONS.md](docs/DECISIONS.md).
 
 All images live in `public/assets/`. The Markdown in `src/content/` and the page components reference them by these exact filenames, so keep the names as-is.
 
@@ -59,9 +59,10 @@ Inline SVG figures, referenced from the essays and rendered as white figure card
 
 ## Also in public/
 
-- `favicon.svg`: light "MG" monogram (warm-white tile, dark ink, accent-blue underline) from the design system.
-- `assets/monogram.svg`, `assets/logo-wordmark.svg`: the design system's brand marks (typographic MG tile and `Mike Gebremeskel` wordmark with a trailing accent underline). Available for share cards and future use.
-- `og.png`: the 1200x630 social share card (Open Graph / Twitter image), light with the Apple blue accent: blue monogram and glow, dark headline with a blue accent period, blue name. A branded statement card, not a photo, generated from `scripts/og-card.html` and referenced in `BaseLayout.astro`.
+- `favicon.svg`: black rounded tile (`#1D1D1F`) with white "MG" (no underline). Shipped as a full icon set so it updates across browsers and link-preview scrapers (which fall back to `/favicon.ico`):
+  - `favicon.ico` (16+32, PNG-in-ICO), `favicon-16.png`, `favicon-32.png`, `apple-touch-icon.png` (180), `icon-192.png`, `icon-512.png`. All referenced in `BaseLayout.astro` `<head>`.
+- `assets/monogram.svg`, `assets/logo-wordmark.svg`: the design system's brand marks (typographic MG tile and `Mike Gebremeskel` wordmark). Available for future use.
+- `og.png`: the 1200x630 social share card (Open Graph / Twitter image), black-and-white to match the icon and identity-first: big "Mike Gebremeskel" headline, "Product manager of an award-winning B2B SaaS startup" descriptor, URL footer, black monogram tile, subtle neutral bloom. A branded statement card, not a photo, generated from `scripts/og-card.html` and referenced in `BaseLayout.astro`.
 - `CNAME`: custom domain (mikegebremeskel.com).
 
 ## Notes
