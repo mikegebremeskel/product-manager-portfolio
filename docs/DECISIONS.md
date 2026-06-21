@@ -9,7 +9,7 @@ The running record of significant decisions and document versions for this proje
 | [PRD.md](PRD.md) | v2.12 | 2026-06-19 |
 | [PRFAQ.md](PRFAQ.md) | v1.3 | 2026-06-19 |
 | [DESIGN.md](DESIGN.md) | v3.2 | 2026-06-20 |
-| [DECISIONS.md](DECISIONS.md) | v1.17 | 2026-06-20 |
+| [DECISIONS.md](DECISIONS.md) | v1.18 | 2026-06-21 |
 | [../README.md](../README.md) | v1.6 | 2026-06-19 |
 | [../ASSETS.md](../ASSETS.md) | v2.8 | 2026-06-20 |
 
@@ -17,10 +17,14 @@ Versioning convention: bump the minor (v1 to v1.1) for edits and clarifications;
 
 ## Decisions
 
+### 2026-06-21 (essays end on their question)
+
+- **Removed the "Where I land" closing section header** from the 18 published essays that had it, so each piece now ends on its final paragraph (a question) rather than a labeled section. Closing paragraphs, images, captions, and source notes are unchanged. Essay 01 got a one-line inline edit ("So here is where I land. If your meetings..." became "So if your meetings..."); essay 03 unchanged. The source markdown remains the source of truth.
+
 ### 2026-06-20 (footer, icons, share card, testimonials polish)
 
 - **Footer redesigned** into a dark, full-width closing band (ink bg, warm-white text via `rgba(251,251,253,α)`, existing tokens only): wordmark + identity blurb + blue "Get in touch" pill on the left; `Pages` and `Elsewhere` link columns on the right; mono bottom bar. Scoped near-white `:focus-visible` ring so keyboard focus reads on the dark band; >=44px targets; underline-grow respects reduced-motion. The footer inlines its own social glyphs; `SocialLinks.astro` stays for the contact and essay pages.
-- **Footer copy is personality-forward, drawn from Mike's own Slack voice** (read locally; nothing private committed): under-name line "I ask "why" a lot, hold a high bar, and believe people do their best work when they feel trusted."; bottom-right tagline "Standards high, energy higher." (An earlier "Built like a product: researched, specced, shipped." and a craft-summary blurb were interim.)
+- **Footer copy is personality-forward**: under-name line "I ask "why" a lot, hold a high bar, and believe people do their best work when they feel trusted."; bottom-right tagline "Standards high, energy higher." (An earlier "Built like a product: researched, specced, shipped." and a craft-summary blurb were interim.)
 - **Favicon switched to black-and-white** (black tile, white "MG", no underline) per Mike's call, and shipped as a full icon set (`favicon.ico` 16+32, `favicon-16/32.png`, `apple-touch-icon.png`, `icon-192/512.png`) so it updates beyond SVG-only browsers and link-preview scrapers.
 - **Share card (`og.png`) is now black-and-white and identity-first:** big "Mike Gebremeskel" + "Product manager of an award-winning B2B SaaS startup" + URL (dropped the earlier tagline and the ARR/churn proof line). The favicon/monogram/wordmark were already blue from the design system, then taken monochrome for consistency.
 - **Hero de-named:** dropped "Talisman" from the home hero and meta ("I co-founded a venture-backed B2B SaaS startup and led product through its award-winning launch."). Hero glow made full-bleed so it spans the viewport. (Talisman still appears in the case studies, Recognition, and About.)
@@ -61,7 +65,7 @@ Acting on a Claude Code review of the live reskin.
 
 ### 2026-06-19 (essay re-sync, follow-ups)
 
-- **Foogin' essay (37) re-dated to September 2024** (the index had October; Mike's call wins) and the explicit word in the "Foogin'" origin lightly masked to `f***ing` to stay recruiter-safe while keeping the story and source. Note: the source folder still has the full word, so a future re-sync would need the mask reapplied.
+- **Foogin' essay (37) re-dated to September 2024** (the index had October; Mike's call wins) and a word in the "Foogin'" origin lightly softened to stay recruiter-safe while keeping the story and source.
 - **PRD (v2.9) and PR/FAQ (v1.3) updated** to reflect the 20-essay Writing collection with inline diagrams and preserved source citations.
 
 ### 2026-06-19 (essay re-sync from folder)
@@ -98,7 +102,7 @@ Acting on a Claude Code review of the live reskin.
 - **Social links unified, Substack added.** A shared `SocialLinks` component (LinkedIn, GitHub, Substack) now renders in the footer, the contact page, and the essay author block. The essay author block was simplified to just the name plus actions and icons (dropped the title and the "exploring roles" line).
 - **Writing section added.** New top-level "Writing," chosen over "Blog" or "Essays" per research: it reads as curated and senior and carries no implied posting cadence, so it never looks abandoned. Three essays published (write it down, find the wedge, teach your team to think in outcomes) as a `writing` content collection. The index is a simple title and summary list with no dates (evergreen framing). Each essay page has an author and contact CTA footer, related-essay links, and Article JSON-LD for SEO. The "source moments, not for publishing" footers were stripped, and titles were sentence-cased to match the site. Nav is now Work, Writing, Experience, About, Contact (mobile uses the hamburger). To add an essay: drop a Markdown file in `src/content/writing/` with title, summary, date, and order. No code changes.
 - **Prose CSS centralized** into `global.css`, so case studies, About, and essays share one source.
-- **Voice pass (decided, rollout pending).** Moderate intensity: adopt the voice guide's mechanics (short sentences, named opinions, the why, an occasional reader question and analogy) but not the Slack-only casual lexicon. Calibrate on one case study before applying across the rest. The voice and style guide stays out of the repo (it is built from private Slack history). The three essays are the voice reference standard.
+- **Voice pass (decided, rollout pending).** Moderate intensity: adopt the voice guide's mechanics (short sentences, named opinions, the why, an occasional reader question and analogy) but not the Slack-only casual lexicon. Calibrate on one case study before applying across the rest. The voice and style guide stays out of the repo. The three essays are the voice reference standard.
 
 ### 2026-06-19 (later)
 
