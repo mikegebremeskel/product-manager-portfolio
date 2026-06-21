@@ -44,8 +44,6 @@ And it runs upward too. Arteta is, by the accounts in that piece, relentless abo
 
 To make it stick, I used the soccer frame directly. We attack by being clear and concise about what we are building, why, how we build it, and how we test it. We defend by meeting every customer requirement, constantly raising the bar for the experience, and never letting our standards drop. And we win by attacking and defending as one team. Excellence is not a moment. It is a hundred small, non-negotiable habits, repeated.
 
-## Where I land
-
 Culture is not the values poster. It is the bar your team actually holds in the small moments, every day, especially when no one is forcing them to. You make that real by writing the standards down, applying them to everyone equally including yourself, and being willing to pay the cost of upholding them.
 
 Arteta gave me the blueprint, and a great name. What outside your own field could give you the blueprint for the team you are trying to build?

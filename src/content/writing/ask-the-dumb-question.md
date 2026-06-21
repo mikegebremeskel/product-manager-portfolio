@@ -34,8 +34,6 @@ Admitting you do not know something invites the expert to teach you, which makes
 
 This connects to a bigger habit of mine. When a domain is not yours, you do not reason it out alone. You find the person who lives in it and ask. With engineers, that person is sitting right next to you.
 
-## Where I land
-
 Your job working with engineers is not to out-engineer them. It is to be crystal clear about the goal and genuinely humble about the implementation, and to make it safe for them to correct you.
 
 So the next time you are tempted to nod along to something technical you do not fully follow, try the other thing. Say "this might be a dumb question," and ask it. What is the question you have been afraid to look dumb asking? That is probably the one worth asking out loud.

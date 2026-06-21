@@ -36,8 +36,6 @@ It is tempting to think culture is forged in the big moments, the crisis, the la
 
 A leader who nails the big speech but is dismissive in daily interactions has a bad culture, no matter what the speech said. A leader who is consistently decent in the small moments builds a good one, even without a single memorable speech. People believe what they experience repeatedly, not what they are told occasionally.
 
-## Where I land
-
 If you want a better culture, do not start with a new values document. Start with your next ten interactions. Encourage the person who is down. Help the one who is stuck. Build the relationship instead of just running the transaction.
 
 Culture is not your values page. It is how you treat the person having a hard week. So what is the actual culture your team is experiencing, in the small moments, regardless of what the wall says?

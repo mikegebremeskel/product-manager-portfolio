@@ -42,8 +42,6 @@ When we needed to understand security, I went looking for people in that field t
 
 There is a bigger version of this idea too. The deeper we got into the financial side, the more it made sense to lean the whole product toward the people who live in those numbers all day, the accountants themselves. The instinct that started with one question for Ian, go to where the real expertise is, scaled all the way up to a direction for the company.
 
-## Where I land
-
 You are going to build things that touch domains you do not understand. Finance, legal, compliance, security, all of it. When that happens, your first move should not be to think harder by yourself. Someone has already spent years on this exact problem.
 
 Find that person. Ask them a precise, well prepared question. Take the model they hand you and design around it. You do not need to become the expert. You need to know who the expert is and how to ask them well.

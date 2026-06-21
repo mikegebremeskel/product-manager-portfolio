@@ -42,8 +42,6 @@ A name rooted in the oldest version of the problem does some of that teaching fo
 
 This is not a clean formula, and naming is partly taste. You will land on a metaphor that is right but already taken, or right in English but strange in another language. We ran into exactly that, where a word we liked translated oddly across markets. That is normal. The point of starting from the oldest version of the problem is not that it hands you the perfect word instantly. It is that it gives you a true north, so every candidate gets judged against what you actually are, not against what sounds nice in a meeting.
 
-## Where I land
-
 A name is not decoration. It is the shortest possible description of your place in the customer's world, and you get to choose whether that description is meaningful or empty.
 
 So do not start a naming session by listing cool words. Start by asking what the oldest, most human version of your problem is, and what single word sits at the center of it. Build outward from there. Ours came from a cartoon I loved as a kid, and it worked because underneath the cartoon was an idea as old as people. What is the timeless problem underneath the thing you are building right now?

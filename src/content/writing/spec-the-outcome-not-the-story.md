@@ -34,8 +34,6 @@ I have a related rule that a good spec passes one test: could someone build it w
 
 You can write a clear, well intentioned paragraph that still fails an engineer, because a paragraph describes and acceptance criteria verify. The format itself does work for you. Writing "given, when, then" forces you to think in concrete, checkable outcomes, which catches the gaps a narrative would have glossed over. The structure is not bureaucracy. It is a thinking tool that happens to also be the cleanest handoff.
 
-## Where I land
-
 When you hand work to an engineer, you are really handing them a definition of done. Make that definition something they can check, not something they have to interpret.
 
 Write the outcome as testable criteria. Use the parent ticket for the story and the why, and let the criteria carry the what. Before you hand off your next ticket, look at it and ask, is the finished state here a set of facts I could check off, or a story someone has to read my mind to complete?
