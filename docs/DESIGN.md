@@ -1,6 +1,6 @@
 # Design Direction
 
-> v3.1, last updated 2026-06-19. See [DECISIONS.md](DECISIONS.md).
+> v3.2, last updated 2026-06-20. See [DECISIONS.md](DECISIONS.md).
 
 The visual system is a dedicated **"Apple Editorial + glow"** design system built for this portfolio (the `mike-gebremeskel-design` Claude Design skill). It replaces the earlier dark, tekky-derived look. The skill is the brand source of truth (tokens, type, components, guidelines, a reference UI kit); this site's `src/styles/global.css` mirrors the subset it needs.
 
@@ -90,7 +90,8 @@ The signature motif: a feathered, low-opacity radial bloom in the accent hue beh
 ## Components
 
 - **Header / nav:** name left (with a trailing accent period brand mark, `Mike Gebremeskel.`), links right. Sticky and transparent at the top, fading to a translucent `blur(20px)` white once scrolled (`#site-header.is-scrolled`).
-- **Footer:** shared `SocialLinks`, "How this site was built" repo link, copyright. Quiet.
+- **Footer:** a dark, full-width band that closes the page (ink `#1D1D1F` bg, warm-white text via `rgba(251,251,253,α)`). Left: wordmark with the accent period, a one-line identity blurb in Mike's voice, and a blue "Get in touch" pill. Right: a `Pages` column and an `Elsewhere` column (mono labels, underline-grow links, social icon+label rows). Bottom bar: mono `© year` and a short tagline. Keyboard focus uses a scoped near-white ring so it reads on the dark band; links are >=44px; underline-grow respects reduced-motion. The footer inlines its own social glyphs; `SocialLinks.astro` remains for the contact and essay pages.
+- **Favicon / app icons:** a black rounded tile with white "MG" (`public/favicon.svg`), shipped as a full set so it updates across browsers and link-preview scrapers: `favicon.ico` (16+32), `favicon-16/32.png`, `apple-touch-icon.png` (180), `icon-192/512.png`, all wired into `<head>`.
 - **Case study card** (home): white surface, 16px radius, 1px hairline; hover = 2px lift + `border-strong`; title goes to `accent-strong`.
 - **Case study page:** eyebrow, title, summary, competency chips, a meta grid, long-form `.prose-portfolio`, prev/next nav.
 - **Recognition collage:** overlapping award arrangement ("Loved by users, awarded by peers"). On light, each piece gets a soft drop-shadow (`--shadow-collage` / `--shadow-overlay`) so it reads as a floating object; no white-edge hack.
