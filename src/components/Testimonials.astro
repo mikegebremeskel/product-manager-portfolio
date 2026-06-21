@@ -85,18 +85,33 @@ const testimonials = [
   }
 </style>
 <script>
+  // Reveal the "Show more" toggle only on quotes that actually overflow the
+  // clamp. A ResizeObserver runs the check after the real layout settles and on
+  // any reflow (font load, viewport change), which a one-shot measurement at
+  // parse time misses. Buttons start hidden (markup) so nothing flashes.
+  const measure = (q: HTMLElement, btn: HTMLButtonElement) => {
+    if (q.classList.contains('is-open')) return; // expanded: leave "Show less" visible
+    const overflowing = q.scrollHeight > q.clientHeight + 2;
+    q.classList.toggle('is-clamped', overflowing);
+    btn.classList.toggle('hidden', !overflowing);
+  };
+
   for (const q of document.querySelectorAll<HTMLElement>('.tq')) {
-    if (q.scrollHeight > q.clientHeight + 2) {
-      q.classList.add('is-clamped');
-      const btn = q.parentElement?.querySelector<HTMLButtonElement>('.tq-more');
-      if (btn) {
-        btn.classList.remove('hidden');
-        btn.addEventListener('click', () => {
-          const open = q.classList.toggle('is-open');
-          btn.textContent = open ? 'Show less' : 'Show more';
-          btn.setAttribute('aria-expanded', String(open));
-        });
-      }
+    const btn = q.parentElement?.querySelector<HTMLButtonElement>('.tq-more');
+    if (!btn) continue;
+
+    btn.addEventListener('click', () => {
+      const open = q.classList.toggle('is-open');
+      q.classList.toggle('is-clamped', !open);
+      btn.textContent = open ? 'Show less' : 'Show more';
+      btn.setAttribute('aria-expanded', String(open));
+    });
+
+    if ('ResizeObserver' in window) {
+      new ResizeObserver(() => measure(q, btn)).observe(q);
+    } else {
+      measure(q, btn);
+      if (document.fonts?.ready) document.fonts.ready.then(() => measure(q, btn));
     }
   }
 </script>
